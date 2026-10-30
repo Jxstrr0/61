@@ -6,7 +6,7 @@ full game in the classic format: two boards of six categories by five clues,
 hidden doubles, and a wagered final. Buzz in real time, type your responses,
 and handwrite your final answer. "61" is the number of clues in a full game.
 
-**Play it:** https://jxstrr0.github.io/61/ (phase 1 of 8: the Home page only)
+**Play it:** https://jxstrr0.github.io/61/ (phase 2 of 8: the Home page only, so far)
 
 ## How it is built
 
@@ -50,7 +50,9 @@ npm test
 ```
 
 That runs Node's built-in test runner (`node --test`). There is nothing to
-install. The same command runs on every push and pull request
+install. The suite checks every board in `boards/` against the schema and the
+placement rules (`node tools/validate.js` does the same for one file; see
+`tools/GENERATE_BOARD.md` for how boards are written and reviewed). The same command runs on every push and pull request
 (`.github/workflows/test.yml`), and the deploy stops if it fails.
 
 ## Dependencies
