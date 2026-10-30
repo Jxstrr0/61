@@ -85,6 +85,7 @@ export function renderResults(el, summary, handlers, options = {}) {
         <button type="button" class="btn btn--ink" data-library ${options.libraryEnabled ? "" : "disabled"}>Library</button>
         <button type="button" class="btn btn--ink" data-home>Home</button>
       </div>
+      <p class="eyebrow eyebrow--ink results__mark">A Longlight Interactive game</p>
     </div>`;
   el.querySelector("[data-again]").addEventListener("click", handlers.onPlayAgain);
   el.querySelector("[data-library]").addEventListener("click", handlers.onLibrary);

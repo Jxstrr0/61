@@ -12,7 +12,7 @@ export function formatScore(n) {
 /**
  * @param {HTMLElement} el
  * @param {object} state
- * @param {object} ctx   { bubbles: {index: text}, flash: {index: "lockout"|"correct"|"wrong"} }
+ * @param {object} ctx   { bubbles: {index: text}, flash: {index: "lockout"|"correct"|"wrong"}, display: [scores mid count-up] }
  */
 export function renderPodiums(el, state, ctx = {}) {
   const answering = state.phase === "clue" ? state.clue?.answerer : null;
@@ -31,7 +31,7 @@ export function renderPodiums(el, state, ctx = {}) {
     const bubble = ctx.bubbles?.[index];
     podium.innerHTML = `
       ${bubble ? `<div class="podium__bubble" role="status">${escapeHtml(bubble)}</div>` : ""}
-      <div class="podium__score ${c.score < 0 ? "podium__score--neg" : ""}">${formatScore(c.score)}</div>
+      <div class="podium__score ${c.score < 0 ? "podium__score--neg" : ""}">${formatScore(ctx.display?.[index] ?? c.score)}</div>
       <div class="podium__name">${escapeHtml(c.name)}</div>
     `;
     frag.appendChild(podium);

@@ -6,7 +6,7 @@ full game in the classic format: two boards of six categories by five clues,
 hidden doubles, and a wagered final. Buzz in real time, type your responses,
 and handwrite your final answer. "61" is the number of clues in a full game.
 
-**Play it:** https://jxstrr0.github.io/61/ (phase 6 of 8: five boards, three difficulties, Library and Stats; polish, sound, tutorial and Practice are next)
+**Play it:** https://jxstrr0.github.io/61/ (phase 7 of 8: the full game with sound, tutorial, Practice mode and home-screen install; more boards and the launch are next)
 
 ## How it is built
 
@@ -23,6 +23,12 @@ and handwrite your final answer. "61" is the number of clues in a full game.
   No API key ships in the site and nothing is generated at runtime.
 - Career stats and saves live in the browser's `localStorage`. There is no
   server and no database.
+- Sound cues are synthesized with the Web Audio API (`src/audio.js`), so the
+  site ships no audio files. The Final-round music is a short original loop
+  made the same way. A mute toggle lives on the Home and game screens.
+- `manifest.webmanifest` and the icons in `assets/icons/` let the game be
+  added to a phone's home screen. There is no service worker yet, so it needs
+  a connection to load.
 
 ## Folder layout
 
@@ -39,14 +45,16 @@ src/
   rng.js              # seeded random numbers (mulberry32)
   storage.js          # localStorage save/resume, stats, settings (versioned)
   sim.js              # plays a whole game with no UI (tests, debug.html)
-  audio.js            # Web Audio cues, mute                 (phase 7)
-  ui/                 # board.js, clue.js, podiums.js, final.js, results.js, library.js, stats.js
+  practice.js         # Practice mode rules: endless buzzer drill (pure, no DOM)
+  audio.js            # Web Audio cues and the Final loop, mute
+  ui/                 # board, clue, podiums, final, results, library, stats, practice, tutorial
 boards/
   _schema.json        # JSON Schema for a board          (phase 2)
   index.json          # list of boards for the Library    (phase 2)
   <id>.json           # one file per board
 data/opponents.json   # CPU roster: name, bio, pool
-assets/               # fonts, logo, sound cues
+assets/               # fonts, logo.svg, icons/ (home-screen icons)
+manifest.webmanifest  # install to home screen
 tools/                # GENERATE_BOARD.md (the generation prompt), validate.js
 test/                 # node --test suites
 ```
@@ -60,7 +68,7 @@ npm test
 That runs Node's built-in test runner (`node --test`). There is nothing to
 install. The suite plays 1,000 seeded games through the engine and checks the
 scores against the event log, runs a table of typed answers through the
-matcher, checks the CPU dice over 10,000 rolls, and checks every board in
+matcher, checks the CPU dice over 10,000 rolls, and plays the Practice drill through its rules, and checks every board in
 `boards/` against the schema and the placement rules (`node tools/validate.js` does the same for one file; see
 `tools/GENERATE_BOARD.md` for how boards are written and reviewed). The same command runs on every push and pull request
 (`.github/workflows/test.yml`), and the deploy stops if it fails.

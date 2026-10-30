@@ -13,6 +13,10 @@ import { renderFinal, finalRenderKey, updateFinalTimers } from "./ui/final.js";
 import { renderResults } from "./ui/results.js";
 import { renderLibrary, renderDifficultySheet, boardBadge } from "./ui/library.js";
 import { renderStats } from "./ui/stats.js";
+import * as audio from "./audio.js";
+import { renderTutorial } from "./ui/tutorial.js";
+import { createPractice, dispatchPractice, cluesFromBoard } from "./practice.js";
+import { renderPracticeSetup, renderPracticeClue, practiceRenderKey, updatePracticeTimers } from "./ui/practice.js";
 
 const SCREENS = ["home", "library", "game", "practice", "stats", "results", "about"];
 const DEFAULT_SCREEN = "home";
@@ -42,6 +46,9 @@ const app = {
   summary: null,       // the finished game, for the results screen
   library: { pack: "all" },   // the Library's current pack filter
   sheet: null,         // the open difficulty sheet: { entry, difficulty, seed }
+  tutorial: null,      // the open tutorial: { step, then }  (then: what to do when it closes)
+  countUp: null,       // podium score animation: { from, to, start, duration }
+  practice: { state: null, mode: "buzz", clues: null, loading: false, error: null, lastKey: "" },
   statsConfirm: false, // the Stats reset button is waiting for its second tap
   timers: { cpuPick: null, reveal: null, bubble: {} },
   lastClueKey: "",
@@ -68,7 +75,19 @@ async function boot() {
     sheet: $("#sheet"),
     goLibrary: $("#go-library"),
     goStats: $("#go-stats"),
+    howTo: $("#how-to"),
+    goPractice: $("#go-practice"),
+    practice: $("#practice"),
+    tutorial: $("#tutorial"),
+    muteButtons: document.querySelectorAll("[data-mute]"),
   };
+  audio.setMuted(app.settings.muted);
+  renderMute();
+  for (const b of app.el.muteButtons) b.addEventListener("click", toggleMute);
+  // Browsers only start audio after a gesture: unlock on the first one.
+  const unlock = () => { audio.unlock(); };
+  document.addEventListener("pointerdown", unlock, { capture: true });
+  document.addEventListener("keydown", unlock, { capture: true });
 
   window.addEventListener("hashchange", route);
   route();
@@ -92,12 +111,30 @@ async function boot() {
   app.el.resume.addEventListener("click", resumeGame);
   app.el.goLibrary.addEventListener("click", () => { location.hash = "#library"; });
   app.el.goStats.addEventListener("click", () => { location.hash = "#stats"; });
+  app.el.howTo.addEventListener("click", () => openTutorial(null));
+  app.el.goPractice.addEventListener("click", () => { location.hash = "#practice"; });
   app.el.sheet.addEventListener("click", (e) => { if (e.target === app.el.sheet) closeSheet(); });
   document.addEventListener("keydown", onKeyDown);
   requestAnimationFrame(frame);
 
   // For poking at a live game from the console (and for scripted play tests).
   window.sixtyOne = { get state() { return app.state; }, act, startGame };
+}
+
+function toggleMute() {
+  app.settings.muted = !app.settings.muted;
+  storage.saveSettings(app.settings);
+  audio.setMuted(app.settings.muted);
+  if (app.settings.muted) audio.stopFinalMusic();
+  renderMute();
+}
+
+function renderMute() {
+  for (const b of app.el.muteButtons) {
+    b.setAttribute("aria-pressed", String(app.settings.muted));
+    b.textContent = app.settings.muted ? "Sound off" : "Sound on";
+    b.title = app.settings.muted ? "Turn sound on" : "Turn sound off";
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -123,7 +160,10 @@ function route() {
   if (name === "home") app.el.resume.hidden = !(app.state && app.state.phase !== "results") && !storage.loadGame();
   if (name === "library") renderLibraryScreen();
   if (name === "stats") { app.statsConfirm = false; renderStatsScreen(); }
+  if (name === "practice") renderPracticeScreen();
+  else if (app.practice.state) stopPractice();
   if (name !== "library" && name !== "home") closeSheet();
+  if (name !== "home" && app.tutorial && !app.tutorial.then) { app.tutorial = null; app.el.tutorial.hidden = true; }
   showScreen(name);
 }
 
@@ -159,7 +199,9 @@ function renderSheet() {
       app.settings.difficulty = sheet.difficulty;
       storage.saveSettings(app.settings);
       closeSheet();
-      startGame(sheet.entry.id, sheet.difficulty, sheet.seed);
+      const start = () => startGame(sheet.entry.id, sheet.difficulty, sheet.seed);
+      if (storage.tutorialSeen()) start();
+      else openTutorial(start); // first game ever: the four how-to cards first
     },
     onClose: closeSheet,
   });
@@ -169,6 +211,29 @@ function closeSheet() {
   app.sheet = null;
   app.el.sheet.hidden = true;
   app.el.sheet.replaceChildren();
+}
+
+/** The how-to cards. `then` runs when they close (starting the first game), or null. */
+function openTutorial(then) {
+  app.tutorial = { step: 0, then };
+  renderTutorialNow();
+}
+
+function renderTutorialNow() {
+  const t = app.tutorial;
+  if (!t) return;
+  const close = () => {
+    storage.markTutorialSeen();
+    app.tutorial = null;
+    app.el.tutorial.hidden = true;
+    app.el.tutorial.replaceChildren();
+    if (t.then) t.then();
+  };
+  renderTutorial(app.el.tutorial, { step: t.step }, {
+    onStep: (n) => { t.step = n; renderTutorialNow(); },
+    onSkip: close,
+    onDone: close,
+  });
 }
 
 async function startGame(boardId, difficulty, seed = randomSeed()) {
@@ -250,6 +315,95 @@ function renderLibraryScreen() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// Practice (src/practice.js is the engine; ui/practice.js the card)
+// ---------------------------------------------------------------------------
+
+function renderPracticeScreen() {
+  const p = app.practice;
+  if (p.state) {
+    const key = practiceRenderKey(p.state);
+    if (key === p.lastKey) return;
+    p.lastKey = key;
+    renderPracticeClue(app.el.practice, p.state, practiceHandlers);
+    return;
+  }
+  p.lastKey = "";
+  renderPracticeSetup(app.el.practice, { mode: p.mode, loading: p.loading, error: p.error }, {
+    onMode: (mode) => { p.mode = mode; renderPracticeScreen(); },
+    onStart: startPractice,
+  });
+}
+
+/** Loads every board once, pools their clues, and starts the drill. */
+async function startPractice() {
+  const p = app.practice;
+  if (!app.index || p.loading) return;
+  p.loading = true;
+  p.error = null;
+  renderPracticeScreen();
+  try {
+    if (!p.clues) {
+      const boards = await Promise.all(app.index.boards.map((b) => fetch(`./boards/${b.id}.json`).then((r) => r.json())));
+      p.clues = boards.flatMap(cluesFromBoard);
+    }
+    p.state = createPractice({ clues: p.clues, seed: randomSeed(), mode: p.mode, roster: app.roster });
+    practiceAct({ type: "start" });
+  } catch (error) {
+    p.error = "Could not load the clues. Check your connection and try again.";
+    console.error(error);
+  } finally {
+    p.loading = false;
+    if (screenFromHash(location.hash) === "practice") renderPracticeScreen();
+  }
+}
+
+function stopPractice() {
+  app.practice.state = null;
+  app.practice.lastKey = "";
+}
+
+function practiceAct(action) {
+  const state = app.practice.state;
+  if (!state) return;
+  dispatchPractice(state, { now: now(), ...action });
+  for (const event of state.lastEvents) onPracticeEvent(event);
+  renderPracticeScreen();
+}
+
+function onPracticeEvent(event) {
+  switch (event.type) {
+    case "open": audio.play("goLight"); break;
+    case "lockout": audio.play("lockout"); break;
+    case "won": audio.play("buzzIn"); break;
+    case "resolved":
+      if (event.winner) audio.play("buzzIn");
+      if (event.winner === "you") audio.play("correct");
+      else if (event.winner === "cpu") audio.play(event.correct ? "wrong" : "correct");
+      break;
+    case "answered": audio.play(event.correct ? "correct" : "wrong"); break;
+    default: break;
+  }
+}
+
+const practiceHandlers = {
+  onBuzz: () => practiceAct({ type: "buzz" }),
+  onAnswer: (text) => practiceAct({ type: "answer", text }),
+  onRule: (correct) => practiceAct({ type: "rule", correct }),
+  onNext: () => practiceAct({ type: "next" }),
+  onStop: () => { stopPractice(); renderPracticeScreen(); },
+};
+
+/** Called every frame while a drill is running. */
+function practiceFrame() {
+  const state = app.practice.state;
+  if (!state) return;
+  practiceAct({ type: "tick" });
+  const c = state.clue;
+  if (c?.state === "resolved" && now() >= c.nextAt) practiceAct({ type: "next" });
+  updatePracticeTimers(app.el.practice, state, now());
+}
+
 function renderStatsScreen() {
   renderStats(app.el.stats, storage.loadStats(), {
     onReset: () => {
@@ -287,17 +441,28 @@ function onEvent(event) {
     case "round.start":
       app.revealBoard = true;
       hideBand();
+      audio.play("boardReveal");
+      break;
+    case "clue.select":
+      audio.play(event.dailyDouble ? "dailyDouble" : "categoryPop");
+      break;
+    case "buzzers.open":
+      audio.play("goLight");
       break;
     case "lockout":
       flash(event.contestant, "lockout", 600);
+      if (state.contestants[event.contestant].isHuman) audio.play("lockout");
       break;
     case "buzz":
       if (!state.contestants[event.contestant].isHuman) bubble(event.contestant, "…", 0);
+      audio.play("buzzIn");
       break;
     case "score": {
+      startCountUp(event.contestant, event.delta);
       if (event.kind === "final") break;
       app.ctx.lastResult = event;
       flash(event.contestant, event.correct ? "correct" : "wrong", 900);
+      audio.play(event.correct ? "correct" : "wrong");
       if (!state.contestants[event.contestant].isHuman) {
         const said = event.text ? `${event.text}. ` : "";
         bubble(event.contestant, `${said}${event.correct ? "Correct!" : "Incorrect."}`, 2600);
@@ -314,6 +479,7 @@ function onEvent(event) {
       app.ctx.nudge = false;
       break;
     case "round.end":
+      audio.play("roundEnd");
       showBand(`
         <h2 class="band__title">End of ${state.board.rounds[event.round].name}</h2>
         <p>${event.scores.map((s, i) => `${escapeHtml(names[i])}: ${formatScore(s)}`).join(" · ")}</p>
@@ -328,8 +494,18 @@ function onEvent(event) {
         showBand(`<h2 class="band__title">No Final today</h2><p>Nobody finished above zero, so there is no Final round.</p>`, "See the results", () => finishGame());
       }
       break;
+    case "final.clue":
+      audio.startFinalMusic();
+      break;
+    case "final.answered":
+      audio.stopFinalMusic();
+      break;
     case "final.reveal":
       flash(event.contestant, event.correct ? "correct" : "wrong", 900);
+      audio.play(event.correct ? "correct" : "wrong");
+      break;
+    case "game.end":
+      audio.stopFinalMusic();
       break;
     default:
       break;
@@ -359,6 +535,35 @@ function afterAction() {
     }, REVEAL_HOLD_MS);
   }
   if (state.phase === "roundEnd" || (state.phase === "final" && state.final?.stage === "category")) storage.saveGame(state);
+}
+
+/**
+ * Podium scores count up or down over half a second instead of jumping.
+ * `app.ctx.display` holds the numbers currently shown; the frame loop moves
+ * them toward the real scores. Skipped when the user prefers reduced motion.
+ */
+function startCountUp(index, delta) {
+  const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  if (reduce || !delta) { app.ctx.display = null; return; }
+  const scores = app.state.contestants.map((c) => c.score);
+  const display = app.ctx.display ? app.ctx.display.slice() : scores.slice();
+  display[index] = scores[index] - delta;
+  app.ctx.display = display;
+  app.countUp = { from: display.slice(), to: scores, start: now(), duration: 550 };
+}
+
+function stepCountUp() {
+  const anim = app.countUp;
+  if (!anim || !app.state) return;
+  const t = Math.min(1, (now() - anim.start) / anim.duration);
+  const eased = 1 - (1 - t) * (1 - t);
+  app.ctx.display = anim.from.map((v, i) => Math.round(v + (anim.to[i] - v) * eased));
+  for (const el of app.el.podiums.querySelectorAll(".podium")) {
+    const i = Number(el.dataset.index);
+    const scoreEl = el.querySelector(".podium__score");
+    if (scoreEl) scoreEl.textContent = formatScore(app.ctx.display[i]);
+  }
+  if (t >= 1) { app.countUp = null; app.ctx.display = null; }
 }
 
 function clearTimers() {
@@ -438,6 +643,8 @@ function renderPodiumsNow() {
 /** One animation frame: tick the engine while a clue or the Final is live, move timer bars. */
 function frame() {
   const state = app.state;
+  stepCountUp();
+  practiceFrame();
   if (state && (state.phase === "clue" || state.phase === "final")) {
     const before = state.clue?.state;
     dispatch(state, { type: "tick", now: now() });
@@ -451,10 +658,15 @@ function frame() {
 }
 
 function onKeyDown(event) {
-  if (!app.state || app.state.phase !== "clue") return;
   if (event.code !== "Space") return;
   const tag = event.target?.tagName;
   if (tag === "INPUT" || tag === "TEXTAREA" || tag === "BUTTON") return;
+  if (app.practice.state && screenFromHash(location.hash) === "practice") {
+    event.preventDefault();
+    practiceAct({ type: "buzz" });
+    return;
+  }
+  if (!app.state || app.state.phase !== "clue") return;
   event.preventDefault();
   act({ type: "buzz" });
 }

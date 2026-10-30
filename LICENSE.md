@@ -20,5 +20,7 @@ Credit "Longlight Interactive" and link back to this repository.
 | --- | --- | --- | --- |
 | Space Grotesk (variable font) | `assets/fonts/` | [Florian Karsten / The Space Grotesk Project Authors](https://github.com/floriankarsten/space-grotesk) | [SIL Open Font License 1.1](assets/fonts/OFL.txt) |
 
-Every third-party asset added later (for example the CC0 final-round music
-track) gets its own row in this table with its source and licence.
+All sound cues and the Final-round music are synthesized in the browser
+(`src/audio.js`) and are original to this game; no audio files ship. Any
+third-party asset added later gets its own row in this table with its source
+and licence.

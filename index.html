@@ -7,6 +7,8 @@
   <meta name="description" content="61 - A Trivia Game: a phone-first quiz-show game from Longlight Interactive. Three podiums, two rounds, a wagered final.">
   <meta name="theme-color" content="#7B3FC4">
   <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 
   <!-- Font: Space Grotesk, the Longlight brand face. The file lives in this
        repo (assets/fonts/); tokens.css sets it up. Preloading starts the
@@ -15,16 +17,16 @@
 
   <!-- All paths are relative (./) on purpose: the site lives under
        /61/ on GitHub Pages and may move to a custom domain later. -->
-  <link rel="stylesheet" href="./styles/tokens.css?v=4">
-  <link rel="stylesheet" href="./styles/app.css?v=4">
-  <script type="module" src="./src/main.js?v=4"></script>
+  <link rel="stylesheet" href="./styles/tokens.css?v=5">
+  <link rel="stylesheet" href="./styles/app.css?v=5">
+  <script type="module" src="./src/main.js?v=5"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Every screen is a <section data-screen="..."> inside <main>. The hash
        router in src/main.js shows one at a time (#home, #library, #game,
-       #practice, #stats, #results, #about). Practice arrives in phase 7. -->
+       #practice, #stats, #results, #about). -->
   <main id="main" class="app">
 
     <section class="screen screen--home" data-screen="home">
@@ -34,16 +36,17 @@
         <p class="home__tagline">Three podiums. Two boards. One wagered final.</p>
 
         <nav class="home__menu" aria-label="Main menu">
-          <!-- Practice is wired up in phase 7. -->
           <button class="btn btn--primary" type="button" id="quick-play" disabled>Quick Play</button>
           <button class="btn" type="button" id="resume" hidden>Resume game</button>
           <button class="btn" type="button" id="go-library" disabled>Library</button>
-          <button class="btn" type="button" disabled>Practice</button>
+          <button class="btn" type="button" id="go-practice">Practice</button>
           <button class="btn" type="button" id="go-stats">Stats</button>
         </nav>
+        <button class="link" type="button" id="how-to">How to play</button>
         <p class="home__note" id="home-note">Quick Play picks a board you have not played yet. Phone: tap the clue to buzz. Desktop: press Space.</p>
       </div>
       <footer class="home__footer">
+        <button type="button" class="mute mute--home" data-mute aria-pressed="false">Sound on</button>
         <span class="eyebrow">A Longlight Interactive game</span>
       </footer>
     </section>
@@ -52,6 +55,7 @@
       <header class="game__top">
         <a class="game__home" href="#home" aria-label="Home">61</a>
         <span class="game__title" id="game-title"></span>
+        <button type="button" class="mute" data-mute aria-pressed="false">Sound on</button>
       </header>
       <!-- The board: six category headers over five rows of values (ui/board.js) -->
       <div class="board" id="board" role="grid"></div>
@@ -63,6 +67,16 @@
       <div class="band" id="band" hidden></div>
       <!-- Full category name and note, on tapping a header -->
       <div class="pop" id="category-pop" hidden></div>
+    </section>
+
+    <!-- Practice: endless buzzer drill (src/practice.js + ui/practice.js) -->
+    <section class="screen screen--game" data-screen="practice" hidden>
+      <header class="game__top">
+        <a class="game__home" href="#home" aria-label="Home">61</a>
+        <span class="game__title">Practice</span>
+        <button type="button" class="mute" data-mute aria-pressed="false">Sound on</button>
+      </header>
+      <div class="practice" id="practice"></div>
     </section>
 
     <!-- Library: pack chips and board cards (ui/library.js) -->
@@ -92,5 +106,7 @@
 
   <!-- The difficulty sheet, over whichever screen opened it (ui/library.js) -->
   <div class="pop pop--sheet" id="sheet" hidden></div>
+  <!-- The how-to cards, first run and from "How to play" (ui/tutorial.js) -->
+  <div class="pop pop--sheet" id="tutorial" hidden></div>
 </body>
 </html>

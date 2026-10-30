@@ -77,6 +77,7 @@
   /* Actions and signals */
   --accent: var(--ll-clay);         /* player podium, go-light, primary buttons */
   --accent-ink: var(--ll-accent-ink);
+  --accent-stage: #F3B093;          /* clay tint for LARGE text on purple (3.4:1); small text on purple uses --stage-ink */
   --on-accent: var(--ll-slate);     /* text on a clay button */
   --focus: var(--ll-lilac);
   --correct: #2E9E6B;               /* always paired with an icon or word, never colour alone */
