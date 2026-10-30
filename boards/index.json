@@ -244,6 +244,25 @@
         "television",
         "sports"
       ]
+    },
+    {
+      "id": "general-05",
+      "title": "General #5",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": [
+        "geography",
+        "nature",
+        "history",
+        "literature",
+        "movies",
+        "sports",
+        "canada",
+        "wordplay",
+        "science",
+        "language",
+        "music"
+      ]
     }
   ]
 }

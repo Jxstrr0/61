@@ -1,0 +1,165 @@
+{
+  "id": "general-05",
+  "title": "General #5",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": ["geography", "nature", "history", "literature", "movies", "sports", "canada", "wordplay", "science", "language", "music"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "MOUNTAINS",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 200, "text": "The highest mountain on Earth, on the border of Nepal and China", "answer": "Mount Everest", "accept": ["Everest"] },
+            { "value": 400, "text": "This snow-capped volcano in Tanzania is the highest peak in Africa", "answer": "Kilimanjaro", "accept": ["Mount Kilimanjaro"] },
+            { "value": 600, "text": "This range runs the whole length of western South America", "answer": "the Andes", "accept": ["Andes", "Andes Mountains"] },
+            { "value": 800, "text": "Mont Blanc, the highest peak in the Alps, straddles the border of France and this country", "answer": "Italy", "accept": [] },
+            { "value": 1000, "text": "This Alpine peak on the Swiss-Italian border is famous for its pyramid shape and gave its outline to a chocolate bar", "answer": "the Matterhorn", "accept": ["Matterhorn", "Monte Cervino"] }
+          ]
+        },
+        {
+          "name": "INSECTS",
+          "tags": ["nature"],
+          "clues": [
+            { "value": 200, "text": "These insects make honey and live in hives", "answer": "bees", "accept": ["bee", "honeybees", "honey bees"] },
+            { "value": 400, "text": "This insect's life cycle runs from egg to caterpillar to chrysalis to winged adult", "answer": "the butterfly", "accept": ["butterfly", "butterflies"] },
+            { "value": 600, "text": "This beetle lights up its abdomen to signal mates on summer nights", "answer": "the firefly", "accept": ["firefly", "fireflies", "lightning bug", "lightning bugs"] },
+            { "value": 800, "text": "Gardeners welcome ladybugs because they eat these tiny sap-sucking pests", "answer": "aphids", "accept": ["aphid", "the aphid"] },
+            { "value": 1000, "text": "This African fly spreads the disease known as sleeping sickness", "answer": "the tsetse fly", "accept": ["tsetse fly", "tsetse"] }
+          ]
+        },
+        {
+          "name": "WOMEN WHO RULED",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "Nicknamed the Virgin Queen, she ruled England from 1558 to 1603", "answer": "Elizabeth I", "accept": ["Queen Elizabeth I", "Elizabeth the First"], "strict": true },
+            { "value": 400, "text": "The last active ruler of ancient Egypt's Ptolemaic dynasty, she allied herself with Julius Caesar and Mark Antony", "answer": "Cleopatra", "accept": ["Cleopatra VII"] },
+            { "value": 600, "text": "Guillotined in 1793, this Austrian-born queen of France was the wife of Louis XVI", "answer": "Marie Antoinette", "accept": ["Antoinette"], "strict": true, "dailyDouble": true },
+            { "value": 800, "text": "This queen of Castile and her husband Ferdinand financed Columbus's 1492 voyage", "answer": "Isabella I", "accept": ["Isabella", "Queen Isabella", "Isabella of Castile"], "strict": true },
+            { "value": 1000, "text": "During the Tang dynasty she became the only woman to rule China as emperor in her own right", "answer": "Wu Zetian", "accept": ["Empress Wu", "Wu Zhao", "Wu"] }
+          ]
+        },
+        {
+          "name": "SCIENCE FICTION",
+          "tags": ["literature", "movies"],
+          "clues": [
+            { "value": 200, "text": "In this 1982 Steven Spielberg film, a boy named Elliott helps a stranded alien phone home", "answer": "E.T.", "accept": ["ET", "E.T. the Extra-Terrestrial", "ET the Extra-Terrestrial"] },
+            { "value": 400, "text": "In this 1968 Stanley Kubrick film, the computer HAL 9000 refuses to open the pod bay doors", "answer": "2001: A Space Odyssey", "accept": ["2001", "A Space Odyssey"], "strict": true },
+            { "value": 600, "text": "H.G. Wells's 1898 novel about a Martian invasion of England", "answer": "The War of the Worlds", "accept": ["War of the Worlds"] },
+            { "value": 800, "text": "Frank Herbert's 1965 novel set on the desert planet Arrakis", "answer": "Dune", "accept": [] },
+            { "value": 1000, "text": "Ray Bradbury's 1953 novel takes its title from the temperature at which book paper supposedly catches fire", "answer": "Fahrenheit 451", "accept": ["451"], "strict": true }
+          ]
+        },
+        {
+          "name": "ON THE ICE",
+          "note": "Hockey, from the rink to the record books",
+          "tags": ["sports", "canada"],
+          "clues": [
+            { "value": 200, "text": "A player who scores three goals in one game has done this, and fans may throw their caps on the ice", "answer": "a hat trick", "accept": ["hat trick", "hat-trick"] },
+            { "value": 400, "text": "The player who guards the net, and the only one allowed to catch the puck in a glove", "answer": "the goalie", "accept": ["goalie", "goaltender", "the goaltender", "goalkeeper", "netminder"] },
+            { "value": 600, "text": "The penalty box goes by this two-word nickname that suggests a place for wrongdoers", "answer": "the sin bin", "accept": ["sin bin"] },
+            { "value": 800, "text": "This memorial trophy goes each year to the NHL player judged most valuable to his team", "answer": "the Hart Trophy", "accept": ["Hart Trophy", "Hart Memorial Trophy", "the Hart"] },
+            { "value": 1000, "text": "Founded in 1924, this team was the first NHL franchise based in the United States", "answer": "the Boston Bruins", "accept": ["Boston Bruins", "Bruins", "Boston"] }
+          ]
+        },
+        {
+          "name": "-OLOGY",
+          "note": "Every response is a word ending in -ology",
+          "tags": ["wordplay", "science"],
+          "clues": [
+            { "value": 200, "text": "The study of living things", "answer": "biology", "accept": [] },
+            { "value": 400, "text": "The study of the mind and behaviour", "answer": "psychology", "accept": [] },
+            { "value": 600, "text": "The study of rocks and how the Earth is put together", "answer": "geology", "accept": [] },
+            { "value": 800, "text": "The study of past human life through the things people left behind, dug up at sites", "answer": "archaeology", "accept": ["archeology"] },
+            { "value": 1000, "text": "The study of birds", "answer": "ornithology", "accept": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "INVENTORS",
+          "tags": ["science", "history"],
+          "clues": [
+            { "value": 400, "text": "Orville and Wilbur, the bicycle-shop brothers who made the first powered airplane flight in 1903", "answer": "the Wright brothers", "accept": ["Wright brothers", "the Wrights", "Wright"] },
+            { "value": 800, "text": "This American's moving assembly line made the Model T cheap enough for ordinary families", "answer": "Henry Ford", "accept": ["Ford"] },
+            { "value": 1200, "text": "This Swedish chemist invented dynamite and left his fortune to fund the prizes that carry his name", "answer": "Alfred Nobel", "accept": ["Nobel"], "dailyDouble": true },
+            { "value": 1600, "text": "In 1989, while at CERN, this English computer scientist proposed the system that became the World Wide Web", "answer": "Tim Berners-Lee", "accept": ["Berners-Lee", "Berners Lee"] },
+            { "value": 2000, "text": "In 1901 this Italian received the first transatlantic radio signal at Signal Hill in St. John's, Newfoundland", "answer": "Guglielmo Marconi", "accept": ["Marconi"] }
+          ]
+        },
+        {
+          "name": "EUROPEAN CITIES",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 400, "text": "This Dutch capital is famous for its canals, bicycles and narrow gabled houses", "answer": "Amsterdam", "accept": [] },
+            { "value": 800, "text": "Antoni Gaudí's unfinished Sagrada Família church towers over this Spanish city", "answer": "Barcelona", "accept": [] },
+            { "value": 1200, "text": "Built on more than 100 small islands, this Italian city is famous for its canals and gondolas", "answer": "Venice", "accept": ["Venezia"] },
+            { "value": 1600, "text": "This Czech capital on the Vltava River is known for its Charles Bridge and medieval astronomical clock", "answer": "Prague", "accept": ["Praha"] },
+            { "value": 2000, "text": "This walled port on Croatia's Adriatic coast was once the capital of the Republic of Ragusa, a rival of Venice", "answer": "Dubrovnik", "accept": ["Ragusa"] }
+          ]
+        },
+        {
+          "name": "WHERE WORDS COME FROM",
+          "note": "Name the language or source behind each word",
+          "tags": ["language"],
+          "clues": [
+            { "value": 400, "text": "This day of the week is named for Thor, the Norse god of thunder", "answer": "Thursday", "accept": [] },
+            { "value": 800, "text": "The word \"alphabet\" comes from the first two letters of this ancient language's alphabet", "answer": "Greek", "accept": ["ancient Greek"] },
+            { "value": 1200, "text": "The word \"robot\" was introduced in a 1920 play by Karel Čapek, written in this language", "answer": "Czech", "accept": [] },
+            { "value": 1600, "text": "The word \"salary\" comes from the Latin word for this seasoning", "answer": "salt", "accept": [] },
+            { "value": 2000, "text": "\"Avatar\", meaning the descent of a god to Earth, comes from this ancient language of India", "answer": "Sanskrit", "accept": [] }
+          ]
+        },
+        {
+          "name": "ON BROADWAY",
+          "note": "Name the musical",
+          "tags": ["music"],
+          "clues": [
+            { "value": 400, "text": "Lin-Manuel Miranda's hip-hop musical about an American founding father who was born in the Caribbean", "answer": "Hamilton", "accept": [] },
+            { "value": 800, "text": "This musical built around the songs of ABBA is set on a Greek island", "answer": "Mamma Mia!", "accept": ["Mamma Mia"] },
+            { "value": 1200, "text": "Elphaba and Glinda, the witches of Oz, are the leads of this musical that opened on Broadway in 2003", "answer": "Wicked", "accept": [], "dailyDouble": true },
+            { "value": 1600, "text": "A masked composer haunts a Paris opera house in this Andrew Lloyd Webber musical", "answer": "The Phantom of the Opera", "accept": ["Phantom of the Opera", "Phantom"] },
+            { "value": 2000, "text": "Jonathan Larson's 1996 rock musical about struggling young artists in New York's East Village, loosely based on \"La Bohème\"", "answer": "Rent", "accept": [] }
+          ]
+        },
+        {
+          "name": "MONEY MATTERS",
+          "note": "Currencies of the world",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 400, "text": "The currency of Japan", "answer": "the yen", "accept": ["yen"] },
+            { "value": 800, "text": "Used across much of the European Union, this currency entered circulation as notes and coins in 2002", "answer": "the euro", "accept": ["euro", "euros"] },
+            { "value": 1200, "text": "Mexico, Chile and the Philippines all use currencies with this name", "answer": "the peso", "accept": ["peso", "pesos"] },
+            { "value": 1600, "text": "South Africa's currency shares its name with the Witwatersrand, the ridge where Johannesburg's gold was found", "answer": "the rand", "accept": ["rand"] },
+            { "value": 2000, "text": "The złoty is the currency of this European country", "answer": "Poland", "accept": [] }
+          ]
+        },
+        {
+          "name": "\"CAN\" DO",
+          "note": "Every response begins with the letters C-A-N",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 400, "text": "A long, narrow boat moved with a single-bladed paddle", "answer": "a canoe", "accept": ["canoe"] },
+            { "value": 800, "text": "This small yellow songbird was once carried into coal mines to warn of dangerous gas", "answer": "a canary", "accept": ["canary"] },
+            { "value": 1200, "text": "Sweet treats, from lollipops to chocolate bars", "answer": "candy", "accept": ["candies"] },
+            { "value": 1600, "text": "A deep gorge with steep sides cut by a river, like the Grand one in Arizona", "answer": "a canyon", "accept": ["canyon"] },
+            { "value": 2000, "text": "In music, a piece in which one voice imitates another a few beats behind, as in \"Row, Row, Row Your Boat\"", "answer": "a canon", "accept": ["canon"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "HISTORY OF SCIENCE",
+    "text": "This Danish astronomer, who wore a metal nose after a duel, made the precise naked-eye observations that Kepler later used to work out his laws of planetary motion",
+    "answer": "Tycho Brahe",
+    "accept": ["Brahe", "Tycho"]
+  }
+}
