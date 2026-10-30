@@ -1,0 +1,11 @@
+{
+  "boards": [
+    {
+      "id": "general-01",
+      "title": "General #1",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": ["geography", "science", "canada", "literature", "sports", "wordplay", "history", "music", "movies"]
+    }
+  ]
+}

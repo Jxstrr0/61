@@ -1,0 +1,164 @@
+{
+  "id": "general-01",
+  "title": "General #1",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": ["geography", "science", "canada", "literature", "sports", "wordplay", "history", "music", "movies"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "WORLD CAPITALS",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 200, "text": "This capital of France sits on the banks of the Seine", "answer": "Paris", "accept": [] },
+            { "value": 400, "text": "Canberra, not Sydney, is the capital of this country", "answer": "Australia", "accept": [] },
+            { "value": 600, "text": "This capital of Kenya is home to a national park where giraffes graze within sight of skyscrapers", "answer": "Nairobi", "accept": [] },
+            { "value": 800, "text": "At about 2,850 metres above sea level, this capital of Ecuador is one of the highest in the world", "answer": "Quito", "accept": [] },
+            { "value": 1000, "text": "From 2019 to 2022 this capital of Kazakhstan was officially called Nur-Sultan", "answer": "Astana", "accept": ["Nur-Sultan", "Nursultan"] }
+          ]
+        },
+        {
+          "name": "THE HUMAN BODY",
+          "tags": ["science"],
+          "clues": [
+            { "value": 200, "text": "The femur, the longest bone in the body, is found in this limb", "answer": "the leg", "accept": ["leg", "thigh", "the thigh"] },
+            { "value": 400, "text": "The largest internal organ, it filters your blood and makes bile", "answer": "the liver", "accept": ["liver"] },
+            { "value": 600, "text": "Counting the wisdom teeth, this is how many teeth an adult normally has", "answer": "32", "accept": ["thirty-two", "thirty two"], "strict": true },
+            { "value": 800, "text": "This butterfly-shaped gland in the neck makes the hormone thyroxine, which sets your metabolism", "answer": "the thyroid", "accept": ["thyroid", "thyroid gland"], "dailyDouble": true },
+            { "value": 1000, "text": "The stapes, the smallest bone in the body, is found in this organ", "answer": "the ear", "accept": ["ear", "middle ear", "the middle ear", "inner ear"] }
+          ]
+        },
+        {
+          "name": "PRAIRIE PROVINCES",
+          "note": "Places in Alberta, Saskatchewan and Manitoba",
+          "tags": ["canada", "geography"],
+          "clues": [
+            { "value": 200, "text": "Regina is the capital of this province", "answer": "Saskatchewan", "accept": ["Sask"] },
+            { "value": 400, "text": "Alberta's capital, home to one of the largest shopping malls in North America", "answer": "Edmonton", "accept": [] },
+            { "value": 600, "text": "Manitoba's capital sits where the Red and Assiniboine rivers meet, at The Forks", "answer": "Winnipeg", "accept": [] },
+            { "value": 800, "text": "Saskatchewan's largest city, on the South Saskatchewan River, is nicknamed the Bridge City", "answer": "Saskatoon", "accept": [] },
+            { "value": 1000, "text": "This Manitoba town on Hudson Bay calls itself the polar bear capital of the world", "answer": "Churchill", "accept": [] }
+          ]
+        },
+        {
+          "name": "SHAKESPEARE",
+          "tags": ["literature"],
+          "clues": [
+            { "value": 200, "text": "\"Romeo and\" this Capulet daughter", "answer": "Juliet", "accept": [] },
+            { "value": 400, "text": "This Danish prince asks, \"To be, or not to be\"", "answer": "Hamlet", "accept": [] },
+            { "value": 600, "text": "Three witches tell this Scottish general he will be king", "answer": "Macbeth", "accept": [] },
+            { "value": 800, "text": "The moneylender Shylock demands a pound of flesh in this play", "answer": "The Merchant of Venice", "accept": ["Merchant of Venice"] },
+            { "value": 1000, "text": "Prospero, the exiled Duke of Milan, conjures a storm to wreck his enemies' ship in this play", "answer": "The Tempest", "accept": ["Tempest"] }
+          ]
+        },
+        {
+          "name": "SPORTS BY THE NUMBERS",
+          "note": "Every response is a number",
+          "tags": ["sports"],
+          "clues": [
+            { "value": 200, "text": "Counting the goalie, this is how many players a hockey team has on the ice at full strength", "answer": "6", "accept": ["six"], "strict": true },
+            { "value": 400, "text": "To the nearest kilometre, the length of a marathon", "answer": "42", "accept": ["forty-two", "forty two", "42.2", "42.195"], "strict": true },
+            { "value": 600, "text": "In basketball, a shot from beyond the arc is worth this many points", "answer": "3", "accept": ["three"], "strict": true },
+            { "value": 800, "text": "Wayne Gretzky's jersey number, retired across the whole NHL in 2000", "answer": "99", "accept": ["ninety-nine", "ninety nine"], "strict": true },
+            { "value": 1000, "text": "A perfect game in ten-pin bowling, twelve strikes in a row, scores this many points", "answer": "300", "accept": ["three hundred"], "strict": true }
+          ]
+        },
+        {
+          "name": "A SPLASH OF COLOUR",
+          "note": "Every response contains a colour",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 200, "text": "This fairy-tale girl in a hooded cape meets a wolf on the way to her grandmother's house", "answer": "Little Red Riding Hood", "accept": ["Red Riding Hood"] },
+            { "value": 400, "text": "The official residence of the president of the United States, at 1600 Pennsylvania Avenue", "answer": "the White House", "accept": ["White House"] },
+            { "value": 600, "text": "This sea between Europe and Asia connects to the Mediterranean through the Bosporus and the Dardanelles", "answer": "the Black Sea", "accept": ["Black Sea"] },
+            { "value": 800, "text": "Johann Strauss II's 1866 waltz named for a river that flows through Vienna", "answer": "The Blue Danube", "accept": ["Blue Danube", "Blue Danube Waltz"] },
+            { "value": 1000, "text": "This British band's 1973 album \"The Dark Side of the Moon\" spent more than 900 weeks on the Billboard 200", "answer": "Pink Floyd", "accept": ["Floyd"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "WORLD HISTORY",
+          "tags": ["history"],
+          "clues": [
+            { "value": 400, "text": "In 1492 this Genoese navigator, sailing for Spain, reached the islands of the Caribbean", "answer": "Christopher Columbus", "accept": ["Columbus", "Cristoforo Colombo"] },
+            { "value": 800, "text": "The year the Berlin Wall came down", "answer": "1989", "accept": [], "strict": true },
+            { "value": 1200, "text": "This 1215 charter forced England's King John to accept limits on royal power", "answer": "Magna Carta", "accept": ["the Magna Carta", "Magna Carta Libertatum"] },
+            { "value": 1600, "text": "The 1917 Russian revolution that brought the Bolsheviks to power is named for this month of the old-style calendar", "answer": "October", "accept": ["the October Revolution", "October Revolution"], "strict": true },
+            { "value": 2000, "text": "In 218 BC this Carthaginian general marched his army and its war elephants over the Alps into Italy", "answer": "Hannibal", "accept": ["Hannibal Barca"] }
+          ]
+        },
+        {
+          "name": "THE ELEMENTS",
+          "tags": ["science"],
+          "clues": [
+            { "value": 400, "text": "Its chemical symbol is O", "answer": "oxygen", "accept": [] },
+            { "value": 800, "text": "Element number 1, the lightest of them all", "answer": "hydrogen", "accept": [] },
+            { "value": 1200, "text": "Its symbol, Au, comes from the Latin aurum", "answer": "gold", "accept": [] },
+            { "value": 1600, "text": "Element number 26, the main ingredient of steel", "answer": "iron", "accept": [], "dailyDouble": true },
+            { "value": 2000, "text": "Marie Curie named element 84 after the country of her birth", "answer": "polonium", "accept": [] }
+          ]
+        },
+        {
+          "name": "CANADIAN MUSIC",
+          "tags": ["canada", "music"],
+          "clues": [
+            { "value": 400, "text": "This singer from Stratford, Ontario had his first big hit in 2010 with \"Baby\"", "answer": "Justin Bieber", "accept": ["Bieber"] },
+            { "value": 800, "text": "This Toronto rapper's albums include \"Views\" and \"Scorpion\"", "answer": "Drake", "accept": ["Aubrey Graham"] },
+            { "value": 1200, "text": "Her 1997 album \"Come On Over\" is the best-selling country album by a female artist", "answer": "Shania Twain", "accept": ["Twain", "Shania"] },
+            { "value": 1600, "text": "Raised in Saskatoon, this singer-songwriter wrote \"Big Yellow Taxi\" and \"A Case of You\"", "answer": "Joni Mitchell", "accept": ["Mitchell", "Joni"] },
+            { "value": 2000, "text": "Fronted by Gord Downie, this band from Kingston, Ontario played its final concert in August 2016", "answer": "The Tragically Hip", "accept": ["Tragically Hip", "The Hip"] }
+          ]
+        },
+        {
+          "name": "MOVIE QUOTES",
+          "note": "Name the film",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 400, "text": "\"May the Force be with you\"", "answer": "Star Wars", "accept": ["A New Hope", "Star Wars: A New Hope"] },
+            { "value": 800, "text": "Arnold Schwarzenegger first said \"I'll be back\" in this 1984 film", "answer": "The Terminator", "accept": ["Terminator"] },
+            { "value": 1200, "text": "\"You're gonna need a bigger boat\"", "answer": "Jaws", "accept": [], "dailyDouble": true },
+            { "value": 1600, "text": "\"Here's looking at you, kid\"", "answer": "Casablanca", "accept": [] },
+            { "value": 2000, "text": "\"Rosebud\" is the dying word that opens this 1941 Orson Welles film", "answer": "Citizen Kane", "accept": [] }
+          ]
+        },
+        {
+          "name": "OLYMPIC HOST CITIES",
+          "tags": ["sports", "geography"],
+          "clues": [
+            { "value": 400, "text": "The first modern Olympic Games, in 1896, were held in this Greek capital", "answer": "Athens", "accept": [] },
+            { "value": 800, "text": "The 1964 Summer Games, the first held in Asia, took place in this Japanese capital", "answer": "Tokyo", "accept": [] },
+            { "value": 1200, "text": "This Alberta city hosted the 1988 Winter Olympics", "answer": "Calgary", "accept": [] },
+            { "value": 1600, "text": "The 2016 Summer Games were the first in South America, in this Brazilian city", "answer": "Rio de Janeiro", "accept": ["Rio"] },
+            { "value": 2000, "text": "This Norwegian town hosted the 1994 Winter Olympics", "answer": "Lillehammer", "accept": [] }
+          ]
+        },
+        {
+          "name": "RHYME TIME",
+          "note": "Every response is two words that rhyme",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 400, "text": "An overweight feline", "answer": "fat cat", "accept": ["a fat cat"] },
+            { "value": 800, "text": "A pleased father", "answer": "glad dad", "accept": ["happy pappy"] },
+            { "value": 1200, "text": "A hilarious rabbit", "answer": "funny bunny", "accept": [] },
+            { "value": 1600, "text": "A large hog", "answer": "big pig", "accept": [] },
+            { "value": 2000, "text": "A rodent's residence", "answer": "mouse house", "accept": [] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "AFRICAN GEOGRAPHY",
+    "text": "Covering about 2.4 million square kilometres, most of it Saharan desert, this is the largest country in Africa by area",
+    "answer": "Algeria",
+    "accept": []
+  }
+}
