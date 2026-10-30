@@ -1,0 +1,163 @@
+{
+  "id": "screen-01",
+  "title": "Screen #1",
+  "pack": "Screen",
+  "difficulty": "normal",
+  "tags": ["movies", "television", "canada", "music", "wordplay"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "DIRECTORS",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 200, "text": "He directed \"E.T.\", \"Jurassic Park\" and \"Schindler's List\"", "answer": "Steven Spielberg", "accept": ["Spielberg"] },
+            { "value": 400, "text": "This director's \"Pulp Fiction\" won the Palme d'Or at Cannes in 1994", "answer": "Quentin Tarantino", "accept": ["Tarantino"] },
+            { "value": 600, "text": "\"Psycho\", \"Vertigo\" and \"The Birds\" were directed by this \"Master of Suspense\"", "answer": "Alfred Hitchcock", "accept": ["Hitchcock"] },
+            { "value": 800, "text": "This New Zealander directed the \"Lord of the Rings\" trilogy in his home country", "answer": "Peter Jackson", "accept": ["Jackson"] },
+            { "value": 1000, "text": "This Japanese director's 1954 \"Seven Samurai\" was remade in Hollywood as \"The Magnificent Seven\"", "answer": "Akira Kurosawa", "accept": ["Kurosawa"] }
+          ]
+        },
+        {
+          "name": "ANIMATED FILMS",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 200, "text": "In this 1994 Disney film the cub Simba grows up to take his place as king", "answer": "The Lion King", "accept": ["Lion King"] },
+            { "value": 400, "text": "Woody and Buzz Lightyear first teamed up in this 1995 Pixar film", "answer": "Toy Story", "accept": [] },
+            { "value": 600, "text": "Elsa sings \"Let It Go\" in this 2013 Disney hit", "answer": "Frozen", "accept": [] },
+            { "value": 800, "text": "A rat named Remy dreams of cooking in a Paris restaurant in this 2007 Pixar film", "answer": "Ratatouille", "accept": [] },
+            { "value": 1000, "text": "Hayao Miyazaki's 2001 film about a girl named Chihiro trapped in a bathhouse for spirits won the Oscar for Best Animated Feature", "answer": "Spirited Away", "accept": [] }
+          ]
+        },
+        {
+          "name": "SITCOMS",
+          "tags": ["television"],
+          "clues": [
+            { "value": 200, "text": "Homer, Marge, Bart, Lisa and Maggie are the yellow family in this animated sitcom set in Springfield", "answer": "The Simpsons", "accept": ["Simpsons"] },
+            { "value": 400, "text": "Sheldon, Leonard and Penny star in this sitcom about physicists and their neighbour", "answer": "The Big Bang Theory", "accept": ["Big Bang Theory"] },
+            { "value": 600, "text": "Four older women share a house in Miami in this 1980s sitcom starring Bea Arthur and Betty White", "answer": "The Golden Girls", "accept": ["Golden Girls"] },
+            { "value": 800, "text": "Kelsey Grammer's radio psychiatrist moved from a Boston bar to Seattle for this spin-off sitcom", "answer": "Frasier", "accept": [] },
+            { "value": 1000, "text": "John Cleese plays the rudest hotel owner in Torquay in this 1970s British sitcom", "answer": "Fawlty Towers", "accept": [] }
+          ]
+        },
+        {
+          "name": "CANADIAN SCREEN",
+          "tags": ["canada", "movies", "television"],
+          "clues": [
+            { "value": 200, "text": "Toronto-born Mike Myers voiced this grumpy green ogre in a 2001 animated hit", "answer": "Shrek", "accept": [] },
+            { "value": 400, "text": "This Canadian-born comic actor starred in \"Ace Ventura\", \"The Mask\" and \"Dumb and Dumber\" in 1994 alone", "answer": "Jim Carrey", "accept": ["Carrey"] },
+            { "value": 600, "text": "Born in Kapuskasing, Ontario, this director made \"The Abyss\", \"True Lies\" and \"Avatar\"", "answer": "James Cameron", "accept": ["Cameron"] },
+            { "value": 800, "text": "This CBC sitcom set in the tiny Saskatchewan town of Dog River ran for six seasons starting in 2004", "answer": "Corner Gas", "accept": [], "dailyDouble": true },
+            { "value": 1000, "text": "This Canadian comedy troupe's TV show featured the Chicken Lady and the Head Crusher", "answer": "The Kids in the Hall", "accept": ["Kids in the Hall"] }
+          ]
+        },
+        {
+          "name": "FILM QUOTES",
+          "note": "Name the film",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 200, "text": "\"Houston, we have a problem\"", "answer": "Apollo 13", "accept": ["Apollo Thirteen"], "strict": true },
+            { "value": 400, "text": "\"You can't handle the truth!\"", "answer": "A Few Good Men", "accept": ["Few Good Men"] },
+            { "value": 600, "text": "\"I'll have what she's having\", said in a New York deli in 1989", "answer": "When Harry Met Sally", "accept": ["When Harry Met Sally..."] },
+            { "value": 800, "text": "\"Why so serious?\" asks Heath Ledger's Joker in this 2008 film", "answer": "The Dark Knight", "accept": ["Dark Knight"] },
+            { "value": 1000, "text": "\"I see dead people\"", "answer": "The Sixth Sense", "accept": ["Sixth Sense"] }
+          ]
+        },
+        {
+          "name": "SEQUELS",
+          "note": "Name the sequel described",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 200, "text": "In this 1980 sequel Darth Vader tells Luke a family secret", "answer": "The Empire Strikes Back", "accept": ["Empire Strikes Back", "Star Wars: Episode V", "Episode V"] },
+            { "value": 400, "text": "Michael J. Fox heads to the year 2015 in this 1989 sequel", "answer": "Back to the Future Part II", "accept": ["Back to the Future 2", "Back to the Future II", "Back to the Future Part 2"], "strict": true },
+            { "value": 600, "text": "This 1974 sequel won Best Picture, with Robert De Niro as the young Vito Corleone", "answer": "The Godfather Part II", "accept": ["Godfather Part II", "The Godfather Part 2", "Godfather 2", "Godfather II", "The Godfather II"], "strict": true },
+            { "value": 800, "text": "In this 1991 sequel the T-1000 is a shape-shifting killer made of liquid metal", "answer": "Terminator 2: Judgment Day", "accept": ["Terminator 2", "T2", "Judgment Day", "Terminator II"], "strict": true },
+            { "value": 1000, "text": "In this 1986 sequel Ripley returns to the planet LV-426 with a squad of colonial marines", "answer": "Aliens", "accept": [], "strict": true }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "ACTORS BY ROLE",
+          "note": "We name the role, you name the actor who played it",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 400, "text": "Captain Jack Sparrow in the \"Pirates of the Caribbean\" films", "answer": "Johnny Depp", "accept": ["Depp"] },
+            { "value": 800, "text": "The wisecracking title antihero of the 2016 film \"Deadpool\", played by a Vancouver native", "answer": "Ryan Reynolds", "accept": ["Reynolds"] },
+            { "value": 1200, "text": "Tony Stark, also known as Iron Man, in the Marvel films", "answer": "Robert Downey Jr.", "accept": ["Robert Downey", "Downey", "Robert Downey Junior"] },
+            { "value": 1600, "text": "Katniss Everdeen in \"The Hunger Games\" films", "answer": "Jennifer Lawrence", "accept": ["Lawrence"], "dailyDouble": true },
+            { "value": 2000, "text": "Hannibal Lecter in the 1991 film \"The Silence of the Lambs\"", "answer": "Anthony Hopkins", "accept": ["Hopkins"] }
+          ]
+        },
+        {
+          "name": "TV DRAMAS",
+          "tags": ["television"],
+          "clues": [
+            { "value": 400, "text": "Chemistry teacher Walter White turns to cooking meth in this AMC series", "answer": "Breaking Bad", "accept": [] },
+            { "value": 800, "text": "Tony Soprano sees a therapist in this HBO series about a New Jersey mob family", "answer": "The Sopranos", "accept": ["Sopranos"] },
+            { "value": 1200, "text": "This HBO fantasy series based on the novels of George R.R. Martin ended in 2019", "answer": "Game of Thrones", "accept": [], "dailyDouble": true },
+            { "value": 1600, "text": "Jon Hamm plays 1960s ad man Don Draper in this series", "answer": "Mad Men", "accept": [] },
+            { "value": 2000, "text": "This 1990 David Lynch series asked who killed Laura Palmer", "answer": "Twin Peaks", "accept": [] }
+          ]
+        },
+        {
+          "name": "MOVIE MUSIC",
+          "tags": ["movies", "music"],
+          "clues": [
+            { "value": 400, "text": "John Williams wrote the two-note shark theme for this 1975 film", "answer": "Jaws", "accept": [] },
+            { "value": 800, "text": "Whitney Houston's \"I Will Always Love You\" was recorded for this 1992 film", "answer": "The Bodyguard", "accept": ["Bodyguard"] },
+            { "value": 1200, "text": "Ennio Morricone's whistling score runs through this 1966 Clint Eastwood western", "answer": "The Good, the Bad and the Ugly", "accept": ["Good, the Bad and the Ugly", "The Good the Bad and the Ugly"] },
+            { "value": 1600, "text": "Bill Conti's \"Gonna Fly Now\" is the training theme from this 1976 boxing film", "answer": "Rocky", "accept": [] },
+            { "value": 2000, "text": "Vangelis won an Oscar for the synthesizer score of this 1981 film about British Olympic runners", "answer": "Chariots of Fire", "accept": [] }
+          ]
+        },
+        {
+          "name": "FILMS OF THE 1980s",
+          "tags": ["movies"],
+          "clues": [
+            { "value": 400, "text": "\"Who you gonna call?\" Bill Murray and Dan Aykroyd bust spooks in New York in this 1984 comedy", "answer": "Ghostbusters", "accept": [] },
+            { "value": 800, "text": "Tom Cruise is naval aviator Maverick in this 1986 film", "answer": "Top Gun", "accept": [] },
+            { "value": 1200, "text": "Bruce Willis takes on terrorists in the Nakatomi Plaza tower on Christmas Eve in this 1988 film", "answer": "Die Hard", "accept": [] },
+            { "value": 1600, "text": "Five high-school students from different cliques spend a Saturday detention together in this 1985 John Hughes film", "answer": "The Breakfast Club", "accept": ["Breakfast Club"] },
+            { "value": 2000, "text": "The rival composer Salieri narrates the life of Mozart in this 1984 Best Picture winner", "answer": "Amadeus", "accept": [] }
+          ]
+        },
+        {
+          "name": "ANIMALS IN THE TITLE",
+          "note": "Every response is a film whose title includes an animal",
+          "tags": ["movies", "wordplay"],
+          "clues": [
+            { "value": 400, "text": "Leonardo DiCaprio plays stockbroker Jordan Belfort in this 2013 Martin Scorsese film", "answer": "The Wolf of Wall Street", "accept": ["Wolf of Wall Street"] },
+            { "value": 800, "text": "Natalie Portman won an Oscar as a ballerina losing her grip in this 2010 thriller", "answer": "Black Swan", "accept": [] },
+            { "value": 1200, "text": "Robert De Niro boxes as Jake LaMotta in this 1980 Scorsese film", "answer": "Raging Bull", "accept": [] },
+            { "value": 1600, "text": "Mr. Pink, Mr. White and Mr. Blonde pull off a jewel heist gone wrong in this 1992 debut film", "answer": "Reservoir Dogs", "accept": [] },
+            { "value": 2000, "text": "This 1978 Best Picture winner follows steelworker friends from Pennsylvania to the Vietnam War", "answer": "The Deer Hunter", "accept": ["Deer Hunter"] }
+          ]
+        },
+        {
+          "name": "SCI-FI & FANTASY",
+          "tags": ["movies", "television"],
+          "clues": [
+            { "value": 400, "text": "Hogwarts School of Witchcraft and Wizardry is the setting of this eight-film series", "answer": "Harry Potter", "accept": ["the Harry Potter films", "Harry Potter films"] },
+            { "value": 800, "text": "Neo takes the red pill in this 1999 film", "answer": "The Matrix", "accept": ["Matrix"] },
+            { "value": 1200, "text": "Harrison Ford hunts replicants in a rainy 2019 Los Angeles in this 1982 Ridley Scott film", "answer": "Blade Runner", "accept": [] },
+            { "value": 1600, "text": "Captain Picard commands the Enterprise-D in this series, which ran from 1987 to 1994", "answer": "Star Trek: The Next Generation", "accept": ["The Next Generation", "Star Trek The Next Generation", "TNG", "Star Trek TNG"] },
+            { "value": 2000, "text": "In this 1927 Fritz Lang silent film a robot is given the face of the worker Maria", "answer": "Metropolis", "accept": [] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "FILM HISTORY",
+    "text": "Released in 1927 and starring Al Jolson, this is generally considered the first feature-length film with synchronized talking and singing",
+    "answer": "The Jazz Singer",
+    "accept": ["Jazz Singer"]
+  }
+}
