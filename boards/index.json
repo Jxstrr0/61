@@ -226,6 +226,24 @@
         "history",
         "canada"
       ]
+    },
+    {
+      "id": "general-04",
+      "title": "General #4",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": [
+        "history",
+        "nature",
+        "canada",
+        "geography",
+        "music",
+        "art",
+        "wordplay",
+        "food",
+        "television",
+        "sports"
+      ]
     }
   ]
 }

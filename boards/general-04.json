@@ -1,0 +1,163 @@
+{
+  "id": "general-04",
+  "title": "General #4",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": ["history", "nature", "canada", "geography", "music", "art", "wordplay", "food", "television", "sports"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "THE MIDDLE AGES",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "These mounted warriors in armour were expected to follow a code of chivalry", "answer": "knights", "accept": ["knight", "a knight"] },
+            { "value": 400, "text": "A fortified stone residence with towers, a moat and a drawbridge", "answer": "a castle", "accept": ["castle", "castles"] },
+            { "value": 600, "text": "The plague that swept Europe in the 1340s, killing perhaps a third of its people, is known by this grim name", "answer": "the Black Death", "accept": ["Black Death", "the plague", "bubonic plague", "the bubonic plague"] },
+            { "value": 800, "text": "Beginning in 1096, these military expeditions from Christian Europe set out to capture Jerusalem", "answer": "the Crusades", "accept": ["Crusades", "the First Crusade"] },
+            { "value": 1000, "text": "This king of the Franks was crowned emperor by the pope in Rome on Christmas Day in the year 800", "answer": "Charlemagne", "accept": ["Charles the Great", "Karl der Grosse"] }
+          ]
+        },
+        {
+          "name": "TREES & PLANTS",
+          "tags": ["nature"],
+          "clues": [
+            { "value": 200, "text": "Acorns grow on this tree", "answer": "the oak", "accept": ["oak", "oak tree", "oaks"] },
+            { "value": 400, "text": "Flowers produce this sweet liquid to attract the insects that pollinate them", "answer": "nectar", "accept": [] },
+            { "value": 600, "text": "The tallest trees on Earth, these California conifers can top 100 metres", "answer": "redwoods", "accept": ["redwood", "the redwood", "coast redwoods", "coast redwood", "sequoias"] },
+            { "value": 800, "text": "A craze for this flower's bulbs created a famous speculative bubble in the Netherlands in the 1630s", "answer": "tulips", "accept": ["tulip", "the tulip"] },
+            { "value": 1000, "text": "The process by which plants release water vapour through tiny pores in their leaves", "answer": "transpiration", "accept": [] }
+          ]
+        },
+        {
+          "name": "CANADIAN CITIES",
+          "tags": ["canada", "geography"],
+          "clues": [
+            { "value": 200, "text": "Canada's second-largest city sits on an island in the St. Lawrence River", "answer": "Montreal", "accept": ["Montréal"] },
+            { "value": 400, "text": "The capital of Nova Scotia, it has one of the largest natural harbours in the world", "answer": "Halifax", "accept": [] },
+            { "value": 600, "text": "British Columbia's capital is on Vancouver Island, not on the mainland", "answer": "Victoria", "accept": [] },
+            { "value": 800, "text": "Confederation was first discussed at an 1864 conference in this Prince Edward Island capital", "answer": "Charlottetown", "accept": [] },
+            { "value": 1000, "text": "The capital of the Northwest Territories, on the north shore of Great Slave Lake", "answer": "Yellowknife", "accept": [] }
+          ]
+        },
+        {
+          "name": "MUSICAL INSTRUMENTS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "This keyboard instrument has 88 keys, black and white", "answer": "the piano", "accept": ["piano"] },
+            { "value": 400, "text": "Scottish regiments march to this instrument, a bag squeezed under the arm to drive air through its pipes", "answer": "the bagpipes", "accept": ["bagpipes", "bagpipe", "pipes"] },
+            { "value": 600, "text": "The largest and lowest-pitched string instrument in a standard orchestra, usually played standing up", "answer": "the double bass", "accept": ["double bass", "contrabass", "upright bass", "string bass"] },
+            { "value": 800, "text": "This brass instrument is coiled into a circle, and the player keeps one hand inside its wide bell", "answer": "the French horn", "accept": ["French horn", "horn"] },
+            { "value": 1000, "text": "Ravi Shankar made this long-necked Indian string instrument with a gourd body famous in the West", "answer": "the sitar", "accept": ["sitar"] }
+          ]
+        },
+        {
+          "name": "SCULPTURE & ARCHITECTURE",
+          "tags": ["art"],
+          "clues": [
+            { "value": 200, "text": "Michelangelo's marble statue of this biblical giant-slayer stands in Florence", "answer": "David", "accept": [] },
+            { "value": 400, "text": "This iron tower, built for the 1889 world's fair, is the tallest structure in Paris", "answer": "the Eiffel Tower", "accept": ["Eiffel Tower"] },
+            { "value": 600, "text": "Auguste Rodin's bronze of a seated man resting his chin on his hand", "answer": "The Thinker", "accept": ["Thinker"] },
+            { "value": 800, "text": "This white marble mausoleum at Agra was built by a Mughal emperor in memory of his favourite wife", "answer": "the Taj Mahal", "accept": ["Taj Mahal"], "dailyDouble": true },
+            { "value": 1000, "text": "This Danish architect designed the sail-like Sydney Opera House", "answer": "Jørn Utzon", "accept": ["Utzon", "Jorn Utzon"] }
+          ]
+        },
+        {
+          "name": "HIDDEN NUMBERS",
+          "note": "Every response is a word with a number hiding inside it",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 200, "text": "A racquet sport played on grass, clay or hard courts; a number hides at the front", "answer": "tennis", "accept": [] },
+            { "value": 400, "text": "The part of your face above the eyebrows; a number hides at the front", "answer": "forehead", "accept": ["the forehead"] },
+            { "value": 600, "text": "Goods carried by train, truck or ship; a number hides inside", "answer": "freight", "accept": [] },
+            { "value": 800, "text": "A feeling of amazement, or one of the seven ancient ones; a number hides at the front", "answer": "wonder", "accept": ["a wonder"] },
+            { "value": 1000, "text": "A dog, or the pointed tooth named for one; a number hides at the back", "answer": "canine", "accept": ["a canine"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "U.S. PRESIDENTS",
+          "tags": ["history"],
+          "clues": [
+            { "value": 400, "text": "The first president of the United States, whose face is on the one-dollar bill", "answer": "George Washington", "accept": ["Washington"] },
+            { "value": 800, "text": "President during the Civil War, he delivered the Gettysburg Address in 1863", "answer": "Abraham Lincoln", "accept": ["Lincoln", "Abe Lincoln"] },
+            { "value": 1200, "text": "His New Deal tackled the Great Depression, and he was elected president four times", "answer": "Franklin D. Roosevelt", "accept": ["Franklin Roosevelt", "FDR", "Franklin Delano Roosevelt"], "strict": true },
+            { "value": 1600, "text": "The only president to resign, he left office in 1974 after the Watergate scandal", "answer": "Richard Nixon", "accept": ["Nixon"] },
+            { "value": 2000, "text": "This president bought the Louisiana Territory from France in 1803, doubling the size of the country", "answer": "Thomas Jefferson", "accept": ["Jefferson"], "dailyDouble": true }
+          ]
+        },
+        {
+          "name": "BIRDS",
+          "tags": ["nature"],
+          "clues": [
+            { "value": 400, "text": "This long-legged wading bird gets its pink colour from pigments in the shrimp and algae it eats", "answer": "the flamingo", "accept": ["flamingo", "flamingos", "flamingoes"] },
+            { "value": 800, "text": "This bird of prey, with a white head, is the national bird of the United States", "answer": "the bald eagle", "accept": ["bald eagle", "eagle"] },
+            { "value": 1200, "text": "These black-and-white flightless birds live almost entirely in the Southern Hemisphere, many of them in Antarctica", "answer": "penguins", "accept": ["penguin", "the penguin"] },
+            { "value": 1600, "text": "The only bird that can fly backwards, it hovers to sip nectar from flowers", "answer": "the hummingbird", "accept": ["hummingbird", "hummingbirds"] },
+            { "value": 2000, "text": "The wandering species of this seabird has the largest wingspan of any living bird, more than three metres", "answer": "the albatross", "accept": ["albatross", "albatrosses", "wandering albatross"] }
+          ]
+        },
+        {
+          "name": "CANADIAN FOOD & DRINK",
+          "tags": ["canada", "food"],
+          "clues": [
+            { "value": 400, "text": "French fries topped with cheese curds and gravy, a Quebec classic", "answer": "poutine", "accept": [] },
+            { "value": 800, "text": "Canada makes most of the world's supply of this sweet product, boiled down from tree sap each spring", "answer": "maple syrup", "accept": ["syrup"] },
+            { "value": 1200, "text": "This no-bake dessert bar with a crumb base, custard filling and chocolate top is named for a city on Vancouver Island", "answer": "the Nanaimo bar", "accept": ["Nanaimo bar", "Nanaimo bars", "Nanaimo"] },
+            { "value": 1600, "text": "This small Canadian pastry is filled with a gooey mix of butter, sugar and egg, sometimes with raisins", "answer": "the butter tart", "accept": ["butter tart", "butter tarts"] },
+            { "value": 2000, "text": "This spiced meat pie from Quebec is a traditional dish on Christmas Eve", "answer": "tourtière", "accept": ["tourtiere"] }
+          ]
+        },
+        {
+          "name": "CARTOONS",
+          "note": "Characters and the shows they star in",
+          "tags": ["television"],
+          "clues": [
+            { "value": 400, "text": "This cat has been chasing Jerry the mouse on screen since 1940", "answer": "Tom", "accept": ["Tom Cat"] },
+            { "value": 800, "text": "This pipe-smoking sailor gets his strength from a can of spinach", "answer": "Popeye", "accept": [] },
+            { "value": 1200, "text": "This lasagna-loving orange cat torments his owner Jon and the dog Odie", "answer": "Garfield", "accept": [] },
+            { "value": 1600, "text": "Fred and Barney live in the Stone Age town of Bedrock in this show", "answer": "The Flintstones", "accept": ["Flintstones"] },
+            { "value": 2000, "text": "This Great Dane solves mysteries with Shaggy, Velma, Daphne and Fred in the Mystery Machine", "answer": "Scooby-Doo", "accept": ["Scooby Doo", "Scooby"] }
+          ]
+        },
+        {
+          "name": "RUN, JUMP, THROW",
+          "note": "Events from the athletics stadium",
+          "tags": ["sports"],
+          "clues": [
+            { "value": 400, "text": "In this event the heavy metal ball is \"put\" from the shoulder rather than thrown", "answer": "the shot put", "accept": ["shot put", "shot", "the shot"] },
+            { "value": 800, "text": "In this sprint relay, four runners each cover 100 metres and pass a baton", "answer": "the 4x100 relay", "accept": ["4x100", "4 by 100", "4 x 100 relay", "4x100 metre relay", "the 4x100"], "strict": true },
+            { "value": 1200, "text": "This spear-like implement is thrown for distance after a running approach", "answer": "the javelin", "accept": ["javelin", "javelin throw"], "dailyDouble": true },
+            { "value": 1600, "text": "This ten-event competition, held over two days, crowns the \"world's greatest athlete\"", "answer": "the decathlon", "accept": ["decathlon"] },
+            { "value": 2000, "text": "This Czech runner won the 5,000 metres, the 10,000 metres and the marathon at the 1952 Helsinki Olympics", "answer": "Emil Zátopek", "accept": ["Zátopek", "Zatopek", "Emil Zatopek"] }
+          ]
+        },
+        {
+          "name": "ALLITERATION NATION",
+          "note": "Every response is two words that begin with the same letter",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 400, "text": "Walt Disney's most famous mouse", "answer": "Mickey Mouse", "accept": ["Mickey"] },
+            { "value": 800, "text": "This giant ape climbed the Empire State Building in a 1933 film", "answer": "King Kong", "accept": ["Kong"] },
+            { "value": 1200, "text": "This soft drink was first sold at a pharmacy in Atlanta in 1886", "answer": "Coca-Cola", "accept": ["Coca Cola", "Coke"] },
+            { "value": 1600, "text": "Superman's colleague at the Daily Planet and the love of his life", "answer": "Lois Lane", "accept": ["Lois"] },
+            { "value": 2000, "text": "Born Norma Jeane Mortenson, this Hollywood star of \"Some Like It Hot\" died in 1962", "answer": "Marilyn Monroe", "accept": ["Monroe", "Marilyn"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "SOUTH AMERICA",
+    "text": "Along with Bolivia, this is one of only two landlocked countries in South America",
+    "answer": "Paraguay",
+    "accept": []
+  }
+}
