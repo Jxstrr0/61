@@ -1,0 +1,161 @@
+{
+  "id": "sports-01",
+  "title": "Sports #1",
+  "pack": "Sports",
+  "difficulty": "normal",
+  "tags": ["sports", "hockey", "baseball", "soccer", "basketball", "olympics", "canada", "geography"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "HOCKEY",
+          "tags": ["hockey", "sports"],
+          "clues": [
+            {"value": 200, "text": "The trophy awarded to the NHL champion", "answer": "the Stanley Cup", "accept": ["Stanley Cup"]},
+            {"value": 400, "text": "With 24 championships, this team has won the Stanley Cup more often than any other", "answer": "the Montreal Canadiens", "accept": ["Montreal Canadiens", "Canadiens", "Montreal", "Habs"]},
+            {"value": 600, "text": "The NHL trophy given each year to the league's top point scorer", "answer": "the Art Ross Trophy", "accept": ["Art Ross", "Art Ross Trophy"]},
+            {"value": 800, "text": "In 1972 Paul Henderson scored the winning goal in the final game of this eight-game series against the Soviet Union", "answer": "the Summit Series", "accept": ["Summit Series"]},
+            {"value": 1000, "text": "This captain lifted the Cup six times, five with the Oilers and one with the Rangers, and has his number 11 retired in Edmonton", "answer": "Mark Messier", "accept": ["Messier"]}
+          ]
+        },
+        {
+          "name": "BASEBALL",
+          "tags": ["baseball", "sports"],
+          "clues": [
+            {"value": 200, "text": "The number of innings in a regulation Major League game", "answer": "9", "accept": ["nine"], "strict": true},
+            {"value": 400, "text": "The Toronto Blue Jays won back-to-back World Series in 1992 and this year", "answer": "1993", "accept": [], "strict": true},
+            {"value": 600, "text": "Joe Carter's World Series-winning home run in 1993 came against this Philadelphia team", "answer": "the Phillies", "accept": ["Phillies", "Philadelphia Phillies", "Philadelphia"]},
+            {"value": 800, "text": "This Yankees slugger hit 60 home runs in 1927, a record that stood for 34 years", "answer": "Babe Ruth", "accept": ["Ruth", "the Babe"]},
+            {"value": 1000, "text": "In 1947 this Brooklyn Dodger broke baseball's colour barrier, a year after playing for the Montreal Royals", "answer": "Jackie Robinson", "accept": ["Robinson"]}
+          ]
+        },
+        {
+          "name": "SOCCER",
+          "tags": ["soccer", "sports"],
+          "clues": [
+            {"value": 200, "text": "The tournament held every four years to crown the champion of men's national teams", "answer": "the World Cup", "accept": ["World Cup", "FIFA World Cup"]},
+            {"value": 400, "text": "This South American country has won the men's World Cup a record five times", "answer": "Brazil", "accept": []},
+            {"value": 600, "text": "Lionel Messi captained this country to the 2022 World Cup title", "answer": "Argentina", "accept": []},
+            {"value": 800, "text": "Christine Sinclair, the all-time leading scorer in international soccer, played for this country", "answer": "Canada", "accept": []},
+            {"value": 1000, "text": "This Portuguese forward is the all-time leading scorer in men's international soccer", "answer": "Cristiano Ronaldo", "accept": ["Ronaldo"]}
+          ]
+        },
+        {
+          "name": "BASKETBALL",
+          "tags": ["basketball", "sports"],
+          "clues": [
+            {"value": 200, "text": "The number of players each team has on the court", "answer": "5", "accept": ["five"], "strict": true},
+            {"value": 400, "text": "Kawhi Leonard's four-bounce buzzer-beater helped this team on the way to the 2019 NBA title", "answer": "the Toronto Raptors", "accept": ["Raptors", "Toronto Raptors", "Toronto"]},
+            {"value": 600, "text": "LeBron James won his first two NBA championships with this Florida team", "answer": "the Miami Heat", "accept": ["Miami Heat", "Heat", "Miami"]},
+            {"value": 800, "text": "The Lakers moved to Los Angeles in 1960 from this Midwestern city", "answer": "Minneapolis", "accept": []},
+            {"value": 1000, "text": "This 7-foot-1 centre scored 100 points in a single NBA game in 1962", "answer": "Wilt Chamberlain", "accept": ["Chamberlain", "Wilt"]}
+          ]
+        },
+        {
+          "name": "THE OLYMPICS",
+          "tags": ["olympics", "sports"],
+          "clues": [
+            {"value": 200, "text": "The Olympic flame is lit in this country before every Games", "answer": "Greece", "accept": []},
+            {"value": 400, "text": "The 2010 Winter Olympics were held in this British Columbia city", "answer": "Vancouver", "accept": []},
+            {"value": 600, "text": "This American swimmer won 23 Olympic gold medals, more than anyone else", "answer": "Michael Phelps", "accept": ["Phelps"]},
+            {"value": 800, "text": "Donovan Bailey won this sprint for Canada at the 1996 Atlanta Games in a world-record 9.84 seconds", "answer": "the 100 metres", "accept": ["100 metres", "100 meters", "100m", "100 m", "the 100", "100 metre dash", "hundred metres"]},
+            {"value": 1000, "text": "At Montreal 1976 this 14-year-old Romanian gymnast scored the first perfect 10", "answer": "Nadia Comăneci", "accept": ["Nadia Comaneci", "Comaneci", "Nadia"]}
+          ]
+        },
+        {
+          "name": "NAME THE SPORT",
+          "note": "Name the sport from its equipment",
+          "tags": ["sports"],
+          "clues": [
+            {"value": 200, "text": "A shuttlecock", "answer": "badminton", "accept": []},
+            {"value": 400, "text": "A 16-pound ball with three finger holes", "answer": "bowling", "accept": ["ten-pin bowling", "tenpin bowling"]},
+            {"value": 600, "text": "Brooms and a 20-kilogram granite stone", "answer": "curling", "accept": []},
+            {"value": 800, "text": "An épée, a foil or a sabre", "answer": "fencing", "accept": [], "dailyDouble": true},
+            {"value": 1000, "text": "A mallet, a pony and a wooden ball on a 300-yard field", "answer": "polo", "accept": []}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "CANADIAN SPORTS HEROES",
+          "tags": ["canada", "sports"],
+          "clues": [
+            {"value": 400, "text": "In April 1980 this runner from Port Coquitlam dipped his artificial leg in the Atlantic at St. John's to begin his Marathon of Hope", "answer": "Terry Fox", "accept": ["Fox"]},
+            {"value": 800, "text": "Sidney Crosby scored the \"golden goal\" in overtime of the 2010 Olympic men's hockey final against this country", "answer": "the United States", "accept": ["United States", "USA", "US", "America", "the US"]},
+            {"value": 1200, "text": "This Mississauga-born tennis player won the 2019 US Open at age 19", "answer": "Bianca Andreescu", "accept": ["Andreescu"]},
+            {"value": 1600, "text": "This Parry Sound, Ontario defenceman changed the position with the Bruins and won the Norris Trophy eight years in a row", "answer": "Bobby Orr", "accept": ["Orr"]},
+            {"value": 2000, "text": "This Winnipeg skip went undefeated to win women's curling gold at the 2014 Sochi Olympics", "answer": "Jennifer Jones", "accept": ["Jones"]}
+          ]
+        },
+        {
+          "name": "GOLF & TENNIS",
+          "tags": ["sports"],
+          "clues": [
+            {"value": 400, "text": "In golf, a score of one under par on a hole", "answer": "a birdie", "accept": ["birdie"]},
+            {"value": 800, "text": "Tennis's four major tournaments are known collectively by this name", "answer": "the Grand Slam", "accept": ["Grand Slam", "the Grand Slams", "the majors"]},
+            {"value": 1200, "text": "The only Grand Slam tennis tournament played on grass", "answer": "Wimbledon", "accept": []},
+            {"value": 1600, "text": "Mike Weir became the first Canadian man to win a golf major when he won this tournament in 2003", "answer": "the Masters", "accept": ["Masters", "Masters Tournament"]},
+            {"value": 2000, "text": "The first man to win 24 Grand Slam singles titles", "answer": "Novak Djokovic", "accept": ["Djokovic"]}
+          ]
+        },
+        {
+          "name": "FOOTBALL, BOTH KINDS",
+          "note": "Canadian, American and the other kind",
+          "tags": ["sports", "canada"],
+          "clues": [
+            {"value": 400, "text": "The CFL's championship trophy", "answer": "the Grey Cup", "accept": ["Grey Cup"]},
+            {"value": 800, "text": "The NFL's championship game, played each February", "answer": "the Super Bowl", "accept": ["Super Bowl"]},
+            {"value": 1200, "text": "A CFL field is this many yards long between the goal lines, ten more than an NFL field", "answer": "110", "accept": ["one hundred ten", "110 yards"], "strict": true},
+            {"value": 1600, "text": "This Saskatchewan team's fans are known as Rider Nation", "answer": "the Saskatchewan Roughriders", "accept": ["Roughriders", "Saskatchewan Roughriders", "the Riders", "Riders"]},
+            {"value": 2000, "text": "This quarterback won a record seven Super Bowls, six of them with New England", "answer": "Tom Brady", "accept": ["Brady"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "WHEELS & MORE",
+          "tags": ["sports"],
+          "clues": [
+            {"value": 400, "text": "The 500-mile race held each May in Indianapolis", "answer": "the Indianapolis 500", "accept": ["Indy 500", "Indianapolis 500", "the Indy 500"]},
+            {"value": 800, "text": "Formula One's Canadian Grand Prix is run on a Montreal circuit named for this Quebec driver", "answer": "Gilles Villeneuve", "accept": ["Villeneuve", "Circuit Gilles Villeneuve"]},
+            {"value": 1200, "text": "The leader of the Tour de France wears a jersey of this colour", "answer": "yellow", "accept": ["the yellow jersey", "maillot jaune"]},
+            {"value": 1600, "text": "This Monaco street race is part of motorsport's \"Triple Crown\" with the Indy 500 and Le Mans", "answer": "the Monaco Grand Prix", "accept": ["Monaco Grand Prix", "Monaco"]},
+            {"value": 2000, "text": "Lewis Hamilton and this German share the record of seven Formula One world championships", "answer": "Michael Schumacher", "accept": ["Schumacher"]}
+          ]
+        },
+        {
+          "name": "SPORTS GEOGRAPHY",
+          "tags": ["geography", "sports"],
+          "clues": [
+            {"value": 400, "text": "Wimbledon is a district of this capital city", "answer": "London", "accept": []},
+            {"value": 800, "text": "Lambeau Field is home to the Packers in this small Wisconsin city", "answer": "Green Bay", "accept": []},
+            {"value": 1200, "text": "The Maracanã stadium is in this Brazilian city", "answer": "Rio de Janeiro", "accept": ["Rio"]},
+            {"value": 1600, "text": "The Iditarod sled dog race runs about 1,000 miles across this U.S. state", "answer": "Alaska", "accept": [], "dailyDouble": true},
+            {"value": 2000, "text": "Golf's Old Course, the oldest in the world, is in this Scottish town", "answer": "St Andrews", "accept": ["St. Andrews", "Saint Andrews"]}
+          ]
+        },
+        {
+          "name": "BY THE RULES",
+          "tags": ["sports"],
+          "clues": [
+            {"value": 400, "text": "In soccer, a card of this colour sends a player off", "answer": "red", "accept": ["a red card", "red card"]},
+            {"value": 800, "text": "In hockey, a minor penalty puts a player in the box for this many minutes", "answer": "2", "accept": ["two"], "strict": true},
+            {"value": 1200, "text": "In tennis, a score of zero is called this", "answer": "love", "accept": []},
+            {"value": 1600, "text": "In baseball, a batter who takes four balls is awarded this", "answer": "a walk", "accept": ["walk", "base on balls", "first base"]},
+            {"value": 2000, "text": "In curling, the ring of scoring circles at each end of the sheet is called this", "answer": "the house", "accept": ["house"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "OLYMPIC HISTORY",
+    "text": "At the 1936 Berlin Olympics this American won four gold medals in track and field",
+    "answer": "Jesse Owens",
+    "accept": ["Owens"]
+  }
+}

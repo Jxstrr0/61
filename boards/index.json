@@ -53,6 +53,22 @@
         "literature",
         "language"
       ]
+    },
+    {
+      "id": "sports-01",
+      "title": "Sports #1",
+      "pack": "Sports",
+      "difficulty": "normal",
+      "tags": [
+        "sports",
+        "hockey",
+        "baseball",
+        "soccer",
+        "basketball",
+        "olympics",
+        "canada",
+        "geography"
+      ]
     }
   ]
 }
