@@ -5,7 +5,35 @@
       "title": "General #1",
       "pack": "General",
       "difficulty": "normal",
-      "tags": ["geography", "science", "canada", "literature", "sports", "wordplay", "history", "music", "movies"]
+      "tags": [
+        "geography",
+        "science",
+        "canada",
+        "literature",
+        "sports",
+        "wordplay",
+        "history",
+        "music",
+        "movies"
+      ]
+    },
+    {
+      "id": "general-02",
+      "title": "General #2",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": [
+        "geography",
+        "science",
+        "canada",
+        "history",
+        "literature",
+        "food",
+        "wordplay",
+        "movies",
+        "music",
+        "sports"
+      ]
     }
   ]
 }

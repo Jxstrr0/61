@@ -1,0 +1,162 @@
+{
+  "id": "general-02",
+  "title": "General #2",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": ["geography", "science", "canada", "history", "literature", "food", "wordplay", "movies", "music", "sports"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "RIVERS OF THE WORLD",
+          "tags": ["geography"],
+          "clues": [
+            {"value": 200, "text": "The longest river in South America, it flows through Brazil to the Atlantic", "answer": "the Amazon", "accept": ["Amazon", "Amazon River"]},
+            {"value": 400, "text": "This river flows north through Egypt to the Mediterranean", "answer": "the Nile", "accept": ["Nile", "Nile River"]},
+            {"value": 600, "text": "This river forms much of the border between the United States and Mexico", "answer": "the Rio Grande", "accept": ["Rio Grande", "Rio Bravo"]},
+            {"value": 800, "text": "Vienna, Budapest and Belgrade all stand on this river", "answer": "the Danube", "accept": ["Danube", "Danube River"]},
+            {"value": 1000, "text": "Known in China as the Chang Jiang, it is the longest river in Asia", "answer": "the Yangtze", "accept": ["Yangtze", "Yangtze River", "Chang Jiang"]}
+          ]
+        },
+        {
+          "name": "ANIMAL KINGDOM",
+          "tags": ["science"],
+          "clues": [
+            {"value": 200, "text": "The largest animal ever to live, it is a marine mammal, not a fish", "answer": "the blue whale", "accept": ["blue whale"]},
+            {"value": 400, "text": "This flightless Australian bird is the second-tallest bird in the world, after the ostrich", "answer": "the emu", "accept": ["emu", "emus"]},
+            {"value": 600, "text": "A group of these striped African animals is called a dazzle", "answer": "zebras", "accept": ["zebra", "a zebra"]},
+            {"value": 800, "text": "The only mammals capable of true powered flight", "answer": "bats", "accept": ["bat", "the bat"], "dailyDouble": true},
+            {"value": 1000, "text": "The largest living lizard, it is native to a few Indonesian islands", "answer": "the Komodo dragon", "accept": ["Komodo dragon", "Komodo"]}
+          ]
+        },
+        {
+          "name": "CANADIAN PRIME MINISTERS",
+          "tags": ["canada", "history"],
+          "clues": [
+            {"value": 200, "text": "Canada's first prime minister, who took office at Confederation in 1867", "answer": "John A. Macdonald", "accept": ["Macdonald", "Sir John A. Macdonald", "John Macdonald"]},
+            {"value": 400, "text": "Elected in 2015, this prime minister is the son of an earlier prime minister", "answer": "Justin Trudeau", "accept": ["Justin"], "strict": true},
+            {"value": 600, "text": "Prime minister from 1968 to 1979 and again from 1980 to 1984, he brought the Constitution home in 1982", "answer": "Pierre Trudeau", "accept": ["Pierre Elliott Trudeau", "Pierre"], "strict": true},
+            {"value": 800, "text": "This prime minister from Saskatchewan brought in the Canadian Bill of Rights in 1960", "answer": "John Diefenbaker", "accept": ["Diefenbaker", "Dief"]},
+            {"value": 1000, "text": "Canada's longest-serving prime minister, with more than 21 years in office across three stretches", "answer": "William Lyon Mackenzie King", "accept": ["Mackenzie King", "King"]}
+          ]
+        },
+        {
+          "name": "CLASSIC NOVELS",
+          "tags": ["literature"],
+          "clues": [
+            {"value": 200, "text": "Herman Melville's novel of Captain Ahab and a white whale", "answer": "Moby-Dick", "accept": ["Moby Dick"]},
+            {"value": 400, "text": "Jane Austen's 1813 novel about Elizabeth Bennet and Mr. Darcy", "answer": "Pride and Prejudice", "accept": []},
+            {"value": 600, "text": "Harper Lee's novel of small-town Alabama, narrated by Scout Finch", "answer": "To Kill a Mockingbird", "accept": []},
+            {"value": 800, "text": "George Orwell's 1949 novel in which Big Brother is watching you", "answer": "1984", "accept": ["Nineteen Eighty-Four", "Nineteen Eighty Four"], "strict": true},
+            {"value": 1000, "text": "Gabriel García Márquez's 1967 novel follows seven generations of the Buendía family in the town of Macondo", "answer": "One Hundred Years of Solitude", "accept": ["A Hundred Years of Solitude", "100 Years of Solitude"]}
+          ]
+        },
+        {
+          "name": "IN THE KITCHEN",
+          "tags": ["food"],
+          "clues": [
+            {"value": 200, "text": "This Italian dish of flattened dough topped with tomato sauce and cheese is baked in a very hot oven", "answer": "pizza", "accept": []},
+            {"value": 400, "text": "Guacamole is made mainly from this fruit", "answer": "the avocado", "accept": ["avocado", "avocados"]},
+            {"value": 600, "text": "This Japanese soup gets its flavour from fermented soybean paste", "answer": "miso soup", "accept": ["miso"]},
+            {"value": 800, "text": "Hummus is made from this legume, also known as the garbanzo bean", "answer": "chickpeas", "accept": ["chickpea", "garbanzo", "garbanzo beans"]},
+            {"value": 1000, "text": "This French sauce of egg yolks, butter and lemon juice is the classic topping for eggs Benedict", "answer": "hollandaise", "accept": ["hollandaise sauce"]}
+          ]
+        },
+        {
+          "name": "BEFORE & AFTER",
+          "note": "Two phrases share a word in the middle: \"Peanut butter cup\" is \"peanut butter\" + \"butter cup\"",
+          "tags": ["wordplay"],
+          "clues": [
+            {"value": 200, "text": "A ballpark sausage in a bun that stretches into the sultriest weeks of the year", "answer": "hot dog days of summer", "accept": ["hotdog days of summer"]},
+            {"value": 400, "text": "An all-American dessert that shows its data as slices", "answer": "apple pie chart", "accept": []},
+            {"value": 600, "text": "George Lucas's space saga crossed with the 15th-century English civil wars between Lancaster and York", "answer": "Star Wars of the Roses", "accept": []},
+            {"value": 800, "text": "Tony Stark's armoured hero merged with Superman's nickname", "answer": "Iron Man of Steel", "accept": []},
+            {"value": 1000, "text": "The Baker Street detective fixes up houses with contractor Mike Holmes", "answer": "Sherlock Holmes on Homes", "accept": []}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "WORLD WAR II",
+          "tags": ["history"],
+          "clues": [
+            {"value": 400, "text": "The Allied landings in Normandy on June 6, 1944 are known by this name", "answer": "D-Day", "accept": ["D Day"]},
+            {"value": 800, "text": "Canadian troops landed on this Normandy beach on D-Day", "answer": "Juno Beach", "accept": ["Juno"]},
+            {"value": 1200, "text": "The December 7, 1941 attack on this Hawaiian naval base brought the United States into the war", "answer": "Pearl Harbor", "accept": ["Pearl Harbour"]},
+            {"value": 1600, "text": "The 1942–43 battle for this Soviet city on the Volga was a turning point on the Eastern Front", "answer": "Stalingrad", "accept": ["Volgograd"]},
+            {"value": 2000, "text": "In February 1945 Churchill, Roosevelt and Stalin met at this Crimean resort to plan the post-war world", "answer": "Yalta", "accept": []}
+          ]
+        },
+        {
+          "name": "THE SOLAR SYSTEM",
+          "tags": ["science"],
+          "clues": [
+            {"value": 400, "text": "The largest planet in the solar system", "answer": "Jupiter", "accept": []},
+            {"value": 800, "text": "The planet known as the Red Planet", "answer": "Mars", "accept": []},
+            {"value": 1200, "text": "The planet famous for its bright rings", "answer": "Saturn", "accept": []},
+            {"value": 1600, "text": "In 2006 this body was demoted from planet to dwarf planet", "answer": "Pluto", "accept": [], "dailyDouble": true},
+            {"value": 2000, "text": "The largest moon in the solar system, it orbits Jupiter and is bigger than the planet Mercury", "answer": "Ganymede", "accept": []}
+          ]
+        },
+        {
+          "name": "BEST PICTURE WINNERS",
+          "note": "Name the film",
+          "tags": ["movies"],
+          "clues": [
+            {"value": 400, "text": "James Cameron's 1997 film about a doomed ocean liner won 11 Oscars", "answer": "Titanic", "accept": []},
+            {"value": 800, "text": "In this 1994 film Tom Hanks sits on a bench with a box of chocolates", "answer": "Forrest Gump", "accept": []},
+            {"value": 1200, "text": "Peter Jackson's third Middle-earth film won all 11 of the Oscars it was nominated for", "answer": "The Return of the King", "accept": ["Return of the King", "The Lord of the Rings: The Return of the King", "Lord of the Rings"]},
+            {"value": 1600, "text": "This 2019 South Korean film by Bong Joon-ho was the first non-English-language film to win Best Picture", "answer": "Parasite", "accept": []},
+            {"value": 2000, "text": "Set in 1920s Illinois, this 2002 musical with Renée Zellweger and Catherine Zeta-Jones won Best Picture", "answer": "Chicago", "accept": []}
+          ]
+        },
+        {
+          "name": "NAME THE BAND",
+          "note": "Name the band from its members",
+          "tags": ["music"],
+          "clues": [
+            {"value": 400, "text": "Freddie Mercury fronted this band, whose hits include \"Bohemian Rhapsody\"", "answer": "Queen", "accept": []},
+            {"value": 800, "text": "Mick Jagger and Keith Richards", "answer": "The Rolling Stones", "accept": ["Rolling Stones", "the Stones"]},
+            {"value": 1200, "text": "Bono and The Edge", "answer": "U2", "accept": []},
+            {"value": 1600, "text": "Kurt Cobain fronted this Seattle band", "answer": "Nirvana", "accept": []},
+            {"value": 2000, "text": "Geddy Lee and Neil Peart of this Toronto trio", "answer": "Rush", "accept": []}
+          ]
+        },
+        {
+          "name": "SPORTS NICKNAMES",
+          "tags": ["sports"],
+          "clues": [
+            {"value": 400, "text": "\"The Great One\"", "answer": "Wayne Gretzky", "accept": ["Gretzky"]},
+            {"value": 800, "text": "This boxer called himself \"The Greatest\" and floated like a butterfly", "answer": "Muhammad Ali", "accept": ["Ali", "Cassius Clay"]},
+            {"value": 1200, "text": "\"His Airness\", number 23 for the Chicago Bulls", "answer": "Michael Jordan", "accept": ["Jordan", "MJ"]},
+            {"value": 1600, "text": "Jamaican sprinter nicknamed \"Lightning Bolt\"", "answer": "Usain Bolt", "accept": ["Bolt"]},
+            {"value": 2000, "text": "Nicknamed \"The Rocket\", this Montreal Canadiens winger was the first to score 50 goals in 50 games", "answer": "Maurice Richard", "accept": ["Richard", "Rocket Richard"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "ISLAND NATIONS",
+          "tags": ["geography"],
+          "clues": [
+            {"value": 400, "text": "This island country off the southeast coast of Africa is the only home of lemurs", "answer": "Madagascar", "accept": []},
+            {"value": 800, "text": "Reykjavik is the capital of this North Atlantic island nation", "answer": "Iceland", "accept": []},
+            {"value": 1200, "text": "This Mediterranean island nation south of Sicily has Valletta as its capital", "answer": "Malta", "accept": []},
+            {"value": 1600, "text": "Made up of more than 7,000 islands, this Southeast Asian country has Manila as its capital", "answer": "the Philippines", "accept": ["Philippines"]},
+            {"value": 2000, "text": "This Indian Ocean island nation, once called Ceylon, is famous for its tea", "answer": "Sri Lanka", "accept": ["Ceylon"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "20TH-CENTURY SCIENCE",
+    "text": "In 1928 this Scottish bacteriologist noticed a mould killing bacteria in a petri dish, a discovery that led to penicillin",
+    "answer": "Alexander Fleming",
+    "accept": ["Fleming"]
+  }
+}
