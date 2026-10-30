@@ -6,7 +6,7 @@ full game in the classic format: two boards of six categories by five clues,
 hidden doubles, and a wagered final. Buzz in real time, type your responses,
 and handwrite your final answer. "61" is the number of clues in a full game.
 
-**Play it:** https://jxstrr0.github.io/61/ (phase 7 of 8: the full game with sound, tutorial, Practice mode and home-screen install; more boards and the launch are next)
+**Play it:** https://jxstrr0.github.io/61/ (v1.0: the full game, with boards in the General, Sports, Prairie, Science, Screen, History, Music and Words packs)
 
 ## How it is built
 
