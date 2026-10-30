@@ -6,7 +6,7 @@ full game in the classic format: two boards of six categories by five clues,
 hidden doubles, and a wagered final. Buzz in real time, type your responses,
 and handwrite your final answer. "61" is the number of clues in a full game.
 
-**Play it:** https://jxstrr0.github.io/61/ (phase 5 of 8: a full game is playable end to end, including the Final round and results; the Library, difficulty and Stats screens are next)
+**Play it:** https://jxstrr0.github.io/61/ (phase 6 of 8: five boards, three difficulties, Library and Stats; polish, sound, tutorial and Practice are next)
 
 ## How it is built
 
@@ -40,7 +40,7 @@ src/
   storage.js          # localStorage save/resume, stats, settings (versioned)
   sim.js              # plays a whole game with no UI (tests, debug.html)
   audio.js            # Web Audio cues, mute                 (phase 7)
-  ui/                 # board.js, clue.js, podiums.js, final.js, results.js
+  ui/                 # board.js, clue.js, podiums.js, final.js, results.js, library.js, stats.js
 boards/
   _schema.json        # JSON Schema for a board          (phase 2)
   index.json          # list of boards for the Library    (phase 2)
