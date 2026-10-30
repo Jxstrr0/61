@@ -12,7 +12,8 @@ and handwrite your final answer. "61" is the number of clues in a full game.
 
 - Plain HTML, CSS and JavaScript with ES modules. No framework, no bundler,
   no build step. The browser loads `index.html`, which imports `src/main.js`.
-- Hosted on GitHub Pages straight from `main` by `.github/workflows/deploy.yml`.
+- Hosted on GitHub Pages straight from `main` by `.github/workflows/deploy.yml`
+  (one-time setup: Settings → Pages → Source: GitHub Actions).
 - The rules engine (`src/game.js`, arriving in phase 3) is a pure state
   machine with no DOM access, so every rule is unit-tested in Node.
 - Boards are JSON files in `boards/`, generated with Claude outside the game,

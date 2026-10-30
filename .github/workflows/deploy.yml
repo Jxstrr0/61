@@ -7,8 +7,10 @@
 #      leaving out .github and test,
 #   3. publishes _site to Pages.
 #
-# Settings → Pages → Source must be "GitHub Actions". The configure-pages
-# step tries to switch that on by itself the first time it runs.
+# One-time setup: Settings → Pages → Source must be "GitHub Actions".
+# The workflow's own token is not allowed to create the Pages site, so the
+# first run fails at configure-pages until that setting is chosen; after
+# that, press "Run workflow" (or push to main) and it goes live.
 name: Deploy site
 
 on:
