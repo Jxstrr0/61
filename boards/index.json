@@ -307,6 +307,24 @@
         "canada",
         "science"
       ]
+    },
+    {
+      "id": "general-08",
+      "title": "General #8",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": [
+        "history",
+        "art",
+        "science",
+        "canada",
+        "culture",
+        "wordplay",
+        "language",
+        "geography",
+        "literature",
+        "sports"
+      ]
     }
   ]
 }

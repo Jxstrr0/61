@@ -1,0 +1,683 @@
+{
+  "id": "general-08",
+  "title": "General #8",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": [
+    "history",
+    "art",
+    "science",
+    "canada",
+    "culture",
+    "wordplay",
+    "language",
+    "geography",
+    "literature",
+    "sports"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "THE RENAISSANCE",
+          "tags": [
+            "history",
+            "art"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This Florentine painted \"The Last Supper\" and filled notebooks with designs for flying machines",
+              "answer": "Leonardo da Vinci",
+              "accept": [
+                "Leonardo",
+                "da Vinci"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This Florentine banking family bankrolled artists and produced four popes",
+              "answer": "the Medici",
+              "accept": [
+                "Medici",
+                "the Medicis",
+                "Medici family"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "In 1517 this German monk published 95 theses attacking the sale of indulgences",
+              "answer": "Martin Luther",
+              "accept": [
+                "Luther"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This Polish astronomer put the Sun, not the Earth, at the centre of the universe",
+              "answer": "Nicolaus Copernicus",
+              "accept": [
+                "Copernicus"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Michelangelo called this sculptor's bronze doors for the Florence Baptistery the \"Gates of Paradise\"",
+              "answer": "Lorenzo Ghiberti",
+              "accept": [
+                "Ghiberti"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ANATOMY CLASS",
+          "tags": [
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The body's largest organ, it covers everything else",
+              "answer": "the skin",
+              "accept": [
+                "skin"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "These two bean-shaped organs filter the blood and make urine",
+              "answer": "the kidneys",
+              "accept": [
+                "kidneys",
+                "kidney",
+                "the kidney"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "The femur, in your thigh, is the longest and strongest of these",
+              "answer": "a bone",
+              "accept": [
+                "bone",
+                "bones"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The proper name for the windpipe",
+              "answer": "the trachea",
+              "accept": [
+                "trachea"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The pea-sized \"master gland\" at the base of the brain that controls growth and the other glands",
+              "answer": "the pituitary gland",
+              "accept": [
+                "pituitary",
+                "the pituitary"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DATES IN CANADIAN HISTORY",
+          "note": "Every response is a year",
+          "tags": [
+            "history",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Canada's centennial year, celebrated with Expo in Montreal",
+              "answer": "1967",
+              "accept": [
+                "'67",
+                "67"
+              ],
+              "strict": true
+            },
+            {
+              "value": 400,
+              "text": "Nunavut was carved out of the Northwest Territories in this year",
+              "answer": "1999",
+              "accept": [
+                "'99",
+                "99"
+              ],
+              "strict": true
+            },
+            {
+              "value": 600,
+              "text": "The red maple leaf flag was first raised on Parliament Hill in this year",
+              "answer": "1965",
+              "accept": [
+                "'65",
+                "65"
+              ],
+              "strict": true
+            },
+            {
+              "value": 800,
+              "text": "The Charter of Rights and Freedoms became law in this year",
+              "answer": "1982",
+              "accept": [
+                "'82",
+                "82"
+              ],
+              "strict": true
+            },
+            {
+              "value": 1000,
+              "text": "The Statute of Westminster, which gave Canada control of its own foreign policy, was passed in this year",
+              "answer": "1931",
+              "accept": [
+                "'31",
+                "31"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "BOARD GAMES",
+          "tags": [
+            "culture"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Buy Boardwalk, build hotels and send your rivals to the poorhouse in this property game",
+              "answer": "Monopoly",
+              "accept": [
+                "Monopoly game",
+                "Manopoly"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Checkmate ends a game of this",
+              "answer": "chess",
+              "accept": [
+                "a chess game",
+                "chess match"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Was it Colonel Mustard in the library with the candlestick? This game will tell you",
+              "answer": "Clue",
+              "accept": [
+                "Cluedo"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Invented in 1938, this word game is played with 100 lettered tiles on a 15-by-15 board",
+              "answer": "Scrabble",
+              "accept": [
+                "Scrabble game",
+                "Scrable"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Two Montreal journalists invented this question-and-answer game in 1979, and it sold millions in the 1980s",
+              "answer": "Trivial Pursuit",
+              "accept": [
+                "Trivial Pursuits",
+                "Trivial Persuit"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "SOUND & LIGHT",
+          "tags": [
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "White light splits into a rainbow when it passes through this triangular block of glass",
+              "answer": "a prism",
+              "accept": [
+                "prism"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Sound cannot travel through this, which is why explosions in space are silent",
+              "answer": "a vacuum",
+              "accept": [
+                "vacuum",
+                "empty space",
+                "a void"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "The unit used to measure how loud a sound is",
+              "answer": "the decibel",
+              "accept": [
+                "decibel",
+                "decibels",
+                "dB"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "A straw in a glass of water looks bent because of this bending of light as it passes between air and water",
+              "answer": "refraction",
+              "accept": [
+                "refracting",
+                "light refraction"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The change in pitch of a siren as it races past you is this effect, named for an Austrian physicist",
+              "answer": "the Doppler effect",
+              "accept": [
+                "Doppler",
+                "Doppler shift",
+                "the Doppler shift"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "\"B\" POSITIVE",
+          "note": "Every response begins with the letter B",
+          "tags": [
+            "wordplay",
+            "language"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This five-stringed instrument of bluegrass music has a round, drum-like body",
+              "answer": "a banjo",
+              "accept": [
+                "banjo"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This curved Australian throwing stick is designed to come back to you",
+              "answer": "a boomerang",
+              "accept": [
+                "boomerang"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "An outdoor meal of grilled meat, or the grill it is cooked on",
+              "answer": "a barbecue",
+              "accept": [
+                "barbecue",
+                "BBQ",
+                "barbeque"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The capital of Belgium and home of the European Union's main institutions",
+              "answer": "Brussels",
+              "accept": [
+                "Bruxelles",
+                "Brussel",
+                "Brussels, Belgium"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The creator god of Hinduism, often shown with four faces",
+              "answer": "Brahma",
+              "accept": [
+                "Lord Brahma",
+                "Bramha"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "AFRICAN NATIONS",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Africa's most populous country, home to the megacity of Lagos",
+              "answer": "Nigeria",
+              "accept": [
+                "Federal Republic of Nigeria",
+                "Nigera"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This country has three capitals: Pretoria, Cape Town and Bloemfontein",
+              "answer": "South Africa",
+              "accept": [
+                "Republic of South Africa",
+                "RSA",
+                "S. Africa"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Addis Ababa is the capital of this country, the only African nation never fully colonized by Europeans",
+              "answer": "Ethiopia",
+              "accept": [
+                "Abyssinia",
+                "Ethopia"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Founded by freed American slaves, this West African country's capital, Monrovia, is named for a U.S. president",
+              "answer": "Liberia",
+              "accept": [
+                "Republic of Liberia",
+                "Libera"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "The dodo once lived on this Indian Ocean island nation east of Madagascar",
+              "answer": "Mauritius",
+              "accept": [
+                "Republic of Mauritius",
+                "Mauritious"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CHILDREN'S BOOKS",
+          "tags": [
+            "literature"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "L.M. Montgomery's red-haired orphan arrives in Avonlea by mistake when the Cuthberts had asked for a boy",
+              "answer": "Anne Shirley",
+              "accept": [
+                "Anne",
+                "Anne of Green Gables"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This poor boy finds the fifth golden ticket in a Roald Dahl novel",
+              "answer": "Charlie Bucket",
+              "accept": [
+                "Charlie"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This American author and illustrator sent Max off to where the wild things are",
+              "answer": "Maurice Sendak",
+              "accept": [
+                "Sendak"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Robert Munsch's 1980 picture book in which Princess Elizabeth outsmarts a dragon and ditches Prince Ronald",
+              "answer": "The Paper Bag Princess",
+              "accept": [
+                "Paper Bag Princess"
+              ],
+              "strict": true
+            },
+            {
+              "value": 2000,
+              "text": "This Swedish author created the freckled, pigtailed Pippi Longstocking",
+              "answer": "Astrid Lindgren",
+              "accept": [
+                "Lindgren"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "ON THE WATER",
+          "tags": [
+            "sports"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The America's Cup, the oldest trophy in international sport, is contested in this sport",
+              "answer": "sailing",
+              "accept": [
+                "yachting",
+                "yacht racing",
+                "sail racing"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Alex Baumann, Mark Tewksbury and Penny Oleksiak all won Olympic gold for Canada in this sport",
+              "answer": "swimming",
+              "accept": [
+                "swim",
+                "competitive swimming"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Silken Laumann won bronze at the 1992 Olympics in this sport just ten weeks after a leg injury that nearly ended her career",
+              "answer": "rowing",
+              "accept": [
+                "single sculls",
+                "sculling"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "At Sydney 2000, the first Games to include this swim-bike-run event, Simon Whitfield won Canada's first gold medal in it",
+              "answer": "the triathlon",
+              "accept": [
+                "triathlon"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "The Henley Royal Regatta has been held on this English river since 1839",
+              "answer": "the Thames",
+              "accept": [
+                "Thames",
+                "River Thames",
+                "the River Thames"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VOLCANOES",
+          "tags": [
+            "science",
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Kilauea, one of the most active volcanoes on Earth, is in this U.S. state",
+              "answer": "Hawaii",
+              "accept": [
+                "Hawai'i"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The 1883 eruption of this Indonesian volcano was heard nearly 5,000 kilometres away",
+              "answer": "Krakatoa",
+              "accept": [
+                "Krakatau"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Japan's highest mountain is this volcano, which last erupted in 1707",
+              "answer": "Mount Fuji",
+              "accept": [
+                "Fuji",
+                "Fujiyama",
+                "Fuji-san"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Europe's most active volcano towers over the Sicilian city of Catania",
+              "answer": "Mount Etna",
+              "accept": [
+                "Etna"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "The 1815 eruption of this Indonesian volcano, the largest in recorded history, caused the \"Year Without a Summer\"",
+              "answer": "Mount Tambora",
+              "accept": [
+                "Tambora"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "THE COLD WAR",
+          "tags": [
+            "history"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Built in 1961 to stop East Germans fleeing west, it came down in 1989",
+              "answer": "the Berlin Wall",
+              "accept": [
+                "Berlin Wall",
+                "Berlin"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Winston Churchill said this had \"descended across the Continent\" in a 1946 speech in Missouri",
+              "answer": "the Iron Curtain",
+              "accept": [
+                "Iron Curtain",
+                "an iron curtain"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This Canadian diplomat won the 1957 Nobel Peace Prize for proposing a UN peacekeeping force during the Suez Crisis, and later became prime minister",
+              "answer": "Lester Pearson",
+              "accept": [
+                "Pearson",
+                "Lester B. Pearson",
+                "Mike Pearson"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The Soviet Union's 1955 answer to NATO, named for the Polish capital where it was signed",
+              "answer": "the Warsaw Pact",
+              "accept": [
+                "Warsaw Pact"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Soviet cipher clerk defected in Ottawa in 1945 with documents exposing a spy ring, in what is often called the opening act of the Cold War",
+              "answer": "Igor Gouzenko",
+              "accept": [
+                "Gouzenko"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VIDEO GAMES",
+          "tags": [
+            "culture"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This moustachioed Italian plumber is Nintendo's mascot",
+              "answer": "Mario",
+              "accept": [
+                "Super Mario"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "In this 1980 arcade game you gobble dots in a maze while dodging four ghosts",
+              "answer": "Pac-Man",
+              "accept": [
+                "Pacman",
+                "Pac Man"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This falling-blocks puzzle was created in the Soviet Union in 1984",
+              "answer": "Tetris",
+              "accept": [
+                "Tetrus",
+                "Tetris game"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Markus \"Notch\" Persson's blocky building game was bought by Microsoft in 2014 for $2.5 billion",
+              "answer": "Minecraft",
+              "accept": [
+                "Mine Craft",
+                "Minecraft game"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Edmonton studio made the \"Mass Effect\" and \"Dragon Age\" series",
+              "answer": "BioWare",
+              "accept": [
+                "Bioware"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "CANADIAN FIRSTS",
+    "text": "In the 1921 federal election, the first in which most women could vote, she became the first woman elected to Canada's House of Commons, representing Grey Southeast in Ontario",
+    "answer": "Agnes Macphail",
+    "accept": [
+      "Macphail",
+      "Agnes MacPhail",
+      "MacPhail"
+    ]
+  }
+}
