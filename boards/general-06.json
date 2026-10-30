@@ -1,0 +1,619 @@
+{
+  "id": "general-06",
+  "title": "General #6",
+  "pack": "General",
+  "difficulty": "easy",
+  "tags": [
+    "geography",
+    "nature",
+    "canada",
+    "literature",
+    "sports",
+    "wordplay",
+    "science",
+    "food",
+    "movies",
+    "music",
+    "language"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "CONTINENTS & OCEANS",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The largest ocean on Earth, it separates Asia from the Americas",
+              "answer": "the Pacific",
+              "accept": [
+                "Pacific",
+                "Pacific Ocean"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Canada, the United States and Mexico are the three biggest countries on this continent",
+              "answer": "North America",
+              "accept": []
+            },
+            {
+              "value": 600,
+              "text": "Kangaroos and koalas are native to this continent",
+              "answer": "Australia",
+              "accept": []
+            },
+            {
+              "value": 800,
+              "text": "The Sahara Desert covers much of the north of this continent",
+              "answer": "Africa",
+              "accept": []
+            },
+            {
+              "value": 1000,
+              "text": "This ocean lies between Africa and Australia",
+              "answer": "the Indian Ocean",
+              "accept": [
+                "Indian Ocean",
+                "Indian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ON THE FARM",
+          "tags": [
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This bird lays the eggs most people eat for breakfast",
+              "answer": "the chicken",
+              "accept": [
+                "chicken",
+                "chickens",
+                "hen",
+                "hens"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Wool comes from this animal",
+              "answer": "the sheep",
+              "accept": [
+                "sheep"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "A young cow is called this",
+              "answer": "a calf",
+              "accept": [
+                "calf"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "A female pig is called this",
+              "answer": "a sow",
+              "accept": [
+                "sow"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This sturdy pack animal is the offspring of a male donkey and a female horse",
+              "answer": "a mule",
+              "accept": [
+                "mule"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CANADA 101",
+          "tags": [
+            "canada",
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Canada's capital city, on the Ottawa River",
+              "answer": "Ottawa",
+              "accept": []
+            },
+            {
+              "value": 400,
+              "text": "The red symbol in the centre of Canada's flag",
+              "answer": "the maple leaf",
+              "accept": [
+                "maple leaf",
+                "a maple leaf"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Canada has this many provinces",
+              "answer": "10",
+              "accept": [
+                "ten"
+              ],
+              "strict": true
+            },
+            {
+              "value": 800,
+              "text": "Canada's largest city by population, home to the CN Tower",
+              "answer": "Toronto",
+              "accept": []
+            },
+            {
+              "value": 1000,
+              "text": "Niagara Falls sits on the border between Ontario and this U.S. state",
+              "answer": "New York",
+              "accept": [
+                "New York State"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FAIRY TALES",
+          "tags": [
+            "literature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "She lost a glass slipper on the palace steps at midnight",
+              "answer": "Cinderella",
+              "accept": []
+            },
+            {
+              "value": 400,
+              "text": "This girl with very long hair was locked away in a tower",
+              "answer": "Rapunzel",
+              "accept": []
+            },
+            {
+              "value": 600,
+              "text": "Three of these animals built houses of straw, sticks and bricks",
+              "answer": "pigs",
+              "accept": [
+                "pig",
+                "the three little pigs",
+                "little pigs"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This boy traded the family cow for magic beans and climbed a giant beanstalk",
+              "answer": "Jack",
+              "accept": [],
+              "dailyDouble": true
+            },
+            {
+              "value": 1000,
+              "text": "In the Grimm brothers' tale, this little man spun straw into gold and demanded the queen's first child in return",
+              "answer": "Rumpelstiltskin",
+              "accept": [
+                "Rumplestiltskin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SPORTS BASICS",
+          "tags": [
+            "sports"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "In this sport, players hit a feathered shuttlecock over a high net",
+              "answer": "badminton",
+              "accept": []
+            },
+            {
+              "value": 400,
+              "text": "You need skates, a stick and a puck to play this sport",
+              "answer": "hockey",
+              "accept": [
+                "ice hockey"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "A golfer shouts this word to warn others that a ball is flying their way",
+              "answer": "fore",
+              "accept": []
+            },
+            {
+              "value": 800,
+              "text": "In baseball, the player who throws the ball to the batter",
+              "answer": "the pitcher",
+              "accept": [
+                "pitcher"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "In curling, players slide granite stones toward this target of coloured rings at the end of the sheet",
+              "answer": "the house",
+              "accept": [
+                "house",
+                "the rings",
+                "rings"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "STARTS WITH \"S\"",
+          "note": "Every response begins with the letter S",
+          "tags": [
+            "wordplay"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The star at the centre of our solar system",
+              "answer": "the Sun",
+              "accept": [
+                "Sun"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Frozen flakes that fall from a winter sky",
+              "answer": "snow",
+              "accept": []
+            },
+            {
+              "value": 600,
+              "text": "This eight-legged creature spins a web",
+              "answer": "a spider",
+              "accept": [
+                "spider"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The season that follows spring",
+              "answer": "summer",
+              "accept": []
+            },
+            {
+              "value": 1000,
+              "text": "This long, thin Italian pasta is often served with meatballs",
+              "answer": "spaghetti",
+              "accept": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "FAMOUS SCIENTISTS",
+          "tags": [
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The story goes that an apple falling from a tree got this Englishman thinking about gravity",
+              "answer": "Isaac Newton",
+              "accept": [
+                "Newton"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This German-born physicist came up with E = mc²",
+              "answer": "Albert Einstein",
+              "accept": [
+                "Einstein"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This English naturalist wrote \"On the Origin of Species\" after a voyage on HMS Beagle",
+              "answer": "Charles Darwin",
+              "accept": [
+                "Darwin"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This Polish-born scientist won two Nobel Prizes for her work on radioactivity",
+              "answer": "Marie Curie",
+              "accept": [
+                "Curie",
+                "Marie Skłodowska-Curie",
+                "Madame Curie"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Italian astronomer improved the telescope and was put on trial by the Church for saying the Earth goes around the Sun",
+              "answer": "Galileo",
+              "accept": [
+                "Galileo Galilei"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FRUIT & VEGETABLES",
+          "tags": [
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This yellow fruit grows in bunches, and cartoon characters slip on its peel",
+              "answer": "a banana",
+              "accept": [
+                "banana",
+                "bananas"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This big orange squash is carved into lanterns at Halloween",
+              "answer": "a pumpkin",
+              "accept": [
+                "pumpkin",
+                "pumpkins"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This orange root vegetable is said to be good for your eyesight",
+              "answer": "a carrot",
+              "accept": [
+                "carrot",
+                "carrots"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This tropical fruit with a hard brown husk and white flesh grows on palm trees",
+              "answer": "a coconut",
+              "accept": [
+                "coconut",
+                "coconuts"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This small red fruit grows in bogs and is served as a sauce with roast turkey",
+              "answer": "a cranberry",
+              "accept": [
+                "cranberry",
+                "cranberries"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DINOSAURS",
+          "tags": [
+            "science",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This fearsome dinosaur's name means \"tyrant lizard king\"",
+              "answer": "Tyrannosaurus rex",
+              "accept": [
+                "T. rex",
+                "T-rex",
+                "T rex",
+                "Tyrannosaurus"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This dinosaur had three horns on its face and a bony frill behind its head",
+              "answer": "Triceratops",
+              "accept": []
+            },
+            {
+              "value": 1200,
+              "text": "The dinosaurs died out about this many million years ago",
+              "answer": "66",
+              "accept": [
+                "sixty-six",
+                "sixty six",
+                "65",
+                "sixty-five",
+                "sixty five"
+              ],
+              "strict": true
+            },
+            {
+              "value": 1600,
+              "text": "This plant-eater had a row of large bony plates along its back and spikes on its tail",
+              "answer": "Stegosaurus",
+              "accept": [],
+              "dailyDouble": true
+            },
+            {
+              "value": 2000,
+              "text": "Dinosaur fossils are dug from Alberta's badlands near this town, home of the Royal Tyrrell Museum",
+              "answer": "Drumheller",
+              "accept": []
+            }
+          ]
+        },
+        {
+          "name": "ANIMATED MOVIES",
+          "tags": [
+            "movies"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Simba the lion cub grows up to take his father's place as king in this 1994 film",
+              "answer": "The Lion King",
+              "accept": [
+                "Lion King"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Elsa sings \"Let It Go\" in this 2013 film",
+              "answer": "Frozen",
+              "accept": []
+            },
+            {
+              "value": 1200,
+              "text": "Ariel, a mermaid princess, dreams of life on land in this 1989 film",
+              "answer": "The Little Mermaid",
+              "accept": [
+                "Little Mermaid"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This wooden puppet's nose grows whenever he tells a lie",
+              "answer": "Pinocchio",
+              "accept": []
+            },
+            {
+              "value": 2000,
+              "text": "In this 1991 film, Belle falls for a cursed prince in a castle full of talking teapots and candlesticks",
+              "answer": "Beauty and the Beast",
+              "accept": []
+            }
+          ]
+        },
+        {
+          "name": "MUSIC BASICS",
+          "tags": [
+            "music"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "A standard guitar has this many strings",
+              "answer": "6",
+              "accept": [
+                "six"
+              ],
+              "strict": true
+            },
+            {
+              "value": 800,
+              "text": "Musical notes are named with the first seven letters of the alphabet, from A up to this letter",
+              "answer": "G",
+              "accept": [],
+              "strict": true
+            },
+            {
+              "value": 1200,
+              "text": "This string instrument is played with a bow and rests under the chin",
+              "answer": "the violin",
+              "accept": [
+                "violin",
+                "fiddle"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "A group of four musicians is called this",
+              "answer": "a quartet",
+              "accept": [
+                "quartet"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Austrian child prodigy composed \"Eine kleine Nachtmusik\" and \"The Magic Flute\"",
+              "answer": "Mozart",
+              "accept": [
+                "Wolfgang Amadeus Mozart"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "FINISH THE PROVERB",
+          "note": "Give the last word of the well-known saying",
+          "tags": [
+            "language",
+            "wordplay"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "\"An apple a day keeps the ___ away\"",
+              "answer": "doctor",
+              "accept": [
+                "the doctor"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "\"The early bird catches the ___\"",
+              "answer": "worm",
+              "accept": [
+                "the worm"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "\"Don't count your chickens before they ___\"",
+              "answer": "hatch",
+              "accept": [
+                "are hatched",
+                "hatched"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "\"Too many cooks spoil the ___\"",
+              "answer": "broth",
+              "accept": [
+                "the broth"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "\"A rolling stone gathers no ___\"",
+              "answer": "moss",
+              "accept": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "ANCIENT WONDERS",
+    "text": "The only one of the Seven Wonders of the Ancient World still standing, this structure in Egypt was built as a tomb for a pharaoh",
+    "answer": "the Great Pyramid of Giza",
+    "accept": [
+      "Great Pyramid of Giza",
+      "the Great Pyramid",
+      "Great Pyramid",
+      "the Pyramid of Giza",
+      "the pyramids of Giza",
+      "Pyramid of Khufu",
+      "the Great Pyramid of Khufu"
+    ]
+  }
+}

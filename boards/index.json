@@ -121,6 +121,25 @@
         "science",
         "wordplay"
       ]
+    },
+    {
+      "id": "general-06",
+      "title": "General #6",
+      "pack": "General",
+      "difficulty": "easy",
+      "tags": [
+        "geography",
+        "nature",
+        "canada",
+        "literature",
+        "sports",
+        "wordplay",
+        "science",
+        "food",
+        "movies",
+        "music",
+        "language"
+      ]
     }
   ]
 }
