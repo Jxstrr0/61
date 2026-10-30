@@ -292,6 +292,21 @@
         "history",
         "canada"
       ]
+    },
+    {
+      "id": "food-01",
+      "title": "Food & Drink #1",
+      "pack": "Food & Drink",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "nature",
+        "geography",
+        "wordplay",
+        "language",
+        "canada",
+        "science"
+      ]
     }
   ]
 }

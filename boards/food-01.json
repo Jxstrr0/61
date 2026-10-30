@@ -1,0 +1,694 @@
+{
+  "id": "food-01",
+  "title": "Food & Drink #1",
+  "pack": "Food & Drink",
+  "difficulty": "easy",
+  "tags": [
+    "food",
+    "nature",
+    "geography",
+    "wordplay",
+    "language",
+    "canada",
+    "science"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "FRUIT BASKET",
+          "tags": [
+            "food",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Red or green, one of these a day is said to keep the doctor away",
+              "answer": "an apple",
+              "accept": [
+                "apple",
+                "apples"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This sour yellow citrus fruit is squeezed to make a summer drink",
+              "answer": "a lemon",
+              "accept": [
+                "lemon",
+                "lemons"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Dried grapes go by this name",
+              "answer": "raisins",
+              "accept": [
+                "raisin",
+                "a raisin"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This spiky tropical fruit with a leafy crown is a hotly debated pizza topping",
+              "answer": "a pineapple",
+              "accept": [
+                "pineapple",
+                "pineapples"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Famous for its terrible smell, this large spiky fruit of Southeast Asia is banned on some trains and in some hotels",
+              "answer": "the durian",
+              "accept": [
+                "durian",
+                "durians"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BREAKFAST TIME",
+          "tags": [
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Scrambled, fried or boiled, they come from a hen",
+              "answer": "eggs",
+              "accept": [
+                "egg",
+                "an egg",
+                "hen's eggs"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Bread browned in a pop-up kitchen gadget",
+              "answer": "toast",
+              "accept": [
+                "a piece of toast"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Flat, round cakes cooked in a pan, flipped once and served with syrup",
+              "answer": "pancakes",
+              "accept": [
+                "pancake",
+                "a pancake",
+                "flapjacks"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Oats cooked in milk or water make this hot cereal",
+              "answer": "porridge",
+              "accept": [
+                "oatmeal",
+                "oat porridge"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This buttery, crescent-shaped French pastry is made of many flaky layers",
+              "answer": "a croissant",
+              "accept": [
+                "croissant",
+                "croissants"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SWEET TOOTH",
+          "tags": [
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This frozen dessert is served in a cone or a bowl",
+              "answer": "ice cream",
+              "accept": [
+                "icecream",
+                "ice-cream"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This sweet brown treat is made from roasted cocoa beans",
+              "answer": "chocolate",
+              "accept": [
+                "chocolates",
+                "chocolate bar"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This Canadian fairground treat is a flat, stretched piece of fried dough named for the hind end of a national animal",
+              "answer": "a BeaverTail",
+              "accept": [
+                "BeaverTail",
+                "beaver tail",
+                "BeaverTails"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Egg whites whipped with sugar and baked until crisp make this light dessert",
+              "answer": "meringue",
+              "accept": [
+                "a meringue",
+                "meringues"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This Italian dessert whose name means \"pick me up\" layers coffee-soaked biscuits with creamy mascarpone",
+              "answer": "tiramisu",
+              "accept": [
+                "tiramisù"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DRINK UP",
+          "tags": [
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Cows give us this white drink",
+              "answer": "milk",
+              "accept": [
+                "cow's milk",
+                "a glass of milk"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This breakfast drink is squeezed from a round orange fruit",
+              "answer": "orange juice",
+              "accept": [
+                "OJ",
+                "juice"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Made by steeping dried leaves in hot water, it is the world's most popular drink after water",
+              "answer": "tea",
+              "accept": [
+                "a cup of tea",
+                "black tea",
+                "green tea"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Canada Dry, first made in Toronto in 1904, is this kind of fizzy pop",
+              "answer": "ginger ale",
+              "accept": [
+                "gingerale",
+                "ginger-ale"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This Mexican spirit is made from the blue agave plant",
+              "answer": "tequila",
+              "accept": [
+                "tequilla",
+                "tekila"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ITALIAN KITCHEN",
+          "tags": [
+            "food",
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "These small tubes of pasta are often baked with cheese",
+              "answer": "macaroni",
+              "accept": [
+                "macaroni and cheese",
+                "mac and cheese"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Wide sheets of pasta layered with meat sauce and cheese make this baked dish",
+              "answer": "lasagna",
+              "accept": [
+                "lasagne"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This hard cheese grated over pasta is named for the city of Parma",
+              "answer": "Parmesan",
+              "accept": [
+                "Parmigiano",
+                "Parmigiano-Reggiano",
+                "parmesan cheese"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 800,
+              "text": "Rice stirred slowly with hot broth until creamy makes this northern Italian dish",
+              "answer": "risotto",
+              "accept": [
+                "risoto",
+                "rissotto"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Served from shops called gelaterias, this Italian frozen treat is denser than ice cream",
+              "answer": "gelato",
+              "accept": [
+                "gelatto",
+                "Italian ice cream"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EDIBLE EXPRESSIONS",
+          "note": "Every response is a food that completes a well-known saying",
+          "tags": [
+            "wordplay",
+            "language",
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "\"Cool as a\" this",
+              "answer": "a cucumber",
+              "accept": [
+                "cucumber"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "\"Easy as\" this",
+              "answer": "pie",
+              "accept": [
+                "a pie"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "A \"couch\" this spends all day watching TV",
+              "answer": "a potato",
+              "accept": [
+                "potato",
+                "couch potato"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "\"Bring home the\" this",
+              "answer": "bacon",
+              "accept": [
+                "the bacon"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Someone in a tight spot is \"in a\" this",
+              "answer": "pickle",
+              "accept": [
+                "a pickle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "WORLD TOUR",
+          "note": "Name the country these dishes come from",
+          "tags": [
+            "food",
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Croissants, baguettes and crêpes",
+              "answer": "France",
+              "accept": [
+                "the French Republic",
+                "Francia"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Paella and tapas",
+              "answer": "Spain",
+              "accept": [
+                "España",
+                "Espana"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Pad thai and green curry",
+              "answer": "Thailand",
+              "accept": [
+                "Siam",
+                "Tailand"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Kimchi and bibimbap",
+              "answer": "South Korea",
+              "accept": [
+                "Korea"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Haggis, neeps and tatties",
+              "answer": "Scotland",
+              "accept": [
+                "Alba",
+                "Scottland"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GARDEN VEGGIES",
+          "tags": [
+            "food",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This red vegetable, really a fruit, is the main ingredient in ketchup",
+              "answer": "a tomato",
+              "accept": [
+                "tomato",
+                "tomatoes"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Chopping these layered bulbs can make you cry",
+              "answer": "onions",
+              "accept": [
+                "onion",
+                "an onion"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Popeye got his strength from cans of this leafy green",
+              "answer": "spinach",
+              "accept": [
+                "spinnach",
+                "spinache"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This green vegetable looks like a tiny tree and is a cousin of cabbage",
+              "answer": "broccoli",
+              "accept": [
+                "brocolli",
+                "brocoli",
+                "broccolli"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This dark red root vegetable gives the soup borscht its colour",
+              "answer": "beets",
+              "accept": [
+                "beet",
+                "a beet",
+                "beetroot"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "CHEESE, PLEASE",
+          "tags": [
+            "food"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This cheese with holes is named for a valley in Switzerland",
+              "answer": "Emmental",
+              "accept": [
+                "Emmentaler",
+                "Emmenthal",
+                "Swiss cheese"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This crumbly white Greek cheese is sprinkled on salads",
+              "answer": "feta",
+              "accept": [
+                "feta cheese",
+                "fetta"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This popular orange or white cheese is named for a village in Somerset, England",
+              "answer": "cheddar",
+              "accept": [
+                "cheddar cheese",
+                "chedder"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This soft French cheese with a white, edible rind is named for a region east of Paris",
+              "answer": "Brie",
+              "accept": [
+                "brie cheese",
+                "bree"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This French blue cheese is made from sheep's milk and aged in caves",
+              "answer": "Roquefort",
+              "accept": [
+                "Roquefort cheese",
+                "Rochefort",
+                "Rokfort"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TRUE NORTH TREATS",
+          "tags": [
+            "food",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This Canadian coffee-and-doughnut chain is named for a Toronto Maple Leafs defenceman",
+              "answer": "Tim Hortons",
+              "accept": [
+                "Tim Horton's",
+                "Tim's",
+                "Timmies"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "These small pastries with a gooey filling of butter, sugar and sometimes raisins are a Canadian classic",
+              "answer": "butter tarts",
+              "accept": [
+                "butter tart",
+                "a butter tart"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "The Montreal version of this chewy bread ring is sweeter and thinner than the New York kind",
+              "answer": "a bagel",
+              "accept": [
+                "bagel",
+                "bagels",
+                "Montreal bagel"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Halifax's signature late-night food, this spiced-meat pita with a sweet milky sauce is a cousin of the döner kebab",
+              "answer": "the donair",
+              "accept": [
+                "donair",
+                "donairs",
+                "Halifax donair"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 2000,
+              "text": "At a Quebec sugar shack, hot maple syrup is poured onto snow and rolled onto a stick to make this",
+              "answer": "maple taffy",
+              "accept": [
+                "tire d'érable",
+                "tire",
+                "sugar on snow"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "COOKING CLASS",
+          "tags": [
+            "food",
+            "language"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Cooking food in hot oil in a pan",
+              "answer": "frying",
+              "accept": [
+                "fry",
+                "to fry",
+                "pan-frying"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This bowl full of holes drains the water from cooked pasta",
+              "answer": "a colander",
+              "accept": [
+                "colander",
+                "strainer",
+                "a strainer"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Cream or egg whites are beaten with this looped wire tool",
+              "answer": "a whisk",
+              "accept": [
+                "whisk"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The French phrase for having every ingredient prepped and in its place before cooking starts",
+              "answer": "mise en place",
+              "accept": [
+                "mis en place",
+                "mise-en-place"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "French for \"under vacuum\", this method cooks food sealed in a bag in a warm water bath",
+              "answer": "sous vide",
+              "accept": [
+                "sous-vide"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FOOD FACTS",
+          "tags": [
+            "food",
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Bread rises thanks to this living ingredient, a fungus that gives off bubbles of gas",
+              "answer": "yeast",
+              "accept": [
+                "baker's yeast",
+                "yeasts"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Jars of this bee-made sweetener found in ancient Egyptian tombs were still edible",
+              "answer": "honey",
+              "accept": [
+                "bee honey",
+                "huney"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This Japanese word names the savoury \"fifth taste\" found in soy sauce and aged cheese",
+              "answer": "umami",
+              "accept": [
+                "umame",
+                "savoury"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This sweet spice, the dried inner bark of a tree, flavours buns and apple pie",
+              "answer": "cinnamon",
+              "accept": [
+                "cinamon",
+                "cinnamon bark"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "The heat of chili peppers is measured in units on this scale",
+              "answer": "the Scoville scale",
+              "accept": [
+                "Scoville",
+                "Scoville units",
+                "Scoville heat units"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "SPICES",
+    "text": "The most expensive spice in the world by weight, it is made from the hand-picked red stigmas of a crocus flower",
+    "answer": "saffron",
+    "accept": [
+      "safron",
+      "saffron threads"
+    ]
+  }
+}
