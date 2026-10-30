@@ -3,12 +3,14 @@
 // the ui/ modules are the only places that touch the DOM; nothing here
 // decides a rule.
 
-import { createGame, dispatch, chooseClueForCpu, findClue } from "./game.js";
+import { createGame, dispatch, chooseClueForCpu, findClue, summarize } from "./game.js";
 import { randomSeed } from "./rng.js";
 import * as storage from "./storage.js";
 import { renderBoard } from "./ui/board.js";
 import { renderClue, clueRenderKey, updateClueTimers } from "./ui/clue.js";
 import { renderPodiums, escapeHtml, formatScore } from "./ui/podiums.js";
+import { renderFinal, finalRenderKey, updateFinalTimers } from "./ui/final.js";
+import { renderResults } from "./ui/results.js";
 
 const SCREENS = ["home", "library", "game", "practice", "stats", "results", "about"];
 const DEFAULT_SCREEN = "home";
@@ -34,7 +36,8 @@ const app = {
   roster: null,        // data/opponents.json
   settings: storage.loadSettings(),
   state: null,         // the engine's game state
-  ctx: { bubbles: {}, flash: {}, lastResult: null, wager: null, nudge: false },
+  ctx: { bubbles: {}, flash: {}, lastResult: null, wager: null, nudge: false, drawing: null },
+  summary: null,       // the finished game, for the results screen
   timers: { cpuPick: null, reveal: null, bubble: {} },
   lastClueKey: "",
   lastBoardKey: "",
@@ -52,6 +55,8 @@ async function boot() {
     band: $("#band"),
     gameTitle: $("#game-title"),
     quickPlay: $("#quick-play"),
+    resume: $("#resume"),
+    results: $("#results"),
     categoryPop: $("#category-pop"),
   };
 
@@ -72,6 +77,7 @@ async function boot() {
   }
 
   app.el.quickPlay.addEventListener("click", quickPlay);
+  app.el.resume.addEventListener("click", resumeGame);
   document.addEventListener("keydown", onKeyDown);
   requestAnimationFrame(frame);
 
@@ -98,6 +104,8 @@ function showScreen(name) {
 function route() {
   const name = screenFromHash(location.hash);
   if (name === "game" && !app.state) { location.hash = "#home"; return; }
+  if (name === "results" && !app.summary) { location.hash = "#home"; return; }
+  if (name === "home") app.el.resume.hidden = !(app.state && app.state.phase !== "results") && !storage.loadGame();
   showScreen(name);
 }
 
@@ -119,16 +127,37 @@ async function startGame(boardId, difficulty) {
   app.el.quickPlay.disabled = true;
   try {
     const board = await fetch(`./boards/${boardId}.json`).then((r) => r.json());
-    app.state = createGame({ board, seed: randomSeed(), difficulty, roster: app.roster, playerName: app.settings.playerName });
-    app.ctx = { bubbles: {}, flash: {}, lastResult: null, wager: null, nudge: false };
-    clearTimers();
-    app.lastClueKey = "";
-    app.lastBoardKey = "";
-    location.hash = "#game";
+    const state = createGame({ board, seed: randomSeed(), difficulty, roster: app.roster, playerName: app.settings.playerName });
+    beginGame(state);
     showIntro();
   } finally {
     app.el.quickPlay.disabled = false;
   }
+}
+
+/** Installs a game state (new or loaded) as the live game and shows the game screen. */
+function beginGame(state) {
+  app.state = state;
+  app.summary = null;
+  app.ctx = { bubbles: {}, flash: {}, lastResult: null, wager: null, nudge: false, drawing: null };
+  clearTimers();
+  app.lastClueKey = "";
+  app.lastBoardKey = "";
+  hideBand();
+  app.el.gameTitle.textContent = state.board.title;
+  location.hash = "#game";
+  render();
+}
+
+/** Resume: the game saved after the last clue (a game in progress in this tab wins over the save). */
+function resumeGame() {
+  if (app.state && app.state.phase !== "results") { location.hash = "#game"; render(); afterAction(); return; }
+  const saved = storage.loadGame();
+  if (!saved) { app.el.resume.hidden = true; return; }
+  beginGame(saved);
+  app.revealBoard = true;
+  render();
+  afterAction();
 }
 
 function showIntro() {
@@ -140,8 +169,24 @@ function showIntro() {
     <p class="band__bio">${escapeHtml(b.name)}: ${escapeHtml(b.bio)}</p>
     <p>Tap a value to pick a clue. When the clue turns orange, tap it to buzz. Type your response and press Answer.</p>
   `, "Start", () => { act({ type: "start" }); });
-  app.el.gameTitle.textContent = app.state.board.title;
-  renderPodiums(app.el.podiums, app.state, app.ctx);
+}
+
+/** The game is over: fold it into the career stats, drop the save, show the results. */
+function finishGame() {
+  const state = app.state;
+  if (!state || state.phase !== "results") return;
+  if (!app.summary) {
+    app.summary = summarize(state);
+    storage.saveStats(storage.recordGame(storage.loadStats(), app.summary));
+    storage.markPlayed(state.boardId, app.summary.playerScore);
+    storage.clearGame();
+  }
+  renderResults(app.el.results, app.summary, {
+    onPlayAgain: () => quickPlay(),
+    onLibrary: () => { location.hash = "#library"; },
+    onHome: () => { location.hash = "#home"; },
+  }, { libraryEnabled: false });
+  location.hash = "#results";
 }
 
 // ---------------------------------------------------------------------------
@@ -204,12 +249,13 @@ function onEvent(event) {
       `, "Continue", () => act({ type: "next" }));
       break;
     case "final.start":
-      // The Final round arrives in phase 5. For now, show the scores and go home.
-      showBand(`
-        <h2 class="band__title">Both rounds played</h2>
-        <p>${state.contestants.map((c) => `${escapeHtml(c.name)}: ${formatScore(c.score)}`).join(" · ")}</p>
-        <p>The Final round and the results screen arrive in the next build phase.</p>
-      `, "Home", () => { app.state = null; storage.clearGame(); location.hash = "#home"; });
+      hideBand();
+      if (!event.eligible.length) {
+        showBand(`<h2 class="band__title">No Final today</h2><p>Nobody finished above zero, so there is no Final round.</p>`, "See the results", () => finishGame());
+      }
+      break;
+    case "final.reveal":
+      flash(event.contestant, event.correct ? "correct" : "wrong", 900);
       break;
     default:
       break;
@@ -276,6 +322,16 @@ const clueHandlers = {
   onNext: () => act({ type: "next" }),
 };
 
+const finalHandlers = {
+  onNext: () => act({ type: "next" }),
+  onWager: (amount) => { app.ctx.wager = null; act({ type: "finalWager", amount }); },
+  onWagerChange: (amount) => { app.ctx.wager = amount; render(); },
+  onDone: () => act({ type: "finalAnswer" }),
+  onRule: (correct) => act({ type: "finalRule", correct }),
+  onDrawingChange: (dataUrl) => { app.ctx.drawing = dataUrl; },
+  onResults: () => finishGame(),
+};
+
 const boardHandlers = {
   onSelect: (clueId) => act({ type: "select", clueId }),
   onCategory: (c) => showCategory(c),
@@ -290,13 +346,15 @@ function render() {
     app.lastBoardKey = boardKey;
     app.revealBoard = false;
   }
-  const clueKey = clueRenderKey(state, app.ctx);
+  const inFinal = state.final && (state.phase === "final" || state.phase === "results");
+  const clueKey = inFinal ? finalRenderKey(state, app.ctx) : clueRenderKey(state, app.ctx);
   if (clueKey !== app.lastClueKey) {
-    renderClue(app.el.clue, state, clueHandlers, app.ctx);
+    if (inFinal) renderFinal(app.el.clue, state, finalHandlers, app.ctx);
+    else renderClue(app.el.clue, state, clueHandlers, app.ctx);
     app.lastClueKey = clueKey;
   }
   renderPodiumsNow();
-  app.el.game.classList.toggle("game--clue", state.phase === "clue");
+  app.el.game.classList.toggle("game--clue", state.phase === "clue" || Boolean(inFinal));
 }
 
 function renderPodiumsNow() {
@@ -313,6 +371,7 @@ function frame() {
     render(); // keyed, so this is cheap when nothing changed
     if (state.clue?.state !== before) afterAction();
     updateClueTimers(app.el.clue, state, now());
+    updateFinalTimers(app.el.clue, state, now());
   }
   requestAnimationFrame(frame);
 }

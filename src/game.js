@@ -637,6 +637,7 @@ export function summarize(state) {
   const byClue = {};
   const missed = [];
   const categories = {}; // tag -> { correct, attempted } for the human
+  const byCategory = state.board.rounds.flatMap((round, r) => round.categories.map((cat) => ({ name: cat.name, round: r, correct: 0, attempted: 0 })));
   let buzzWon = 0, buzzLost = 0, reactionTotal = 0, reactionCount = 0;
   const dailyDouble = { correct: 0, attempted: 0 };
   const finalRecord = { correct: 0, attempted: 0 };
@@ -658,6 +659,9 @@ export function summarize(state) {
           if (e.correct) categories[tag].correct += 1;
         }
         if (e.kind === "dailyDouble") { dailyDouble.attempted += 1; if (e.correct) dailyDouble.correct += 1; }
+        const slot = byCategory[info.roundIndex * 6 + info.catIndex];
+        slot.attempted += 1;
+        if (e.correct) slot.correct += 1;
       }
     }
     if (e.type === "clue.resolved") {
@@ -680,6 +684,7 @@ export function summarize(state) {
     playerScore: scores[me],
     series,
     categories,
+    byCategory,
     missed,
     buzz: { won: buzzWon, lost: buzzLost, averageReactionMs: reactionCount ? Math.round(reactionTotal / reactionCount) : null },
     dailyDouble,

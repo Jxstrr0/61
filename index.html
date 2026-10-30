@@ -15,9 +15,9 @@
 
   <!-- All paths are relative (./) on purpose: the site lives under
        /61/ on GitHub Pages and may move to a custom domain later. -->
-  <link rel="stylesheet" href="./styles/tokens.css?v=2">
-  <link rel="stylesheet" href="./styles/app.css?v=2">
-  <script type="module" src="./src/main.js?v=2"></script>
+  <link rel="stylesheet" href="./styles/tokens.css?v=3">
+  <link rel="stylesheet" href="./styles/app.css?v=3">
+  <script type="module" src="./src/main.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,6 +37,7 @@
         <nav class="home__menu" aria-label="Main menu">
           <!-- Library, Practice and Stats are wired up in later phases. -->
           <button class="btn btn--primary" type="button" id="quick-play" disabled>Quick Play</button>
+          <button class="btn" type="button" id="resume" hidden>Resume game</button>
           <button class="btn" type="button" disabled>Library</button>
           <button class="btn" type="button" disabled>Practice</button>
           <button class="btn" type="button" disabled>Stats</button>
@@ -63,6 +64,11 @@
       <div class="band" id="band" hidden></div>
       <!-- Full category name and note, on tapping a header -->
       <div class="pop" id="category-pop" hidden></div>
+    </section>
+
+    <!-- Results: filled by ui/results.js when a game ends -->
+    <section class="screen screen--paper" data-screen="results" hidden>
+      <div id="results"></div>
     </section>
 
     <section class="screen" data-screen="about" hidden>
