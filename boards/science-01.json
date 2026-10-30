@@ -1,0 +1,160 @@
+{
+  "id": "science-01",
+  "title": "Science #1",
+  "pack": "Science",
+  "difficulty": "normal",
+  "tags": ["science", "space", "nature", "canada", "medicine", "history", "geography"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "THE PERIODIC TABLE",
+          "tags": ["science"],
+          "clues": [
+            { "value": 200, "text": "This gas, symbol He, is lighter than air and fills party balloons", "answer": "helium", "accept": [] },
+            { "value": 400, "text": "The symbol Na stands for this element, one half of table salt", "answer": "sodium", "accept": [] },
+            { "value": 600, "text": "Element number 6, the basis of all organic chemistry, is found in nature as both diamond and graphite", "answer": "carbon", "accept": [] },
+            { "value": 800, "text": "The only metal that is liquid at room temperature, its symbol Hg comes from the Greek for \"water-silver\"", "answer": "mercury", "accept": ["quicksilver"] },
+            { "value": 1000, "text": "Discovered in 1789, element 92 was named after a planet that had been discovered eight years earlier", "answer": "uranium", "accept": [] }
+          ]
+        },
+        {
+          "name": "LIFE SCIENCE",
+          "tags": ["science", "nature"],
+          "clues": [
+            { "value": 200, "text": "The green pigment that lets plants capture energy from sunlight", "answer": "chlorophyll", "accept": [] },
+            { "value": 400, "text": "The double-helix molecule that carries the genetic instructions of living things", "answer": "DNA", "accept": ["deoxyribonucleic acid"], "strict": true },
+            { "value": 600, "text": "These structures, nicknamed the powerhouse of the cell, turn food into usable energy", "answer": "mitochondria", "accept": ["mitochondrion", "the mitochondria"] },
+            { "value": 800, "text": "The process by which plants make sugar from sunlight, water and carbon dioxide", "answer": "photosynthesis", "accept": [] },
+            { "value": 1000, "text": "This 18th-century Swedish naturalist devised the two-part Latin system for naming species", "answer": "Carl Linnaeus", "accept": ["Linnaeus", "Carolus Linnaeus"] }
+          ]
+        },
+        {
+          "name": "CREATURE FEATURES",
+          "tags": ["nature"],
+          "clues": [
+            { "value": 200, "text": "The tallest land animal, it can reach about 5.5 metres thanks to its neck", "answer": "the giraffe", "accept": ["giraffe", "giraffes"] },
+            { "value": 400, "text": "The largest living bird, it cannot fly but lays the biggest eggs", "answer": "the ostrich", "accept": ["ostrich", "ostriches"] },
+            { "value": 600, "text": "The fastest land animal, able to sprint at around 100 kilometres per hour", "answer": "the cheetah", "accept": ["cheetah", "cheetahs"] },
+            { "value": 800, "text": "This white Arctic bear spends so much time on sea ice that it is classed as a marine mammal", "answer": "the polar bear", "accept": ["polar bear", "polar bears"] },
+            { "value": 1000, "text": "This egg-laying Australian mammal has a duck-like bill and a beaver-like tail", "answer": "the platypus", "accept": ["platypus", "duck-billed platypus"] }
+          ]
+        },
+        {
+          "name": "CANADIAN SCIENCE",
+          "tags": ["canada", "science"],
+          "clues": [
+            { "value": 200, "text": "Frederick Banting and Charles Best discovered this diabetes treatment in Toronto in 1921", "answer": "insulin", "accept": [] },
+            { "value": 400, "text": "This Canadian-built robotic arm first flew on the space shuttle in 1981", "answer": "the Canadarm", "accept": ["Canadarm", "Canadarm1", "Canadarm 1"] },
+            { "value": 600, "text": "This Quebec City-born astronaut became the first Canadian in space in October 1984", "answer": "Marc Garneau", "accept": ["Garneau"] },
+            { "value": 800, "text": "In 2013 Chris Hadfield recorded a David Bowie song aboard this orbiting laboratory, which he was commanding", "answer": "the International Space Station", "accept": ["International Space Station", "ISS", "the ISS"], "dailyDouble": true },
+            { "value": 1000, "text": "Canadian physicist Arthur McDonald shared the 2015 Nobel Prize in Physics for showing that these ghostly particles have mass", "answer": "neutrinos", "accept": ["neutrino", "the neutrino"] }
+          ]
+        },
+        {
+          "name": "BODY & MEDICINE",
+          "tags": ["medicine", "science"],
+          "clues": [
+            { "value": 200, "text": "This organ pumps blood around your body about 100,000 times a day", "answer": "the heart", "accept": ["heart"] },
+            { "value": 400, "text": "Alexander Fleming discovered this first antibiotic in a mouldy petri dish in 1928", "answer": "penicillin", "accept": [] },
+            { "value": 600, "text": "The everyday name for varicella, the childhood disease that causes itchy spots", "answer": "chickenpox", "accept": ["chicken pox", "the chickenpox"] },
+            { "value": 800, "text": "Red blood cells carry oxygen using this iron-rich protein", "answer": "hemoglobin", "accept": ["haemoglobin"] },
+            { "value": 1000, "text": "Edward Jenner's 1796 vaccine against this disease used material from cowpox sores; the disease was declared eradicated in 1980", "answer": "smallpox", "accept": [] }
+          ]
+        },
+        {
+          "name": "WHO INVENTED IT?",
+          "tags": ["science", "history"],
+          "clues": [
+            { "value": 200, "text": "This American is credited with the practical light bulb and the phonograph", "answer": "Thomas Edison", "accept": ["Edison", "Thomas Alva Edison"] },
+            { "value": 400, "text": "Around 1440 Johannes Gutenberg introduced this machine to Europe, making books far cheaper", "answer": "the printing press", "accept": ["printing press", "movable type"] },
+            { "value": 600, "text": "This Scottish-born inventor patented the telephone in 1876", "answer": "Alexander Graham Bell", "accept": ["Bell", "Graham Bell"] },
+            { "value": 800, "text": "In 1895 Wilhelm Röntgen discovered these rays and named them for the mathematical unknown", "answer": "X-rays", "accept": ["X-ray", "X rays", "the X-ray"] },
+            { "value": 1000, "text": "This Hungarian architect's colourful cube puzzle went on sale around the world in 1980", "answer": "Ernő Rubik", "accept": ["Rubik", "Erno Rubik"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "PHYSICS CLASS",
+          "tags": ["science"],
+          "clues": [
+            { "value": 400, "text": "The rate at which an object's velocity changes", "answer": "acceleration", "accept": [] },
+            { "value": 800, "text": "At about 300,000 kilometres per second, nothing in the universe is faster than this", "answer": "the speed of light", "accept": ["speed of light", "light"] },
+            { "value": 1200, "text": "E = mc² comes from this two-word 1905 theory of Einstein's", "answer": "special relativity", "accept": ["the special theory of relativity", "special theory of relativity", "relativity"] },
+            { "value": 1600, "text": "This force of attraction between masses keeps the planets in their orbits and your feet on the ground", "answer": "gravity", "accept": ["gravitation"], "dailyDouble": true },
+            { "value": 2000, "text": "This Austrian physicist's famous thought experiment features a cat that is both alive and dead", "answer": "Erwin Schrödinger", "accept": ["Schrödinger", "Schrodinger", "Schroedinger"] }
+          ]
+        },
+        {
+          "name": "GREAT MINDS",
+          "tags": ["science", "history"],
+          "clues": [
+            { "value": 400, "text": "This French chemist's name is on the process of heating milk to kill germs", "answer": "Louis Pasteur", "accept": ["Pasteur"] },
+            { "value": 800, "text": "This Serbian-American inventor championed alternating current and gave his name to the unit of magnetic flux density", "answer": "Nikola Tesla", "accept": ["Tesla"] },
+            { "value": 1200, "text": "This Italian was tried by the Inquisition in 1633 for saying the Earth moves around the Sun", "answer": "Galileo Galilei", "accept": ["Galileo"] },
+            { "value": 1600, "text": "This Cambridge physicist wrote \"A Brief History of Time\" and spent decades studying black holes", "answer": "Stephen Hawking", "accept": ["Hawking"] },
+            { "value": 2000, "text": "This Austrian monk's pea-plant experiments in the 1860s founded the science of genetics", "answer": "Gregor Mendel", "accept": ["Mendel"] }
+          ]
+        },
+        {
+          "name": "EARTH SCIENCE",
+          "tags": ["science", "geography"],
+          "clues": [
+            { "value": 400, "text": "Molten rock once it has erupted from a volcano", "answer": "lava", "accept": [] },
+            { "value": 800, "text": "The Richter scale and the moment magnitude scale measure the size of these", "answer": "earthquakes", "accept": ["earthquake", "an earthquake"] },
+            { "value": 1200, "text": "Earth's outer shell is broken into about a dozen large pieces called these, whose slow movement builds mountains", "answer": "tectonic plates", "accept": ["plates", "plate tectonics"], "dailyDouble": true },
+            { "value": 1600, "text": "The three main rock types are igneous, sedimentary and this one, formed by heat and pressure", "answer": "metamorphic", "accept": ["metamorphic rock"] },
+            { "value": 2000, "text": "Earth's innermost layer, a solid ball of mostly iron and nickel", "answer": "the inner core", "accept": ["inner core", "core", "the core"] }
+          ]
+        },
+        {
+          "name": "CHEMISTRY LAB",
+          "tags": ["science"],
+          "clues": [
+            { "value": 400, "text": "The everyday name for H2O", "answer": "water", "accept": [] },
+            { "value": 800, "text": "On the pH scale, a value of 7 is described with this word", "answer": "neutral", "accept": [] },
+            { "value": 1200, "text": "Vinegar is a dilute solution of this acid", "answer": "acetic acid", "accept": ["ethanoic acid"] },
+            { "value": 1600, "text": "The process by which a liquid turns to gas at its surface, below the boiling point", "answer": "evaporation", "accept": ["evaporating"] },
+            { "value": 2000, "text": "Avogadro's number, about 6.02 × 10²³, is the number of particles in one of these chemical units", "answer": "a mole", "accept": ["mole", "the mole"] }
+          ]
+        },
+        {
+          "name": "NAMED FOR SCIENTISTS",
+          "note": "Every response is a unit of measurement named after a scientist",
+          "tags": ["science"],
+          "clues": [
+            { "value": 400, "text": "The unit of power, named for the Scottish engineer who improved the steam engine", "answer": "watt", "accept": ["the watt", "watts"] },
+            { "value": 800, "text": "The SI unit of pressure, named for a 17th-century French mathematician", "answer": "pascal", "accept": ["the pascal", "pascals"] },
+            { "value": 1200, "text": "The SI unit of energy, named for an English brewer and physicist", "answer": "joule", "accept": ["the joule", "joules"] },
+            { "value": 1600, "text": "The unit of electrical resistance, symbolized by the Greek letter omega", "answer": "ohm", "accept": ["the ohm", "ohms"] },
+            { "value": 2000, "text": "The unit of temperature on the absolute scale, where zero is the coldest possible", "answer": "kelvin", "accept": ["the kelvin", "kelvins"] }
+          ]
+        },
+        {
+          "name": "SPACE EXPLORATION",
+          "tags": ["space"],
+          "clues": [
+            { "value": 400, "text": "In July 1969 Neil Armstrong and Buzz Aldrin became the first people to walk here", "answer": "the Moon", "accept": ["Moon"] },
+            { "value": 800, "text": "This Soviet cosmonaut became the first human in space on April 12, 1961", "answer": "Yuri Gagarin", "accept": ["Gagarin"] },
+            { "value": 1200, "text": "Launched in 1990, this orbiting telescope is named for the astronomer who showed that the universe is expanding", "answer": "the Hubble Space Telescope", "accept": ["Hubble", "Hubble Space Telescope", "Hubble telescope"] },
+            { "value": 1600, "text": "Launched in 1977, this NASA probe became the first human-made object to enter interstellar space, in 2012", "answer": "Voyager 1", "accept": ["Voyager one", "Voyager I"], "strict": true },
+            { "value": 2000, "text": "The Soviet Union put this first artificial satellite into orbit in October 1957", "answer": "Sputnik", "accept": ["Sputnik 1", "Sputnik one"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "ASTRONOMY",
+    "text": "Named for the English astronomer who watched the solar flare that caused it, this 1859 geomagnetic storm set telegraph wires sparking around the world",
+    "answer": "the Carrington Event",
+    "accept": ["Carrington Event", "Carrington", "the Carrington storm"]
+  }
+}

@@ -140,6 +140,21 @@
         "music",
         "language"
       ]
+    },
+    {
+      "id": "science-01",
+      "title": "Science #1",
+      "pack": "Science",
+      "difficulty": "normal",
+      "tags": [
+        "science",
+        "space",
+        "nature",
+        "canada",
+        "medicine",
+        "history",
+        "geography"
+      ]
     }
   ]
 }
