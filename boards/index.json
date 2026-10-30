@@ -168,6 +168,25 @@
         "music",
         "wordplay"
       ]
+    },
+    {
+      "id": "prairie-02",
+      "title": "Prairie #2",
+      "pack": "Prairie",
+      "difficulty": "normal",
+      "tags": [
+        "canada",
+        "prairie",
+        "geography",
+        "nature",
+        "people",
+        "culture",
+        "food",
+        "history",
+        "literature",
+        "sports",
+        "language"
+      ]
     }
   ]
 }

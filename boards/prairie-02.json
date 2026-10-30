@@ -1,0 +1,162 @@
+{
+  "id": "prairie-02",
+  "title": "Prairie #2",
+  "pack": "Prairie",
+  "difficulty": "normal",
+  "tags": ["canada", "prairie", "geography", "nature", "people", "culture", "food", "history", "literature", "sports", "language"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "PRAIRIE TOWNS",
+          "tags": ["geography", "prairie"],
+          "clues": [
+            {"value": 200, "text": "This Saskatchewan city west of Regina is known for its Prohibition-era tunnels and its mineral spa", "answer": "Moose Jaw", "accept": []},
+            {"value": 400, "text": "This Alberta city halfway between Calgary and Edmonton shares its name with the river it sits on", "answer": "Red Deer", "accept": []},
+            {"value": 600, "text": "This Manitoba city on the Trans-Canada west of Winnipeg is known for a water tower painted as a giant Coca-Cola can", "answer": "Portage la Prairie", "accept": ["Portage"]},
+            {"value": 800, "text": "This Saskatchewan city on the North Saskatchewan River is the gateway to the province's north and home of the WHL Raiders", "answer": "Prince Albert", "accept": ["P.A.", "PA"]},
+            {"value": 1000, "text": "Across the river from North Battleford, this Saskatchewan town was capital of the North-West Territories from 1876 to 1883", "answer": "Battleford", "accept": []}
+          ]
+        },
+        {
+          "name": "PARKS & WILD PLACES",
+          "tags": ["nature", "geography", "prairie"],
+          "clues": [
+            {"value": 200, "text": "Canada's first national park, set aside in 1885 around hot springs in the Rockies", "answer": "Banff", "accept": ["Banff National Park"]},
+            {"value": 400, "text": "This Saskatchewan national park near Val Marie protects native mixed-grass prairie and black-tailed prairie dogs", "answer": "Grasslands National Park", "accept": ["Grasslands"]},
+            {"value": 600, "text": "This Manitoba national park's townsite is Wasagaming, on the shore of Clear Lake", "answer": "Riding Mountain National Park", "accept": ["Riding Mountain"]},
+            {"value": 800, "text": "This Alberta park on the Montana border joined with Glacier in 1932 to form the world's first International Peace Park", "answer": "Waterton Lakes National Park", "accept": ["Waterton", "Waterton Lakes", "Waterton National Park"]},
+            {"value": 1000, "text": "Baldy Mountain, Manitoba's highest point at 831 metres, is in this provincial park named for a bird", "answer": "Duck Mountain Provincial Park", "accept": ["Duck Mountain", "Duck Mountains"]}
+          ]
+        },
+        {
+          "name": "FAMOUS PRAIRIE FOLK",
+          "tags": ["people", "prairie"],
+          "clues": [
+            {"value": 200, "text": "\"Mr. Hockey\", born in Floral, Saskatchewan, played pro hockey into his 50s", "answer": "Gordie Howe", "accept": ["Howe"]},
+            {"value": 400, "text": "This Saskatchewan lawyer was prime minister from 1957 to 1963 and brought in the Canadian Bill of Rights", "answer": "John Diefenbaker", "accept": ["Diefenbaker", "Dief"]},
+            {"value": 600, "text": "This \"Back to the Future\" star was born in Edmonton in 1961", "answer": "Michael J. Fox", "accept": ["Fox", "Michael Fox"]},
+            {"value": 800, "text": "The deadpan star of \"Airplane!\" and \"The Naked Gun\", he was born in Regina in 1926", "answer": "Leslie Nielsen", "accept": ["Nielsen"]},
+            {"value": 1000, "text": "This English-born conservationist, who lived as an Indigenous man, wrote his books from a cabin on Ajawaan Lake in Prince Albert National Park", "answer": "Grey Owl", "accept": ["Grey Owl", "Archibald Belaney", "Archie Belaney", "Belaney"], "strict": true}
+          ]
+        },
+        {
+          "name": "PRAIRIE SKIES",
+          "tags": ["nature", "prairie"],
+          "clues": [
+            {"value": 200, "text": "This warm, dry wind blows down off the Rockies and can lift a Calgary winter day by 20 degrees in hours", "answer": "a chinook", "accept": ["chinook", "chinook wind", "chinooks"]},
+            {"value": 400, "text": "Saskatchewan licence plates call the province the \"Land of Living\" these", "answer": "Skies", "accept": ["Living Skies", "the Living Skies", "sky"]},
+            {"value": 600, "text": "Also called the aurora borealis, they are seen on more than 300 nights a year over Churchill, Manitoba", "answer": "the northern lights", "accept": ["northern lights", "aurora borealis", "the aurora", "aurora"]},
+            {"value": 800, "text": "The 2007 storm that hit Elie, Manitoba was the first in Canada rated F5, the top of the scale for one of these", "answer": "a tornado", "accept": ["tornado", "tornadoes", "twister"]},
+            {"value": 1000, "text": "A fast-moving winter storm that forms east of the Rockies and races across the prairies into the U.S. is called an \"Alberta\" this", "answer": "clipper", "accept": ["Alberta clipper", "an Alberta clipper"]}
+          ]
+        },
+        {
+          "name": "FESTIVALS & FAIRS",
+          "tags": ["culture", "prairie"],
+          "clues": [
+            {"value": 200, "text": "Calgary's ten-day July rodeo and exhibition bills itself as \"the Greatest Outdoor Show on Earth\"", "answer": "the Calgary Stampede", "accept": ["Calgary Stampede", "Stampede", "the Stampede"]},
+            {"value": 400, "text": "Winnipeg's February festival of French-Canadian and Métis culture is named for the fur trade's canoe men", "answer": "Festival du Voyageur", "accept": ["Voyageur", "the Voyageur Festival", "Voyageur Festival"]},
+            {"value": 600, "text": "Edmonton's August theatre festival is the oldest and largest of its kind in North America", "answer": "the Edmonton Fringe", "accept": ["Fringe", "the Fringe", "Edmonton Fringe", "Fringe Festival", "Edmonton International Fringe Theatre Festival"]},
+            {"value": 800, "text": "Winnipeg's two-week August celebration with dozens of cultural pavilions across the city", "answer": "Folklorama", "accept": [], "dailyDouble": true},
+            {"value": 1000, "text": "Dauphin, Manitoba hosts Canada's National Festival of this heritage every summer", "answer": "Ukrainian", "accept": ["Ukraine", "Ukrainian heritage", "Ukrainian culture"]}
+          ]
+        },
+        {
+          "name": "SECOND HELPINGS",
+          "note": "More prairie food and drink",
+          "tags": ["food", "prairie"],
+          "clues": [
+            {"value": 200, "text": "Walter Chell mixed vodka, Clamato and spices to invent this cocktail in Calgary in 1969", "answer": "the Caesar", "accept": ["Caesar", "Bloody Caesar", "the Bloody Caesar"]},
+            {"value": 400, "text": "Known as holubtsi in Ukrainian, these leafy bundles of rice and meat sit beside the perogies at a prairie wedding", "answer": "cabbage rolls", "accept": ["cabbage roll", "holubtsi", "holopchi", "stuffed cabbage"]},
+            {"value": 600, "text": "Winnipeggers dip these breaded pieces of poultry in honey dill sauce", "answer": "chicken fingers", "accept": ["chicken strips", "chicken tenders", "chicken nuggets"]},
+            {"value": 800, "text": "Manitoba grows most of Canada's crop of these tall yellow flowers, whose seeds are roasted for snacking and pressed for oil", "answer": "sunflowers", "accept": ["sunflower", "sunflower seeds"]},
+            {"value": 1000, "text": "Made for decades in Winnipeg by the Paulin's candy company, this peanut-and-chocolate bar is named for a Caribbean island", "answer": "the Cuban Lunch", "accept": ["Cuban Lunch"]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "FUR TRADE & FORTS",
+          "tags": ["history", "prairie"],
+          "clues": [
+            {"value": 400, "text": "Founded in 1670, this trading company once held Rupert's Land, which covered most of the prairies", "answer": "the Hudson's Bay Company", "accept": ["Hudson's Bay Company", "HBC", "the Bay", "Hudson Bay Company"]},
+            {"value": 800, "text": "The Montreal-based rival of the Hudson's Bay Company until the two merged in 1821", "answer": "the North West Company", "accept": ["North West Company", "NWC", "the Nor'Westers", "Nor'Westers"]},
+            {"value": 1200, "text": "This Scottish earl founded the Red River Colony in 1812 on land granted by the Hudson's Bay Company", "answer": "Lord Selkirk", "accept": ["Selkirk", "Thomas Douglas", "the Earl of Selkirk"]},
+            {"value": 1600, "text": "The North-West Resistance ended in May 1885 with a four-day battle at this Métis village on the South Saskatchewan River", "answer": "Batoche", "accept": [], "dailyDouble": true},
+            {"value": 2000, "text": "This stone fort near Churchill took about 40 years to build and surrendered to the French without a shot in 1782", "answer": "Prince of Wales Fort", "accept": ["Fort Prince of Wales", "Prince of Wales's Fort"]}
+          ]
+        },
+        {
+          "name": "FIRST PEOPLES OF THE PLAINS",
+          "tags": ["history", "culture", "prairie"],
+          "clues": [
+            {"value": 400, "text": "The Métis flag shows this mathematical symbol in white on a blue or red field", "answer": "the infinity symbol", "accept": ["infinity", "infinity sign", "infinity symbol"]},
+            {"value": 800, "text": "The cone-shaped home of Plains peoples, made of poles and hides, that could be packed up to follow the bison", "answer": "a tipi", "accept": ["tipi", "teepee", "tepee", "tipis"]},
+            {"value": 1200, "text": "This Siksika chief who signed Treaty 7 gives his name to a Calgary C-Train station and a major Calgary trail", "answer": "Crowfoot", "accept": ["Chief Crowfoot", "Isapo-muxika"]},
+            {"value": 1600, "text": "This Cree chief held out on Treaty 6 until 1879, tried to stop the fighting in 1885 and was jailed anyway; Canada exonerated him in 2019", "answer": "Poundmaker", "accept": ["Chief Poundmaker", "Pitikwahanapiwiyin"]},
+            {"value": 2000, "text": "Treaty 7 was signed in 1877 at this crossing of the Bow River, east of Calgary", "answer": "Blackfoot Crossing", "accept": []}
+          ]
+        },
+        {
+          "name": "PRAIRIE ON PAGE & SCREEN",
+          "tags": ["literature", "culture", "prairie"],
+          "clues": [
+            {"value": 400, "text": "This CBC sitcom set in the fictional town of Dog River, Saskatchewan ran from 2004 to 2009", "answer": "Corner Gas", "accept": []},
+            {"value": 800, "text": "W.O. Mitchell's 1947 novel about a boy named Brian growing up in a small Saskatchewan town", "answer": "Who Has Seen the Wind", "accept": []},
+            {"value": 1200, "text": "A Winnipeg soldier named this bear cub for his hometown in 1914; at the London Zoo she inspired A.A. Milne", "answer": "Winnie", "accept": ["Winnie the Pooh", "Winnie-the-Pooh", "Winnipeg the bear"]},
+            {"value": 1600, "text": "This Steinbach-born author's novel \"A Complicated Kindness\" follows a teenager in a Manitoba Mennonite town", "answer": "Miriam Toews", "accept": ["Toews"]},
+            {"value": 2000, "text": "Sinclair Ross's 1941 novel, told through the diary of a minister's wife in the dusty town of Horizon", "answer": "As For Me and My House", "accept": ["As for Me and My House"]}
+          ]
+        },
+        {
+          "name": "GAME ON",
+          "tags": ["sports", "prairie"],
+          "clues": [
+            {"value": 400, "text": "Calgary's CFL team", "answer": "the Stampeders", "accept": ["Stampeders", "Calgary Stampeders", "Stamps", "the Stamps"]},
+            {"value": 800, "text": "Brandon's WHL team is named for the royalty of the province's main crop", "answer": "the Wheat Kings", "accept": ["Wheat Kings", "Brandon Wheat Kings"]},
+            {"value": 1200, "text": "This Saskatoon speed skater won 500-metre gold at both Nagano 1998 and Salt Lake City 2002", "answer": "Catriona Le May Doan", "accept": ["Le May Doan", "LeMay Doan", "Catriona LeMay Doan"], "dailyDouble": true},
+            {"value": 1600, "text": "This Winnipeg-born athlete won Olympic medals in both summer cycling and winter speed skating", "answer": "Clara Hughes", "accept": ["Hughes"]},
+            {"value": 2000, "text": "The Edmonton Grads, who lost only 20 of 522 games between 1915 and 1940, played this sport", "answer": "basketball", "accept": ["women's basketball"]}
+          ]
+        },
+        {
+          "name": "ROADSIDE GIANTS",
+          "note": "Big things beside prairie highways; name the thing or the town",
+          "tags": ["culture", "prairie"],
+          "clues": [
+            {"value": 400, "text": "Vegreville, Alberta's giant decorated Easter egg goes by this Ukrainian name", "answer": "a pysanka", "accept": ["pysanka", "Easter egg", "the Vegreville egg"]},
+            {"value": 800, "text": "Komarno, Manitoba claims the world's largest statue of this biting insect, which is also what the town's name means in Ukrainian", "answer": "a mosquito", "accept": ["mosquito", "the mosquito"]},
+            {"value": 1200, "text": "Drumheller's 26-metre \"World's Largest Dinosaur\" is a model of this species, with a viewing platform in its mouth", "answer": "Tyrannosaurus rex", "accept": ["T. rex", "T-rex", "T rex", "Tyrannosaurus", "trex"]},
+            {"value": 1600, "text": "This Alberta town east of Edmonton has a 13-metre ring of kubasa, Ukrainian garlic sausage", "answer": "Mundare", "accept": []},
+            {"value": 2000, "text": "The \"Honey Capital of Canada\", this town in Alberta's Peace Country has a giant bee", "answer": "Falher", "accept": []}
+          ]
+        },
+        {
+          "name": "PRAIRIE TALK",
+          "note": "Words and sayings from the prairies",
+          "tags": ["language", "prairie"],
+          "clues": [
+            {"value": 400, "text": "A Manitoba \"social\" is a fundraising dance with silent auctions and rye bread, usually held to pay for this event", "answer": "a wedding", "accept": ["wedding", "the wedding"]},
+            {"value": 800, "text": "Pronounced \"slew\", a prairie slough is one of these shallow bodies of water", "answer": "a pond", "accept": ["pond", "marsh", "a marsh", "wetland", "a wetland", "pothole", "a pothole", "a lake"]},
+            {"value": 1200, "text": "Calgary calls its big roads, like Deerfoot and Crowchild, by this word instead of highway or expressway", "answer": "trail", "accept": ["trails", "a trail"]},
+            {"value": 1600, "text": "In Winnipeg a \"jam buster\" is this kind of pastry", "answer": "a jelly doughnut", "accept": ["jelly doughnut", "jelly donut", "jam doughnut", "jam donut", "doughnut", "donut"]},
+            {"value": 2000, "text": "The prairie word coulee, for a steep ravine, comes from this language's word for \"flowed\"", "answer": "French", "accept": ["Canadian French"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "PRAIRIE GEOGRAPHY",
+    "text": "At 3,747 metres, this peak on the Alberta–British Columbia border in Jasper National Park is the highest point in Alberta",
+    "answer": "Mount Columbia",
+    "accept": ["Columbia", "Mt. Columbia", "Mt Columbia"]
+  }
+}
