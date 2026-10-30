@@ -1,0 +1,684 @@
+{
+  "id": "geography-01",
+  "title": "Geography #1",
+  "pack": "Geography",
+  "difficulty": "normal",
+  "tags": [
+    "geography",
+    "nature",
+    "canada",
+    "culture",
+    "wordplay",
+    "language",
+    "history",
+    "sports"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "DESERTS",
+          "tags": [
+            "geography",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The world's largest hot desert, it stretches across North Africa from the Atlantic to the Red Sea",
+              "answer": "the Sahara",
+              "accept": [
+                "Sahara",
+                "Sahara Desert"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Dust storms that reach Beijing blow in from this desert of Mongolia and northern China",
+              "answer": "the Gobi",
+              "accept": [
+                "Gobi",
+                "Gobi Desert"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Death Valley, the hottest and lowest place in North America, lies in this desert of California and Nevada",
+              "answer": "the Mojave",
+              "accept": [
+                "Mojave",
+                "Mojave Desert"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Some weather stations in this Chilean desert, the driest non-polar place on Earth, have never recorded rain",
+              "answer": "the Atacama",
+              "accept": [
+                "Atacama",
+                "Atacama Desert"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Running along Africa's southwest coast, this desert is said to mean \"vast place\" and gives its name to the country it lies in",
+              "answer": "the Namib",
+              "accept": [
+                "Namib",
+                "Namib Desert"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CAPITAL IDEAS",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Egypt's capital, on the Nile, is the largest city in the Arab world",
+              "answer": "Cairo",
+              "accept": [
+                "Cairo, Egypt",
+                "Kairo"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Australia's capital, a planned city chosen as a compromise between Sydney and Melbourne",
+              "answer": "Canberra",
+              "accept": [
+                "Canberra, Australia",
+                "Canbera"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Brazil's purpose-built capital, inaugurated in 1960 and laid out in the shape of an airplane",
+              "answer": "Brasília",
+              "accept": [
+                "Brasilia"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "At about 3,600 metres above sea level, Bolivia's seat of government is the highest capital city in the world",
+              "answer": "La Paz",
+              "accept": [
+                "La Paz, Bolivia",
+                "Lapaz"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Myanmar's government moved out of Yangon in 2005 to this newly built capital",
+              "answer": "Naypyidaw",
+              "accept": [
+                "Nay Pyi Taw",
+                "Naypyitaw"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "COAST TO COAST TO COAST",
+          "tags": [
+            "geography",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Canada's smallest province, joined to the mainland by the Confederation Bridge",
+              "answer": "Prince Edward Island",
+              "accept": [
+                "PEI",
+                "P.E.I."
+              ]
+            },
+            {
+              "value": 400,
+              "text": "The Bay of Fundy, between New Brunswick and Nova Scotia, has the highest of these in the world",
+              "answer": "tides",
+              "accept": [
+                "tide",
+                "the tides",
+                "tidal range"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Cape Spear, the easternmost point in Canada, is in this province",
+              "answer": "Newfoundland and Labrador",
+              "accept": [
+                "Newfoundland",
+                "Newfoundland & Labrador"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Formerly the Queen Charlotte Islands, this archipelago off British Columbia was officially renamed in 2010",
+              "answer": "Haida Gwaii",
+              "accept": [
+                "Haida Gwai"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Canada's third-largest island, it is home to Alert, the northernmost permanently inhabited place on Earth",
+              "answer": "Ellesmere Island",
+              "accept": [
+                "Ellesmere"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "INLAND WATERS",
+          "tags": [
+            "geography",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Shared by Ontario, Michigan, Wisconsin and Minnesota, it is the largest of the Great Lakes by surface area",
+              "answer": "Lake Superior",
+              "accept": [
+                "Superior"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "The lowest point on land, this salt lake between Israel and Jordan lets swimmers float with no effort",
+              "answer": "the Dead Sea",
+              "accept": [
+                "Dead Sea"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Though called a sea, this body of water between Russia, Iran and Kazakhstan is the world's largest lake",
+              "answer": "the Caspian Sea",
+              "accept": [
+                "Caspian Sea",
+                "Caspian"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The world's deepest lake, in Siberia, holds about a fifth of the planet's unfrozen fresh water",
+              "answer": "Lake Baikal",
+              "accept": [
+                "Baikal"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 1000,
+              "text": "Straddling Peru and Bolivia, it is often called the highest navigable lake in the world",
+              "answer": "Lake Titicaca",
+              "accept": [
+                "Titicaca"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FLAGS OF THE WORLD",
+          "tags": [
+            "geography",
+            "culture"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This country's flag is a red disc on a white field, representing the rising sun",
+              "answer": "Japan",
+              "accept": [
+                "Nippon",
+                "Nihon"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Nepal's flag is the only national flag that is not this shape",
+              "answer": "a rectangle",
+              "accept": [
+                "rectangle",
+                "rectangular",
+                "a quadrilateral"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "The Union Jack sits in the corner of the light-blue flag of this Pacific island nation",
+              "answer": "Fiji",
+              "accept": [
+                "the Fiji Islands",
+                "Fiji Islands"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The flag of this Mediterranean island nation shows a map of the island above two olive branches",
+              "answer": "Cyprus",
+              "accept": [
+                "Republic of Cyprus",
+                "Cypress"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The flag of this landlocked African kingdom shows a shield, two spears and a fighting stick",
+              "answer": "Eswatini",
+              "accept": [
+                "Swaziland"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HIDDEN COUNTRIES",
+          "note": "Every response is a word with the name of a country hiding inside it",
+          "tags": [
+            "wordplay",
+            "language"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Diving underwater with a tank of air on your back",
+              "answer": "scuba",
+              "accept": [
+                "scuba diving"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "A long-eared dog breed that comes in cocker and springer varieties",
+              "answer": "a spaniel",
+              "accept": [
+                "spaniel"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "To read through something casually, or to browse",
+              "answer": "peruse",
+              "accept": [
+                "to peruse",
+                "perusal"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "A love story, or the genre of novel that sells in the millions",
+              "answer": "romance",
+              "accept": [
+                "a romance"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Ill will toward someone; in criminal law it is \"aforethought\"",
+              "answer": "malice",
+              "accept": [
+                "malice aforethought",
+                "malicious"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "RANGE FINDER",
+          "note": "Name the mountain range",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Mont Blanc is the highest peak of this range shared by France, Italy, Switzerland and others",
+              "answer": "the Alps",
+              "accept": [
+                "Alps"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This Russian range, running from the Arctic to Kazakhstan, is the traditional boundary between Europe and Asia",
+              "answer": "the Urals",
+              "accept": [
+                "Urals",
+                "Ural Mountains",
+                "the Ural Mountains"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "K2 and three other peaks over 8,000 metres rise in this range on the Pakistan–China border",
+              "answer": "the Karakoram",
+              "accept": [
+                "Karakoram",
+                "Karakorum"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Running through Morocco, Algeria and Tunisia, this range is named for a Titan of Greek myth",
+              "answer": "the Atlas Mountains",
+              "accept": [
+                "Atlas",
+                "the Atlas"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Ben Nevis, the highest peak in the British Isles, stands in this range of the Scottish Highlands",
+              "answer": "the Grampians",
+              "accept": [
+                "Grampians",
+                "Grampian Mountains",
+                "the Grampian Mountains"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "LANDLOCKED",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The world's largest landlocked country stretches from the Caspian Sea to China",
+              "answer": "Kazakhstan",
+              "accept": [
+                "Kazakstan",
+                "Kazahkstan"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This tiny Alpine principality between Switzerland and Austria is one of only two doubly landlocked countries",
+              "answer": "Liechtenstein",
+              "accept": [
+                "Lichtenstein",
+                "Liechenstein"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Completely surrounded by South Africa, this mountainous kingdom is nicknamed \"the Kingdom in the Sky\"",
+              "answer": "Lesotho",
+              "accept": [
+                "the Kingdom of Lesotho",
+                "Lesoto"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This South American country lost its coastline to Chile in the 1880s but still keeps a navy on Lake Titicaca",
+              "answer": "Bolivia",
+              "accept": [
+                "Republic of Bolivia",
+                "Bolívia"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Along with Liechtenstein, this Central Asian country is the only other country surrounded entirely by landlocked countries",
+              "answer": "Uzbekistan",
+              "accept": [
+                "Uzbekhistan",
+                "Republic of Uzbekistan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DOWN UNDER",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Australia's most populous city, famous for its harbour bridge and opera house",
+              "answer": "Sydney",
+              "accept": [
+                "Sydney, Australia",
+                "Sidney"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This giant sandstone rock in Australia's Northern Territory was long known as Ayers Rock",
+              "answer": "Uluru",
+              "accept": [
+                "Ayers Rock"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "New Zealand's capital, at the southern tip of the North Island",
+              "answer": "Wellington",
+              "accept": [
+                "Wellington, New Zealand",
+                "Welington"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Australia's island state, separated from the mainland by the Bass Strait",
+              "answer": "Tasmania",
+              "accept": [
+                "Tassie",
+                "Tasmania, Australia"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "New Zealand's largest lake fills a volcanic caldera and is the source of the Waikato River",
+              "answer": "Lake Taupō",
+              "accept": [
+                "Taupo",
+                "Lake Taupo",
+                "Taupō"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CANADIAN RIVERS & FALLS",
+          "tags": [
+            "geography",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "These falls on the river between Ontario and New York state draw millions of tourists a year",
+              "answer": "Niagara Falls",
+              "accept": [
+                "Niagara",
+                "the Niagara Falls"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Montreal and Quebec City sit on this river, which carries the Great Lakes to the Atlantic",
+              "answer": "the St. Lawrence River",
+              "accept": [
+                "St. Lawrence",
+                "Saint Lawrence",
+                "St Lawrence River"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Rising in the Rockies and reaching the sea at Vancouver, it is the longest river entirely within British Columbia",
+              "answer": "the Fraser River",
+              "accept": [
+                "Fraser",
+                "the Fraser"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Virginia Falls, nearly twice the height of Niagara, is on this river in the Northwest Territories' Nahanni National Park Reserve",
+              "answer": "the South Nahanni River",
+              "accept": [
+                "Nahanni",
+                "the Nahanni",
+                "South Nahanni"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 2000,
+              "text": "This river meets the Red River at The Forks in downtown Winnipeg",
+              "answer": "the Assiniboine River",
+              "accept": [
+                "Assiniboine",
+                "the Assiniboine"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FORMERLY KNOWN AS",
+          "note": "We give a place's old name; you give the name it goes by today",
+          "tags": [
+            "geography",
+            "history"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Constantinople",
+              "answer": "Istanbul",
+              "accept": [
+                "Istanbul, Turkey",
+                "Instanbul"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Bombay",
+              "answer": "Mumbai",
+              "accept": [
+                "Mumbai, India",
+                "Mumbay"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Rhodesia",
+              "answer": "Zimbabwe",
+              "accept": [
+                "Republic of Zimbabwe",
+                "Zimbabway"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Saigon",
+              "answer": "Ho Chi Minh City",
+              "accept": [
+                "Ho Chi Minh"
+              ],
+              "strict": true
+            },
+            {
+              "value": 2000,
+              "text": "Upper Volta",
+              "answer": "Burkina Faso",
+              "accept": [
+                "Burkina"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "HOME TURF",
+          "note": "Name the city from its sports teams",
+          "tags": [
+            "sports",
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The Lakers and the Dodgers",
+              "answer": "Los Angeles",
+              "accept": [
+                "LA",
+                "L.A."
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The Steelers, the Penguins and the Pirates, all in black and gold",
+              "answer": "Pittsburgh",
+              "accept": [
+                "Pittsburg",
+                "Pittsburgh, Pennsylvania"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Real and Atlético, bitter rivals in a European capital",
+              "answer": "Madrid",
+              "accept": [
+                "Madrid, Spain",
+                "Madríd"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Celtic and Rangers, who meet in the Old Firm derby",
+              "answer": "Glasgow",
+              "accept": [
+                "Glasgow, Scotland",
+                "Glasgo"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Boca Juniors and River Plate, whose Superclásico is played in a South American capital",
+              "answer": "Buenos Aires",
+              "accept": [
+                "Buenos Aires, Argentina",
+                "Buenos Aries",
+                "BA"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "WORLD GEOGRAPHY",
+    "text": "Because both the equator and the 180th meridian pass through it, this Pacific island nation is the only country with territory in all four hemispheres",
+    "answer": "Kiribati",
+    "accept": [
+      "Republic of Kiribati"
+    ]
+  }
+}

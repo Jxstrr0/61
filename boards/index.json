@@ -263,6 +263,22 @@
         "language",
         "music"
       ]
+    },
+    {
+      "id": "geography-01",
+      "title": "Geography #1",
+      "pack": "Geography",
+      "difficulty": "normal",
+      "tags": [
+        "geography",
+        "nature",
+        "canada",
+        "culture",
+        "wordplay",
+        "language",
+        "history",
+        "sports"
+      ]
     }
   ]
 }
