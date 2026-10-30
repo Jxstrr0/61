@@ -51,10 +51,13 @@ Then tell it the board's `id` (lowercase slug, which is also the file name),
 7. Commit the board on its own, separate from code changes, so content
    review is easy. Boards are licensed CC BY-NC 4.0 (see LICENSE.md).
 
-## Packs for v1
+## Packs in v1.0
 
-- General #1–#3 (normal)
-- Sports (one board)
-- Prairie (one board)
+21 boards: General #1–#9 (#6 easy, #7 and #9 hard), Sports #1–#2, Prairie
+#1–#2, and one board each of Science, Screen, History, Music, Words,
+Geography, Nature and Food & Drink (easy).
 
-Later: packs by theme (Science, Movies, History, Markets) and difficulty tiers.
+When adding a board, also check it against every existing board for
+repeated answers and repeated category names, not just within itself: a
+player who owns the library should not meet the same clue twice. A short
+script that prints shared answers per pair of boards does the job.
