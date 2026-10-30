@@ -15,9 +15,9 @@
 
   <!-- All paths are relative (./) on purpose: the site lives under
        /61/ on GitHub Pages and may move to a custom domain later. -->
-  <link rel="stylesheet" href="./styles/tokens.css?v=1">
-  <link rel="stylesheet" href="./styles/app.css?v=1">
-  <script type="module" src="./src/main.js?v=1"></script>
+  <link rel="stylesheet" href="./styles/tokens.css?v=2">
+  <link rel="stylesheet" href="./styles/app.css?v=2">
+  <script type="module" src="./src/main.js?v=2"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -35,18 +35,34 @@
         <p class="home__tagline">Three podiums. Two boards. One wagered final.</p>
 
         <nav class="home__menu" aria-label="Main menu">
-          <!-- Buttons are wired up in phase 4 (Quick Play) and phase 6
-               (Library, Practice, Stats). Until then they are disabled. -->
-          <button class="btn btn--primary" type="button" disabled>Quick Play</button>
+          <!-- Library, Practice and Stats are wired up in later phases. -->
+          <button class="btn btn--primary" type="button" id="quick-play" disabled>Quick Play</button>
           <button class="btn" type="button" disabled>Library</button>
           <button class="btn" type="button" disabled>Practice</button>
           <button class="btn" type="button" disabled>Stats</button>
         </nav>
-        <p class="home__note">Under construction. The game is being built in phases; this page is phase 1 of 8.</p>
+        <p class="home__note" id="home-note">Quick Play starts a random board against two Normal opponents. Phone: tap the clue to buzz. Desktop: press Space.</p>
       </div>
       <footer class="home__footer">
         <span class="eyebrow">A Longlight Interactive game</span>
       </footer>
+    </section>
+
+    <section class="screen screen--game" data-screen="game" hidden>
+      <header class="game__top">
+        <a class="game__home" href="#home" aria-label="Home">61</a>
+        <span class="game__title" id="game-title"></span>
+      </header>
+      <!-- The board: six category headers over five rows of values (ui/board.js) -->
+      <div class="board" id="board" role="grid"></div>
+      <!-- The clue card covers the board while a clue is in play (ui/clue.js) -->
+      <div class="clue" id="clue" hidden></div>
+      <!-- Podiums along the bottom: you in the middle (ui/podiums.js) -->
+      <div class="podiums" id="podiums"></div>
+      <!-- Round transitions and the intro -->
+      <div class="band" id="band" hidden></div>
+      <!-- Full category name and note, on tapping a header -->
+      <div class="pop" id="category-pop" hidden></div>
     </section>
 
     <section class="screen" data-screen="about" hidden>
