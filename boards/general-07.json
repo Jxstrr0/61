@@ -1,0 +1,163 @@
+{
+  "id": "general-07",
+  "title": "General #7",
+  "pack": "General",
+  "difficulty": "hard",
+  "tags": ["history", "science", "geography", "music", "canada", "literature", "wordplay", "art", "sports", "language"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "ANTIQUITY",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "Buried in ash when Vesuvius erupted in AD 79, this Roman town lay forgotten until excavations began in 1748", "answer": "Pompeii", "accept": ["Pompei"] },
+            { "value": 400, "text": "The Rosetta Stone carries the same decree in Greek, in Demotic and in this picture script", "answer": "hieroglyphics", "accept": ["hieroglyphs", "Egyptian hieroglyphs", "hieroglyphic"] },
+            { "value": 600, "text": "Rome's destruction of Carthage in 146 BC ended the third and last of these wars", "answer": "the Punic Wars", "accept": ["Punic Wars", "Punic", "the Punic War", "Third Punic War"] },
+            { "value": 800, "text": "Called the \"father of history\", this Greek from Halicarnassus wrote the first great account of the wars between Greece and Persia", "answer": "Herodotus", "accept": [] },
+            { "value": 1000, "text": "This Persian king's invasion of Greece in 480 BC was met at Thermopylae and defeated at sea off Salamis", "answer": "Xerxes", "accept": ["Xerxes I", "Xerxes the Great"] }
+          ]
+        },
+        {
+          "name": "THE NIGHT SKY",
+          "tags": ["science"],
+          "clues": [
+            { "value": 200, "text": "The brightest star in the night sky, it shines in Canis Major and is nicknamed the Dog Star", "answer": "Sirius", "accept": ["the Dog Star", "Dog Star"] },
+            { "value": 400, "text": "This planet spins backwards so slowly that its day is longer than its year", "answer": "Venus", "accept": [] },
+            { "value": 600, "text": "Pluto's largest moon, discovered in 1978, is named for the ferryman who rowed the dead across the Styx", "answer": "Charon", "accept": [] },
+            { "value": 800, "text": "The Andromeda Galaxy is also called M31, number 31 in the catalogue of this 18th-century French astronomer", "answer": "Messier", "accept": ["Charles Messier", "the Messier catalogue"] },
+            { "value": 1000, "text": "Named for an Italian-born astronomer, this dark gap separates Saturn's A and B rings", "answer": "the Cassini Division", "accept": ["Cassini Division", "Cassini", "Cassini's Division", "Cassini gap"] }
+          ]
+        },
+        {
+          "name": "ISLANDS",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 200, "text": "The world's largest island is a self-governing territory of this European kingdom", "answer": "Denmark", "accept": [] },
+            { "value": 400, "text": "Napoleon was born in Ajaccio on this Mediterranean island, which belongs to France", "answer": "Corsica", "accept": ["Corse"] },
+            { "value": 600, "text": "The island of Borneo is split between Indonesia, Malaysia and this small, oil-rich sultanate", "answer": "Brunei", "accept": ["Brunei Darussalam"] },
+            { "value": 800, "text": "Canada's largest island, and the fifth largest in the world, lies in Nunavut", "answer": "Baffin Island", "accept": ["Baffin"] },
+            { "value": 1000, "text": "Robert Louis Stevenson spent his last years on the island of Upolu and died there in 1894, in this Pacific country", "answer": "Samoa", "accept": ["Western Samoa"] }
+          ]
+        },
+        {
+          "name": "NAME THAT COMPOSER",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "Almost totally deaf, he still wrote his Ninth Symphony and its \"Ode to Joy\" finale", "answer": "Ludwig van Beethoven", "accept": ["Beethoven"] },
+            { "value": 400, "text": "\"The Four Seasons\", a set of four violin concertos, was written by this red-haired Venetian priest", "answer": "Antonio Vivaldi", "accept": ["Vivaldi"] },
+            { "value": 600, "text": "\"In the Hall of the Mountain King\" comes from this Norwegian's music for the play \"Peer Gynt\"", "answer": "Edvard Grieg", "accept": ["Grieg"] },
+            { "value": 800, "text": "This Czech wrote his Symphony No. 9, \"From the New World\", while living in the United States in 1893", "answer": "Antonín Dvořák", "accept": ["Dvorak", "Antonin Dvorak", "Dvořák"] },
+            { "value": 1000, "text": "This Hungarian's \"Concerto for Orchestra\" premiered in Boston in 1944, a year before he died in New York", "answer": "Béla Bartók", "accept": ["Bartok", "Bela Bartok", "Bartók"] }
+          ]
+        },
+        {
+          "name": "CANLIT",
+          "note": "Canadian books and the people who wrote them",
+          "tags": ["canada", "literature"],
+          "clues": [
+            { "value": 200, "text": "Margaret Atwood's 1985 novel set in the Republic of Gilead, where Offred is a handmaid", "answer": "The Handmaid's Tale", "accept": ["Handmaid's Tale", "The Handmaids Tale"] },
+            { "value": 400, "text": "Yann Martel's novel about a boy and a Bengal tiger adrift in a lifeboat won the 2002 Booker Prize", "answer": "Life of Pi", "accept": [] },
+            { "value": 600, "text": "Farley Mowat's 1963 book about living among wolves in the Keewatin barrens", "answer": "Never Cry Wolf", "accept": [] },
+            { "value": 800, "text": "Born in Neepawa, Manitoba, she wrote \"The Stone Angel\", narrated by 90-year-old Hagar Shipley", "answer": "Margaret Laurence", "accept": ["Laurence"], "dailyDouble": true },
+            { "value": 1000, "text": "Mordecai Richler's 1959 novel about a hustling young man from Montreal's St. Urbain Street is \"The Apprenticeship of\" him", "answer": "Duddy Kravitz", "accept": ["The Apprenticeship of Duddy Kravitz", "Duddy"], "strict": true }
+          ]
+        },
+        {
+          "name": "ANIMALS IN HIDING",
+          "note": "Every response has the name of an animal hiding inside it",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 200, "text": "This caped Gotham City crime fighter works with a sidekick named Robin", "answer": "Batman", "accept": [] },
+            { "value": 400, "text": "The capital of Russia", "answer": "Moscow", "accept": [] },
+            { "value": 600, "text": "King Arthur's legendary court, and the title of a 1960 Lerner and Loewe musical", "answer": "Camelot", "accept": [] },
+            { "value": 800, "text": "A person made to take the blame for others; in the Book of Leviticus it was literally an animal sent into the wilderness", "answer": "a scapegoat", "accept": ["scapegoat"] },
+            { "value": 1000, "text": "This Belgian port on the Scheldt is the diamond-trading capital of the world", "answer": "Antwerp", "accept": ["Antwerpen", "Anvers"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "THIS LAND'S PAST",
+          "note": "Moments from Canadian history",
+          "tags": ["canada", "history"],
+          "clues": [
+            { "value": 400, "text": "The 1867 act of the British Parliament that created the Dominion of Canada", "answer": "the British North America Act", "accept": ["British North America Act", "BNA Act", "the BNA Act", "Constitution Act, 1867", "Constitution Act 1867"] },
+            { "value": 800, "text": "The 1970 kidnappings of James Cross and Pierre Laporte by the FLQ set off this crisis, the first peacetime use of the War Measures Act", "answer": "the October Crisis", "accept": ["October Crisis", "the FLQ Crisis", "FLQ Crisis"] },
+            { "value": 1200, "text": "Canada's first French-Canadian prime minister, he held office from 1896 to 1911", "answer": "Wilfrid Laurier", "accept": ["Laurier", "Sir Wilfrid Laurier"] },
+            { "value": 1600, "text": "Donald Smith drove the last spike of the Canadian Pacific Railway in 1885 at this spot in British Columbia", "answer": "Craigellachie", "accept": [] },
+            { "value": 2000, "text": "This Patriote leader of the 1837 rebellion in Lower Canada fled to the United States and later France", "answer": "Louis-Joseph Papineau", "accept": ["Papineau", "Louis Joseph Papineau"] }
+          ]
+        },
+        {
+          "name": "PHYSICS",
+          "tags": ["science"],
+          "clues": [
+            { "value": 400, "text": "The SI unit of force is named for the Englishman who set out the three laws of motion", "answer": "the newton", "accept": ["newton", "newtons"] },
+            { "value": 800, "text": "The SI unit of frequency, equal to one cycle per second", "answer": "the hertz", "accept": ["hertz", "Hz"] },
+            { "value": 1200, "text": "This German's uncertainty principle says you cannot know a particle's exact position and momentum at the same time", "answer": "Werner Heisenberg", "accept": ["Heisenberg"] },
+            { "value": 1600, "text": "Predicted in 1964 and finally detected at CERN in 2012, the boson nicknamed the \"God particle\" is named for this British physicist", "answer": "Peter Higgs", "accept": ["Higgs", "the Higgs boson", "Higgs boson"], "dailyDouble": true },
+            { "value": 2000, "text": "This Scottish physicist's four equations of the 1860s united electricity, magnetism and light", "answer": "James Clerk Maxwell", "accept": ["Maxwell", "Clerk Maxwell"] }
+          ]
+        },
+        {
+          "name": "STRAITS",
+          "tags": ["geography"],
+          "clues": [
+            { "value": 400, "text": "This strait separates Spain from Morocco at the mouth of the Mediterranean", "answer": "the Strait of Gibraltar", "accept": ["Strait of Gibraltar", "Gibraltar"] },
+            { "value": 800, "text": "The strait between Alaska and Russia is named for a Danish explorer who sailed for the Russian navy", "answer": "the Bering Strait", "accept": ["Bering Strait", "Bering"] },
+            { "value": 1200, "text": "Tankers leaving the Persian Gulf squeeze through this strait between Iran and Oman", "answer": "the Strait of Hormuz", "accept": ["Strait of Hormuz", "Hormuz"] },
+            { "value": 1600, "text": "One of the world's busiest shipping lanes, this strait runs between Sumatra and the Malay Peninsula", "answer": "the Strait of Malacca", "accept": ["Strait of Malacca", "Malacca", "Malacca Strait"] },
+            { "value": 2000, "text": "The whirlpool Charybdis and the monster Scylla of Greek myth were placed in this strait between Sicily and mainland Italy", "answer": "the Strait of Messina", "accept": ["Strait of Messina", "Messina"] }
+          ]
+        },
+        {
+          "name": "ART HISTORY",
+          "tags": ["art"],
+          "clues": [
+            { "value": 400, "text": "This Dutch post-impressionist painted \"The Starry Night\" in 1889 while a patient at the asylum in Saint-Rémy", "answer": "Vincent van Gogh", "accept": ["van Gogh", "Vincent Van Gogh", "Van Gogh"] },
+            { "value": 800, "text": "Michelangelo painted the ceiling of this Vatican chapel between 1508 and 1512", "answer": "the Sistine Chapel", "accept": ["Sistine Chapel", "Sistine"] },
+            { "value": 1200, "text": "This Norwegian painted four versions of \"The Scream\" between 1893 and 1910", "answer": "Edvard Munch", "accept": ["Munch"], "dailyDouble": true },
+            { "value": 1600, "text": "\"Girl with a Pearl Earring\", by this Delft master, hangs in the Mauritshuis in The Hague", "answer": "Johannes Vermeer", "accept": ["Vermeer", "Jan Vermeer"] },
+            { "value": 2000, "text": "\"The Garden of Earthly Delights\", a triptych by this early Netherlandish painter, hangs in the Prado", "answer": "Hieronymus Bosch", "accept": ["Bosch", "Jheronimus Bosch"] }
+          ]
+        },
+        {
+          "name": "SPORTING FIRSTS",
+          "tags": ["sports"],
+          "clues": [
+            { "value": 400, "text": "In 1954 this English medical student became the first person to run a mile in under four minutes", "answer": "Roger Bannister", "accept": ["Bannister"] },
+            { "value": 800, "text": "In 1953 Edmund Hillary and this Sherpa were the first climbers to stand on the summit of Everest", "answer": "Tenzing Norgay", "accept": ["Tenzing", "Norgay", "Sherpa Tenzing"] },
+            { "value": 1200, "text": "In 1958 this winger from Fredericton suited up for Boston and became the first Black player in the NHL", "answer": "Willie O'Ree", "accept": ["O'Ree", "Willie ORee", "ORee"] },
+            { "value": 1600, "text": "In 1926 this American became the first woman to swim the English Channel, beating the men's record by nearly two hours", "answer": "Gertrude Ederle", "accept": ["Ederle", "Trudy Ederle"] },
+            { "value": 2000, "text": "Driving an Alfa Romeo, this Italian won the first Formula One world championship in 1950", "answer": "Giuseppe Farina", "accept": ["Farina", "Nino Farina"] }
+          ]
+        },
+        {
+          "name": "WORD ORIGINS",
+          "note": "Each clue gives a word's roots; name the English word",
+          "tags": ["language", "wordplay"],
+          "clues": [
+            { "value": 400, "text": "From the Greek for \"rule by the people\"", "answer": "democracy", "accept": [] },
+            { "value": 800, "text": "From the Latin for \"I shall please\", it is the inert pill given to the control group in a drug trial", "answer": "a placebo", "accept": ["placebo"] },
+            { "value": 1200, "text": "From a Czech word for forced labour, it was coined in Karel Čapek's 1920 play \"R.U.R.\"", "answer": "robot", "accept": ["robots"] },
+            { "value": 1600, "text": "From the Greek for \"marketplace\" plus \"fear\", it is a dread of open or crowded places", "answer": "agoraphobia", "accept": [] },
+            { "value": 2000, "text": "From a Malay word for a frenzied attack, you \"run\" this when you go wild", "answer": "amok", "accept": ["amuck", "run amok", "run amuck"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "THE AGE OF EXPLORATION",
+    "text": "After Magellan was killed in the Philippines in 1521, this Basque navigator took command and brought the Victoria home to Spain, completing the first voyage around the world",
+    "answer": "Juan Sebastián Elcano",
+    "accept": ["Elcano", "Juan Sebastian Elcano", "del Cano", "Juan Sebastián del Cano", "Juan Sebastian del Cano"]
+  }
+}

@@ -187,6 +187,24 @@
         "sports",
         "language"
       ]
+    },
+    {
+      "id": "general-07",
+      "title": "General #7",
+      "pack": "General",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "geography",
+        "music",
+        "canada",
+        "literature",
+        "wordplay",
+        "art",
+        "sports",
+        "language"
+      ]
     }
   ]
 }
