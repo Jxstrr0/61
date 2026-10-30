@@ -1,0 +1,163 @@
+{
+  "id": "music-01",
+  "title": "Music #1",
+  "pack": "Music",
+  "difficulty": "normal",
+  "tags": ["music", "theatre", "canada"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "CLASSICAL COMPOSERS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "This German composer kept writing, including his Ninth Symphony, after losing his hearing", "answer": "Beethoven", "accept": ["Ludwig van Beethoven"] },
+            { "value": 400, "text": "This Austrian child prodigy wrote the operas \"The Magic Flute\" and \"The Marriage of Figaro\"", "answer": "Mozart", "accept": ["Wolfgang Amadeus Mozart"] },
+            { "value": 600, "text": "This German Baroque composer wrote the \"Brandenburg Concertos\" and \"The Well-Tempered Clavier\"", "answer": "Bach", "accept": ["Johann Sebastian Bach", "J.S. Bach", "JS Bach"] },
+            { "value": 800, "text": "This Russian composer wrote \"The Nutcracker\", \"Swan Lake\" and the cannon-firing \"1812 Overture\"", "answer": "Tchaikovsky", "accept": ["Pyotr Ilyich Tchaikovsky", "Tchaikovski", "Chaikovsky"] },
+            { "value": 1000, "text": "Nicknamed \"the Red Priest\" for his hair and his holy orders, this Venetian wrote \"The Four Seasons\"", "answer": "Vivaldi", "accept": ["Antonio Vivaldi"] }
+          ]
+        },
+        {
+          "name": "ROCK BANDS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "John, Paul, George and Ringo made up this Liverpool band", "answer": "The Beatles", "accept": ["Beatles", "Fab Four", "The Fab Four"] },
+            { "value": 400, "text": "Robert Plant and Jimmy Page fronted this band, whose untitled fourth album includes \"Stairway to Heaven\"", "answer": "Led Zeppelin", "accept": ["Zeppelin", "Zep", "Led Zep"] },
+            { "value": 600, "text": "This Australian band's 1980 album \"Back in Black\" was a tribute to its late singer Bon Scott", "answer": "AC/DC", "accept": ["ACDC", "AC DC"] },
+            { "value": 800, "text": "Jim Morrison sang for this Los Angeles band, named after a book title by Aldous Huxley", "answer": "The Doors", "accept": ["Doors"] },
+            { "value": 1000, "text": "Eddie Vedder fronts this Seattle band whose 1991 debut album was called \"Ten\"", "answer": "Pearl Jam", "accept": [] }
+          ]
+        },
+        {
+          "name": "POP STARS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "This \"Queen of Pop\" had 1980s hits with \"Like a Virgin\" and \"Material Girl\"", "answer": "Madonna", "accept": ["Madonna Ciccone"] },
+            { "value": 400, "text": "His 1982 album \"Thriller\" is one of the best-selling albums ever made", "answer": "Michael Jackson", "accept": ["MJ", "Michael Joseph Jackson"], "strict": true },
+            { "value": 600, "text": "Born Stefani Germanotta, this singer had hits with \"Poker Face\" and \"Bad Romance\"", "answer": "Lady Gaga", "accept": ["Gaga", "Stefani Germanotta"] },
+            { "value": 800, "text": "Her 1992 cover of Dolly Parton's \"I Will Always Love You\" came from the film \"The Bodyguard\"", "answer": "Whitney Houston", "accept": ["Houston", "Whitney"] },
+            { "value": 1000, "text": "This singer from Barbados had hits with \"Umbrella\" and \"Diamonds\"", "answer": "Rihanna", "accept": ["Robyn Fenty", "Robyn Rihanna Fenty"] }
+          ]
+        },
+        {
+          "name": "COUNTRY ROADS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "This Tennessee singer wrote \"Jolene\" and \"9 to 5\" and founded the Dollywood theme park", "answer": "Dolly Parton", "accept": ["Parton", "Dolly"] },
+            { "value": 400, "text": "\"The Man in Black\" recorded a famous 1968 live album inside Folsom Prison", "answer": "Johnny Cash", "accept": ["Cash"] },
+            { "value": 600, "text": "His 1990 album \"No Fences\" includes \"Friends in Low Places\"", "answer": "Garth Brooks", "accept": ["Brooks"] },
+            { "value": 800, "text": "This honky-tonk pioneer sang \"Your Cheatin' Heart\" and \"Hey, Good Lookin'\" before dying at 29 in 1953", "answer": "Hank Williams", "accept": ["Williams", "Hank Williams Sr", "Hank Williams Sr."] },
+            { "value": 1000, "text": "Willie Nelson wrote this one-word song that became a 1961 hit for Patsy Cline", "answer": "Crazy", "accept": [] }
+          ]
+        },
+        {
+          "name": "ALL THAT JAZZ",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "Nicknamed \"Satchmo\", this trumpeter sang \"What a Wonderful World\"", "answer": "Louis Armstrong", "accept": ["Armstrong", "Satchmo", "Pops"] },
+            { "value": 400, "text": "This trumpeter's 1959 album \"Kind of Blue\" featured John Coltrane and Bill Evans", "answer": "Miles Davis", "accept": ["Davis", "Miles"] },
+            { "value": 600, "text": "\"The First Lady of Song\", she recorded whole albums of Cole Porter and Duke Ellington tunes", "answer": "Ella Fitzgerald", "accept": ["Fitzgerald", "Ella"] },
+            { "value": 800, "text": "Billy Strayhorn wrote \"Take the 'A' Train\", the signature tune of this bandleader and pianist", "answer": "Duke Ellington", "accept": ["Ellington", "Duke", "Edward Kennedy Ellington"], "dailyDouble": true },
+            { "value": 1000, "text": "Nicknamed \"Bird\", this alto saxophonist was a founder of bebop", "answer": "Charlie Parker", "accept": ["Parker", "Bird", "Yardbird"] }
+          ]
+        },
+        {
+          "name": "HIP HOP",
+          "tags": ["music"],
+          "clues": [
+            { "value": 200, "text": "This Philadelphia rapper turned actor starred in \"The Fresh Prince of Bel-Air\"", "answer": "Will Smith", "accept": ["Smith", "The Fresh Prince", "Fresh Prince"] },
+            { "value": 400, "text": "Born Marshall Mathers, this Detroit rapper won an Oscar for \"Lose Yourself\" from the film \"8 Mile\"", "answer": "Eminem", "accept": ["Slim Shady", "Marshall Mathers"] },
+            { "value": 600, "text": "This Queens group's 1986 cover of Aerosmith's \"Walk This Way\" put rap on rock radio", "answer": "Run-DMC", "accept": ["Run DMC", "Run D.M.C.", "Run-D.M.C."] },
+            { "value": 800, "text": "Born Shawn Carter, this Brooklyn rapper released \"The Blueprint\" and \"The Black Album\"", "answer": "Jay-Z", "accept": ["Jay Z", "JayZ", "Shawn Carter", "Hova"] },
+            { "value": 1000, "text": "This 1979 single by the Sugarhill Gang was the first rap record to crack the Billboard Top 40", "answer": "Rapper's Delight", "accept": ["Rappers Delight"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "MUSICALS",
+          "tags": ["music", "theatre"],
+          "clues": [
+            { "value": 400, "text": "Leonard Bernstein's musical retells \"Romeo and Juliet\" with two New York gangs, the Jets and the Sharks", "answer": "West Side Story", "accept": [] },
+            { "value": 800, "text": "Andrew Lloyd Webber based this musical on poems by T.S. Eliot; its big song is \"Memory\"", "answer": "Cats", "accept": [] },
+            { "value": 1200, "text": "Jean Valjean is hunted by Inspector Javert in this musical based on a Victor Hugo novel", "answer": "Les Misérables", "accept": ["Les Miserables", "Les Mis", "Les Miz"] },
+            { "value": 1600, "text": "Tevye the milkman sings \"If I Were a Rich Man\" in this 1964 musical set in a Russian village", "answer": "Fiddler on the Roof", "accept": ["Fiddler"] },
+            { "value": 2000, "text": "Stephen Sondheim's musical about a murderous barber of Fleet Street includes \"The Worst Pies in London\"", "answer": "Sweeney Todd", "accept": ["Sweeney Todd: The Demon Barber of Fleet Street", "Sweeny Todd"] }
+          ]
+        },
+        {
+          "name": "INSTRUMENTS",
+          "tags": ["music"],
+          "clues": [
+            { "value": 400, "text": "In a rock band, this four-stringed instrument plays the low notes", "answer": "bass guitar", "accept": ["bass", "electric bass", "the bass"] },
+            { "value": 800, "text": "This brass instrument changes pitch with a slide instead of valves", "answer": "trombone", "accept": ["the trombone"] },
+            { "value": 1200, "text": "The number of keys, black and white, on a standard modern piano", "answer": "88", "accept": ["eighty-eight", "eighty eight"], "strict": true, "dailyDouble": true },
+            { "value": 1600, "text": "The name of this small Hawaiian instrument is often translated as \"jumping flea\"", "answer": "ukulele", "accept": ["uke", "ukelele"] },
+            { "value": 2000, "text": "This double-reed woodwind traditionally plays the A to which the rest of the orchestra tunes", "answer": "oboe", "accept": ["the oboe"] }
+          ]
+        },
+        {
+          "name": "MADE IN CANADA",
+          "note": "Canadian musicians",
+          "tags": ["canada", "music"],
+          "clues": [
+            { "value": 400, "text": "This Quebec-born singer's \"My Heart Will Go On\" was the theme from \"Titanic\"", "answer": "Céline Dion", "accept": ["Celine Dion", "Dion", "Celine"] },
+            { "value": 800, "text": "This Ottawa-born singer's 1995 album \"Jagged Little Pill\" includes \"You Oughta Know\" and \"Ironic\"", "answer": "Alanis Morissette", "accept": ["Morissette", "Alanis", "Morisette"] },
+            { "value": 1200, "text": "\"Summer of '69\" and \"(Everything I Do) I Do It for You\" are hits by this Kingston, Ontario-born rocker", "answer": "Bryan Adams", "accept": ["Adams", "Brian Adams"] },
+            { "value": 1600, "text": "This Montreal poet and songwriter wrote \"Suzanne\" and \"Hallelujah\"", "answer": "Leonard Cohen", "accept": ["Cohen"] },
+            { "value": 2000, "text": "This singer-songwriter from Orillia, Ontario wrote \"The Wreck of the Edmund Fitzgerald\" and \"If You Could Read My Mind\"", "answer": "Gordon Lightfoot", "accept": ["Lightfoot"] }
+          ]
+        },
+        {
+          "name": "NAME THAT TUNE",
+          "note": "A line from the lyrics is given; name the song",
+          "tags": ["music"],
+          "clues": [
+            { "value": 400, "text": "\"Hello darkness, my old friend\"", "answer": "The Sound of Silence", "accept": ["Sound of Silence", "The Sounds of Silence", "Sounds of Silence"] },
+            { "value": 800, "text": "\"Just a small town girl, livin' in a lonely world\"", "answer": "Don't Stop Believin'", "accept": ["Don't Stop Believing", "Dont Stop Believing", "Dont Stop Believin"] },
+            { "value": 1200, "text": "\"I read the news today, oh boy\"", "answer": "A Day in the Life", "accept": ["Day in the Life"] },
+            { "value": 1600, "text": "\"Busted flat in Baton Rouge, waitin' for a train\"", "answer": "Me and Bobby McGee", "accept": ["Bobby McGee", "Me & Bobby McGee"], "dailyDouble": true },
+            { "value": 2000, "text": "\"It's been seven hours and fifteen days since you took your love away\"", "answer": "Nothing Compares 2 U", "accept": ["Nothing Compares to You", "Nothing Compares 2 You"] }
+          ]
+        },
+        {
+          "name": "ALBUM TITLES",
+          "note": "Name the artist from the albums",
+          "tags": ["music"],
+          "clues": [
+            { "value": 400, "text": "\"19\", \"21\" and \"25\", each named for her age when she wrote it", "answer": "Adele", "accept": ["Adele Adkins"] },
+            { "value": 800, "text": "\"Rumours\", the 1977 album with \"Go Your Own Way\" and \"Dreams\"", "answer": "Fleetwood Mac", "accept": ["Fleetwood"] },
+            { "value": 1200, "text": "\"Born to Run\" and \"Born in the U.S.A.\"", "answer": "Bruce Springsteen", "accept": ["Springsteen", "The Boss"] },
+            { "value": 1600, "text": "\"Purple Rain\", the 1984 soundtrack to his own film", "answer": "Prince", "accept": ["Prince Rogers Nelson", "The Artist Formerly Known as Prince"] },
+            { "value": 2000, "text": "\"OK Computer\" and \"Kid A\"", "answer": "Radiohead", "accept": [] }
+          ]
+        },
+        {
+          "name": "ONE-HIT WONDERS",
+          "note": "Acts best remembered for a single song; name the song",
+          "tags": ["music"],
+          "clues": [
+            { "value": 400, "text": "Los del Río's 1990s dance craze, named for a woman", "answer": "Macarena", "accept": ["The Macarena"] },
+            { "value": 800, "text": "Norwegian band a-ha's 1985 hit, with a video that turns a pencil sketch into a live-action man", "answer": "Take On Me", "accept": [] },
+            { "value": 1200, "text": "Right Said Fred's 1991 hit about being too attractive for one's own shirt", "answer": "I'm Too Sexy", "accept": ["Im Too Sexy", "Too Sexy"] },
+            { "value": 1600, "text": "Dexys Midnight Runners' 1982 hit that pleads with a girl by name", "answer": "Come On Eileen", "accept": ["Eileen"] },
+            { "value": 2000, "text": "This 1979 hit by the Buggles was the first video ever played on MTV", "answer": "Video Killed the Radio Star", "accept": [] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "CLASSICAL MUSIC",
+    "text": "Handel's oratorio \"Messiah\" had its premiere in 1742 not in London but in this city across the Irish Sea",
+    "answer": "Dublin",
+    "accept": []
+  }
+}

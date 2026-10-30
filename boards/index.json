@@ -86,6 +86,17 @@
         "music",
         "sports"
       ]
+    },
+    {
+      "id": "music-01",
+      "title": "Music #1",
+      "pack": "Music",
+      "difficulty": "normal",
+      "tags": [
+        "music",
+        "theatre",
+        "canada"
+      ]
     }
   ]
 }
