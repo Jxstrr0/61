@@ -1,0 +1,171 @@
+{
+  "id": "words-01",
+  "title": "Words #1",
+  "pack": "Words",
+  "difficulty": "normal",
+  "tags": ["language", "wordplay", "canada"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "ANAGRAMS",
+          "note": "Rearrange the letters of the word in capitals to get the response",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 200, "text": "Rearrange LISTEN to get this word for making no noise", "answer": "silent", "accept": [] },
+            { "value": 400, "text": "Rearrange EARTH to get this organ that pumps your blood", "answer": "heart", "accept": [] },
+            { "value": 600, "text": "The letters of DORMITORY rearrange into this two-word description of a messy bedroom", "answer": "dirty room", "accept": ["a dirty room"], "strict": true },
+            { "value": 800, "text": "The letters of ASTRONOMER rearrange into this two-word phrase for someone gazing at the night sky", "answer": "moon starer", "accept": ["a moon starer"], "strict": true },
+            { "value": 1000, "text": "The letters of THE EYES rearrange into this two-word phrase for what they do", "answer": "they see", "accept": [], "strict": true }
+          ]
+        },
+        {
+          "name": "SOUNDS THE SAME",
+          "note": "Each clue names a word; the response is its homophone, a word that sounds the same but is spelled differently",
+          "tags": ["wordplay", "language"],
+          "clues": [
+            { "value": 200, "text": "A homophone of \"flour\", it is the blooming part of a plant", "answer": "flower", "accept": [] },
+            { "value": 400, "text": "A homophone of \"stationary\", it is the paper and envelopes you write letters on", "answer": "stationery", "accept": [] },
+            { "value": 600, "text": "A homophone of \"principle\", it is the head of a school", "answer": "principal", "accept": [] },
+            { "value": 800, "text": "A homophone of \"cymbal\", it is a sign or mark that stands for something else", "answer": "symbol", "accept": [] },
+            { "value": 1000, "text": "A homophone of \"colonel\", it is the soft part inside the shell of a nut", "answer": "kernel", "accept": [] }
+          ]
+        },
+        {
+          "name": "BORROWED WORDS",
+          "note": "English words taken from other languages",
+          "tags": ["language"],
+          "clues": [
+            { "value": 200, "text": "This German word meaning \"children's garden\" is a grade in Canadian schools", "answer": "kindergarten", "accept": [] },
+            { "value": 400, "text": "From the French for \"already seen\", the feeling that you have lived through a moment before", "answer": "déjà vu", "accept": ["deja vu", "dejavu"] },
+            { "value": 600, "text": "This Japanese word meaning \"empty orchestra\" is singing along to a recorded backing track", "answer": "karaoke", "accept": ["karaoki"] },
+            { "value": 800, "text": "From Yiddish, this word means shameless nerve or audacity", "answer": "chutzpah", "accept": ["hutzpah", "chutzpa", "hutzpa"], "dailyDouble": true },
+            { "value": 1000, "text": "This German word means taking pleasure in someone else's misfortune", "answer": "schadenfreude", "accept": ["schadenfreud"] }
+          ]
+        },
+        {
+          "name": "IDIOMS",
+          "note": "Fill in the missing word of a common expression",
+          "tags": ["language"],
+          "clues": [
+            { "value": 200, "text": "Something very easy to do is \"a piece of\" this dessert", "answer": "cake", "accept": [] },
+            { "value": 400, "text": "To give away a secret is to spill these", "answer": "the beans", "accept": ["beans"] },
+            { "value": 600, "text": "Someone pursuing a mistaken idea is \"barking up the wrong\" one of these", "answer": "tree", "accept": ["the tree"] },
+            { "value": 800, "text": "When it pours, it is raining these two animals", "answer": "cats and dogs", "accept": ["cats & dogs"], "strict": true },
+            { "value": 1000, "text": "Someone stuck in a bad spot with no way out is \"up the creek without\" one of these", "answer": "a paddle", "accept": ["paddle"] }
+          ]
+        },
+        {
+          "name": "CANADIANISMS",
+          "note": "Words and phrases heard mostly in Canada",
+          "tags": ["canada", "language"],
+          "clues": [
+            { "value": 200, "text": "This one-dollar coin is nicknamed for the bird on its face", "answer": "loonie", "accept": ["loony", "the loonie"] },
+            { "value": 400, "text": "The Canadian word for a knitted winter hat that Americans might call a beanie", "answer": "toque", "accept": ["tuque", "touque"] },
+            { "value": 600, "text": "In Canadian slang, a case of 24 beers is called this, hyphenated", "answer": "two-four", "accept": ["two four", "twofour", "2-4", "24"], "strict": true },
+            { "value": 800, "text": "In much of Canada the electricity bill is called this, after the dams that generate the power", "answer": "hydro", "accept": ["the hydro"] },
+            { "value": 1000, "text": "This old-fashioned Canadian word for a sofa is also the name of a market town in Derbyshire, England", "answer": "chesterfield", "accept": [] }
+          ]
+        },
+        {
+          "name": "PALINDROMES",
+          "note": "Every response reads the same backwards and forwards",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 200, "text": "Twelve o'clock in the daytime", "answer": "noon", "accept": [] },
+            { "value": 400, "text": "A narrow boat paddled with a double-bladed paddle", "answer": "kayak", "accept": [] },
+            { "value": 600, "text": "A system that spots planes and ships with radio waves", "answer": "radar", "accept": [] },
+            { "value": 800, "text": "A principle or belief held firmly, as by a religion or a political party", "answer": "tenet", "accept": [] },
+            { "value": 1000, "text": "The spinning blade assembly on top of a helicopter", "answer": "rotor", "accept": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "HIDDEN ANIMALS",
+          "note": "Every response is a word with an animal's name hidden inside it",
+          "tags": ["wordplay"],
+          "clues": [
+            { "value": 400, "text": "A list of products for sale, often mailed to your home, hides a feline", "answer": "catalogue", "accept": ["catalog"] },
+            { "value": 800, "text": "A substance that gives colour, such as the melanin in skin, hides a farm animal", "answer": "pigment", "accept": [] },
+            { "value": 1200, "text": "A small pointed beard on the chin hides a horned animal", "answer": "goatee", "accept": [] },
+            { "value": 1600, "text": "A set of beliefs laid down by an authority as beyond question hides man's best friend", "answer": "dogma", "accept": [] },
+            { "value": 2000, "text": "An angry or bad-tempered frown hides a bird of the night", "answer": "scowl", "accept": [] }
+          ]
+        },
+        {
+          "name": "PORTMANTEAUS",
+          "note": "Every response is a word blended from two other words",
+          "tags": ["wordplay", "language"],
+          "clues": [
+            { "value": 400, "text": "Breakfast plus lunch", "answer": "brunch", "accept": [] },
+            { "value": 800, "text": "Smoke plus fog", "answer": "smog", "accept": [] },
+            { "value": 1200, "text": "Web plus log, an online journal", "answer": "blog", "accept": ["weblog"], "dailyDouble": true },
+            { "value": 1600, "text": "Spoon plus fork, a piece of camping cutlery", "answer": "spork", "accept": [] },
+            { "value": 2000, "text": "Lewis Carroll blended \"chuckle\" and \"snort\" into this word in \"Through the Looking-Glass\"", "answer": "chortle", "accept": [] }
+          ]
+        },
+        {
+          "name": "SPELLING BEE",
+          "note": "Spell the word described; the spelling must be exact",
+          "tags": ["language"],
+          "clues": [
+            { "value": 400, "text": "A word meaning apart or distinct, often misspelled with an E in the middle instead of an A", "answer": "separate", "accept": [], "strict": true },
+            { "value": 800, "text": "A word meaning essential or required, with one C and two S's", "answer": "necessary", "accept": [], "strict": true },
+            { "value": 1200, "text": "To make someone feel awkward or ashamed, with two R's and two S's", "answer": "embarrass", "accept": [], "strict": true },
+            { "value": 1600, "text": "To provide lodging or make room for, with two C's and two M's", "answer": "accommodate", "accept": [], "strict": true },
+            { "value": 2000, "text": "A repeated pattern of beats in music or poetry, spelled with no A, E, I, O or U", "answer": "rhythm", "accept": [], "strict": true }
+          ]
+        },
+        {
+          "name": "A GROUP EFFORT",
+          "note": "Every response is the collective noun for a group of the animals named",
+          "tags": ["language"],
+          "clues": [
+            { "value": 400, "text": "A group of lions", "answer": "pride", "accept": ["a pride"] },
+            { "value": 800, "text": "A group of fish swimming together", "answer": "school", "accept": ["a school", "shoal", "a shoal"] },
+            { "value": 1200, "text": "A group of geese on the ground", "answer": "gaggle", "accept": ["a gaggle"] },
+            { "value": 1600, "text": "A group of crows, with a grim name", "answer": "murder", "accept": ["a murder"], "dailyDouble": true },
+            { "value": 2000, "text": "A group of owls, named as if they were lawmakers", "answer": "parliament", "accept": ["a parliament"] }
+          ]
+        },
+        {
+          "name": "FEAR ITSELF",
+          "note": "Each clue names a phobia; the response is what it is a fear of",
+          "tags": ["language"],
+          "clues": [
+            { "value": 400, "text": "Arachnophobia", "answer": "spiders", "accept": ["spider"] },
+            { "value": 800, "text": "Acrophobia", "answer": "heights", "accept": ["height", "high places"] },
+            { "value": 1200, "text": "Nyctophobia", "answer": "the dark", "accept": ["dark", "darkness", "night", "the night"] },
+            { "value": 1600, "text": "Triskaidekaphobia", "answer": "the number 13", "accept": ["13", "thirteen", "the number thirteen", "number 13"], "strict": true },
+            { "value": 2000, "text": "Ophidiophobia", "answer": "snakes", "accept": ["snake"] }
+          ]
+        },
+        {
+          "name": "LATIN LESSONS",
+          "note": "Latin phrases still used in English",
+          "tags": ["language"],
+          "clues": [
+            { "value": 400, "text": "Meaning \"and the rest\", it is usually shortened to etc.", "answer": "et cetera", "accept": ["etcetera"] },
+            { "value": 800, "text": "\"Seize the day\"", "answer": "carpe diem", "accept": [] },
+            { "value": 1200, "text": "Meaning \"in good faith\", it describes something genuine or real", "answer": "bona fide", "accept": ["bonafide"] },
+            { "value": 1600, "text": "Julius Caesar's three-word boast meaning \"I came, I saw, I conquered\"", "answer": "veni, vidi, vici", "accept": ["veni vidi vici"], "strict": true },
+            { "value": 2000, "text": "Literally \"you shall have the body\", this legal order requires a prisoner to be brought before a court", "answer": "habeas corpus", "accept": ["habeus corpus"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "WORD ORIGINS",
+    "text": "Sir Thomas More coined this word in 1516 from Greek roots meaning \"no place\" as the title of his book about an ideal island society",
+    "answer": "Utopia",
+    "accept": []
+  }
+}

@@ -97,6 +97,17 @@
         "theatre",
         "canada"
       ]
+    },
+    {
+      "id": "words-01",
+      "title": "Words #1",
+      "pack": "Words",
+      "difficulty": "normal",
+      "tags": [
+        "language",
+        "wordplay",
+        "canada"
+      ]
     }
   ]
 }
