@@ -31,6 +31,17 @@ CHANGELOG.md says which phases are done.
 - The site uses the name Kelbo and the studio name Longlight Interactive only.
   Never put a real name or initials anywhere in the repo.
 
+## Authorship
+
+- Commits: author and committer are `Jxstrr0
+  <322161611+Jxstrr0@users.noreply.github.com>`, and every commit message
+  ends with the `Co-Authored-By: Claude` and `Claude-Session:` lines the
+  session supplies. Never use the account's real email address.
+- Pull requests: opened through the GitHub connector (which acts as Jxstrr0)
+  and keep the "Generated with Claude Code" footer in the description.
+- PR #1 was a one-off exception with no Claude attribution. Don't repeat it
+  unless Kelbo asks again.
+
 ## IP boundaries
 
 Never use the name "Jeopardy!", its logo, the trademarked blue-board look,
