@@ -108,6 +108,19 @@
         "wordplay",
         "canada"
       ]
+    },
+    {
+      "id": "history-01",
+      "title": "History #1",
+      "pack": "History",
+      "difficulty": "normal",
+      "tags": [
+        "history",
+        "geography",
+        "canada",
+        "science",
+        "wordplay"
+      ]
     }
   ]
 }

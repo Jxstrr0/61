@@ -1,0 +1,162 @@
+{
+  "id": "history-01",
+  "title": "History #1",
+  "pack": "History",
+  "difficulty": "normal",
+  "tags": ["history", "geography", "canada", "science", "wordplay"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "THE ANCIENT WORLD",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "The Great Pyramid of Giza was built as a pharaoh's tomb in this country", "answer": "Egypt", "accept": [] },
+            { "value": 400, "text": "The citizens of this Greek city-state invented democracy in the 5th century BC", "answer": "Athens", "accept": [] },
+            { "value": 600, "text": "Julius Caesar was assassinated in this city on the Ides of March, 44 BC", "answer": "Rome", "accept": [] },
+            { "value": 800, "text": "This volcano buried the town of Pompeii in AD 79", "answer": "Mount Vesuvius", "accept": ["Vesuvius"] },
+            { "value": 1000, "text": "This king of Babylon is remembered for one of the earliest written law codes, from around 1750 BC", "answer": "Hammurabi", "accept": [] }
+          ]
+        },
+        {
+          "name": "EXPLORERS",
+          "tags": ["history", "geography"],
+          "clues": [
+            { "value": 200, "text": "This Portuguese-born captain's expedition made the first voyage around the world, though he himself was killed in the Philippines in 1521", "answer": "Ferdinand Magellan", "accept": ["Magellan"] },
+            { "value": 400, "text": "In 1498 this Portuguese explorer became the first European to reach India by sailing around Africa", "answer": "Vasco da Gama", "accept": ["da Gama", "Gama"] },
+            { "value": 600, "text": "This Venetian traveller's account of his years at the court of Kublai Khan fascinated medieval Europe", "answer": "Marco Polo", "accept": ["Polo"] },
+            { "value": 800, "text": "This British captain charted New Zealand and the east coast of Australia before being killed in Hawaii in 1779", "answer": "James Cook", "accept": ["Cook", "Captain Cook"] },
+            { "value": 1000, "text": "This Norwegian beat Robert Falcon Scott to the South Pole in December 1911", "answer": "Roald Amundsen", "accept": ["Amundsen"] }
+          ]
+        },
+        {
+          "name": "KINGS & QUEENS",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "This English king had six wives and broke with the Roman Catholic Church", "answer": "Henry VIII", "accept": ["Henry the Eighth", "Henry 8", "Henry the 8th"], "strict": true },
+            { "value": 400, "text": "Nicknamed the Sun King, this French monarch reigned for 72 years", "answer": "Louis XIV", "accept": ["Louis the Fourteenth", "Louis 14", "Louis the 14th"], "strict": true },
+            { "value": 600, "text": "This queen's 63-year reign gave its name to an era of British history", "answer": "Queen Victoria", "accept": ["Victoria"] },
+            { "value": 800, "text": "Born a German princess, this Russian empress ruled from 1762 to 1796 and was called \"the Great\"", "answer": "Catherine the Great", "accept": ["Catherine", "Catherine II"] },
+            { "value": 1000, "text": "By the time he died at 32 in 323 BC, this king of Macedon had conquered an empire stretching to India", "answer": "Alexander the Great", "accept": ["Alexander", "Alexander III of Macedon"] }
+          ]
+        },
+        {
+          "name": "CANADIAN HISTORY",
+          "tags": ["canada", "history"],
+          "clues": [
+            { "value": 200, "text": "The year of Confederation, when Canada became a country", "answer": "1867", "accept": [], "strict": true },
+            { "value": 400, "text": "Canada's first prime minister", "answer": "John A. Macdonald", "accept": ["Macdonald", "John A Macdonald", "Sir John A. Macdonald", "John Macdonald"] },
+            { "value": 600, "text": "In 1885 the last spike of this railway was driven at Craigellachie, British Columbia", "answer": "the Canadian Pacific Railway", "accept": ["Canadian Pacific Railway", "Canadian Pacific", "CPR", "the CPR"] },
+            { "value": 800, "text": "In 1980 this young man from Port Coquitlam ran 5,373 kilometres across Canada on one leg to raise money for cancer research", "answer": "Terry Fox", "accept": ["Fox"], "dailyDouble": true },
+            { "value": 1000, "text": "Both generals, Wolfe and Montcalm, died at this 1759 battle outside Quebec City", "answer": "the Battle of the Plains of Abraham", "accept": ["Plains of Abraham", "the Plains of Abraham", "Battle of the Plains of Abraham", "Battle of Quebec"] }
+          ]
+        },
+        {
+          "name": "REVOLUTIONS",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "This 1789 revolution began with the storming of the Bastille", "answer": "the French Revolution", "accept": ["French Revolution"] },
+            { "value": 400, "text": "The 1773 \"tea party\" in this harbour city was a protest on the road to the American Revolution", "answer": "Boston", "accept": [] },
+            { "value": 600, "text": "Vladimir Lenin led this party to power in Russia in 1917", "answer": "the Bolsheviks", "accept": ["Bolsheviks", "Bolshevik", "the Bolshevik Party", "Bolshevik Party"] },
+            { "value": 800, "text": "Fidel Castro's revolution drove out the dictator Fulgencio Batista in this country on New Year's Day 1959", "answer": "Cuba", "accept": [] },
+            { "value": 1000, "text": "The 1848 \"Communist Manifesto\" was written by Friedrich Engels and this German philosopher", "answer": "Karl Marx", "accept": ["Marx"] }
+          ]
+        },
+        {
+          "name": "HISTORY BY THE NUMBERS",
+          "note": "Every response is a year",
+          "tags": ["history"],
+          "clues": [
+            { "value": 200, "text": "Columbus first reached the Americas", "answer": "1492", "accept": [], "strict": true },
+            { "value": 400, "text": "The Second World War ended", "answer": "1945", "accept": [], "strict": true },
+            { "value": 600, "text": "The American Declaration of Independence was adopted in Philadelphia", "answer": "1776", "accept": [], "strict": true },
+            { "value": 800, "text": "William the Conqueror won the Battle of Hastings", "answer": "1066", "accept": [], "strict": true },
+            { "value": 1000, "text": "Constantinople fell to the Ottoman Turks", "answer": "1453", "accept": [], "strict": true }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "THE 20TH CENTURY",
+          "tags": ["history"],
+          "clues": [
+            { "value": 400, "text": "In 1969 this mission landed the first humans on the Moon", "answer": "Apollo 11", "accept": ["Apollo Eleven"], "strict": true },
+            { "value": 800, "text": "This South African was released in 1990 after 27 years in prison and became his country's president in 1994", "answer": "Nelson Mandela", "accept": ["Mandela"] },
+            { "value": 1200, "text": "In 1947 this country gained independence from Britain and was partitioned, creating Pakistan", "answer": "India", "accept": [] },
+            { "value": 1600, "text": "In 1989 pro-democracy protests in this Beijing square were crushed by the Chinese army", "answer": "Tiananmen Square", "accept": ["Tiananmen"], "dailyDouble": true },
+            { "value": 2000, "text": "This 1918 influenza pandemic is named for a neutral country whose newspapers reported it freely, not for where it began", "answer": "the Spanish flu", "accept": ["Spanish flu", "Spanish influenza", "the Spanish influenza"] }
+          ]
+        },
+        {
+          "name": "FAMOUS SPEECHES",
+          "tags": ["history"],
+          "clues": [
+            { "value": 400, "text": "Martin Luther King Jr. gave this four-word speech at the 1963 March on Washington", "answer": "I Have a Dream", "accept": ["the I Have a Dream speech"] },
+            { "value": 800, "text": "Abraham Lincoln's 1863 address beginning \"Four score and seven years ago\" was given at this Pennsylvania battlefield", "answer": "Gettysburg", "accept": ["the Gettysburg Address", "Gettysburg Address"] },
+            { "value": 1200, "text": "This British prime minister offered \"blood, toil, tears and sweat\" in his first speech to Parliament as leader in 1940", "answer": "Winston Churchill", "accept": ["Churchill"] },
+            { "value": 1600, "text": "\"Ich bin ein Berliner\" was said by this US president in 1963", "answer": "John F. Kennedy", "accept": ["Kennedy", "JFK", "John Kennedy"] },
+            { "value": 2000, "text": "Speaking in Berlin in 1987, Ronald Reagan challenged this Soviet leader to \"tear down this wall\"", "answer": "Mikhail Gorbachev", "accept": ["Gorbachev"] }
+          ]
+        },
+        {
+          "name": "DATED DISCOVERIES",
+          "note": "We give the year, you name the invention or discovery",
+          "tags": ["history", "science"],
+          "clues": [
+            { "value": 400, "text": "1903: the Wright brothers make the first controlled flight in one of these at Kitty Hawk", "answer": "the airplane", "accept": ["airplane", "aeroplane", "plane", "an airplane"] },
+            { "value": 800, "text": "1876: Alexander Graham Bell patents this", "answer": "the telephone", "accept": ["telephone"] },
+            { "value": 1200, "text": "1928: Alexander Fleming discovers this antibiotic", "answer": "penicillin", "accept": [] },
+            { "value": 1600, "text": "1886: Karl Benz patents the first practical one of these, powered by a petrol engine", "answer": "the automobile", "accept": ["automobile", "car", "the car", "motor car"] },
+            { "value": 2000, "text": "1969: ARPANET, the ancestor of this, carries its first message between two California universities", "answer": "the Internet", "accept": ["Internet"] }
+          ]
+        },
+        {
+          "name": "THE WORLD WARS",
+          "tags": ["history"],
+          "clues": [
+            { "value": 400, "text": "The assassination of Archduke Franz Ferdinand in this Bosnian city in 1914 set off the First World War", "answer": "Sarajevo", "accept": [] },
+            { "value": 800, "text": "The Allied landings in Normandy on June 6, 1944 are known by this short name", "answer": "D-Day", "accept": ["D Day", "Operation Overlord"] },
+            { "value": 1200, "text": "Canadian troops captured this ridge in France in April 1917, a defining moment for the young nation", "answer": "Vimy Ridge", "accept": ["Vimy"] },
+            { "value": 1600, "text": "The 1919 treaty that formally ended the First World War, signed in a French palace", "answer": "the Treaty of Versailles", "accept": ["Treaty of Versailles", "Versailles"] },
+            { "value": 2000, "text": "Operation Barbarossa, launched in June 1941, was Germany's invasion of this country", "answer": "the Soviet Union", "accept": ["Soviet Union", "USSR", "the USSR", "Russia"] }
+          ]
+        },
+        {
+          "name": "EMPIRES",
+          "tags": ["history", "geography"],
+          "clues": [
+            { "value": 400, "text": "Centred on the city now called Istanbul, this empire was dissolved in 1922", "answer": "the Ottoman Empire", "accept": ["Ottoman Empire", "Ottoman", "the Ottomans"] },
+            { "value": 800, "text": "Genghis Khan founded this empire, the largest contiguous land empire in history", "answer": "the Mongol Empire", "accept": ["Mongol Empire", "Mongol", "the Mongols", "Mongols"] },
+            { "value": 1200, "text": "Machu Picchu was built by this Andean empire", "answer": "the Inca Empire", "accept": ["Inca Empire", "Inca", "the Incas", "Incas"] },
+            { "value": 1600, "text": "Hernán Cortés conquered this empire's capital, Tenochtitlan, in 1521", "answer": "the Aztec Empire", "accept": ["Aztec Empire", "Aztec", "the Aztecs", "Aztecs"] },
+            { "value": 2000, "text": "The emperor Ashoka ruled this ancient Indian empire in the 3rd century BC", "answer": "the Maurya Empire", "accept": ["Maurya Empire", "Mauryan Empire", "Maurya", "Mauryan"] }
+          ]
+        },
+        {
+          "name": "HISTORIC NICKNAMES",
+          "note": "Identify the person known by this nickname",
+          "tags": ["history", "wordplay"],
+          "clues": [
+            { "value": 400, "text": "The Iron Lady, Britain's prime minister through the 1980s", "answer": "Margaret Thatcher", "accept": ["Thatcher"] },
+            { "value": 800, "text": "The Maid of Orléans, a French peasant girl who led armies", "answer": "Joan of Arc", "accept": ["Jeanne d'Arc", "Joan"] },
+            { "value": 1200, "text": "Il Duce, the leader of Fascist Italy", "answer": "Benito Mussolini", "accept": ["Mussolini"], "dailyDouble": true },
+            { "value": 1600, "text": "The Desert Fox, a German field marshal in North Africa", "answer": "Erwin Rommel", "accept": ["Rommel"] },
+            { "value": 2000, "text": "Old Hickory, the seventh president of the United States", "answer": "Andrew Jackson", "accept": ["Jackson"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "EUROPEAN HISTORY",
+    "text": "Signed in 1648 and named for a region of Germany, this set of treaties ended the Thirty Years' War",
+    "answer": "the Peace of Westphalia",
+    "accept": ["Peace of Westphalia", "Westphalia", "the Treaty of Westphalia", "Treaty of Westphalia"]
+  }
+}
