@@ -1,0 +1,161 @@
+{
+  "id": "sports-02",
+  "title": "Sports #2",
+  "pack": "Sports",
+  "difficulty": "normal",
+  "tags": ["sports", "hockey", "olympics", "tennis", "baseball", "curling", "athletics", "soccer", "golf", "basketball", "motorsport", "history", "canada"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "NHL TEAMS",
+          "tags": ["hockey", "sports"],
+          "clues": [
+            {"value": 200, "text": "This Original Six team last won the Stanley Cup in 1967 and plays its home games at Scotiabank Arena", "answer": "the Toronto Maple Leafs", "accept": ["Toronto Maple Leafs", "Maple Leafs", "Leafs", "Toronto"]},
+            {"value": 400, "text": "Wayne Gretzky won his four Stanley Cups with this Alberta team in the 1980s", "answer": "the Edmonton Oilers", "accept": ["Edmonton Oilers", "Oilers", "Edmonton"]},
+            {"value": 600, "text": "This Alberta team won its only Stanley Cup in 1989, beating Montreal in the final", "answer": "the Calgary Flames", "accept": ["Calgary Flames", "Flames", "Calgary"]},
+            {"value": 800, "text": "The Quebec Nordiques moved south in 1995 and won the Cup in their first season as this team", "answer": "the Colorado Avalanche", "accept": ["Colorado Avalanche", "Avalanche", "Colorado", "the Avs", "Avs"]},
+            {"value": 1000, "text": "The Minnesota North Stars moved to Texas in 1993 and dropped half their name to become this team", "answer": "the Dallas Stars", "accept": ["Dallas Stars", "Stars", "Dallas"]}
+          ]
+        },
+        {
+          "name": "WINTER OLYMPICS",
+          "tags": ["olympics", "sports"],
+          "clues": [
+            {"value": 200, "text": "This sport combines cross-country skiing with rifle shooting", "answer": "biathlon", "accept": ["the biathlon"]},
+            {"value": 400, "text": "Jamaica famously entered a team in this sliding sport at the 1988 Calgary Games", "answer": "bobsleigh", "accept": ["bobsled", "bobsledding", "bobsleigh racing"]},
+            {"value": 600, "text": "The 1998 Nagano Games were the first to include this sport, with giant slalom and halfpipe events", "answer": "snowboarding", "accept": ["snowboard", "snowboard racing"]},
+            {"value": 800, "text": "Tessa Virtue and Scott Moir won Olympic gold at Vancouver 2010 and Pyeongchang 2018 in this figure skating discipline", "answer": "ice dance", "accept": ["ice dancing", "dance"]},
+            {"value": 1000, "text": "Jean-Luc Brassard won Canada's first Olympic gold in freestyle skiing at Lillehammer 1994 in this bumpy event", "answer": "moguls", "accept": ["the moguls", "mogul skiing"]}
+          ]
+        },
+        {
+          "name": "TENNIS",
+          "tags": ["tennis", "sports"],
+          "clues": [
+            {"value": 200, "text": "The Grand Slam tournament played on red clay in Paris", "answer": "the French Open", "accept": ["French Open", "Roland Garros", "Roland-Garros"]},
+            {"value": 400, "text": "This Swiss won eight Wimbledon men's singles titles between 2003 and 2017", "answer": "Roger Federer", "accept": ["Federer"]},
+            {"value": 600, "text": "The \"King of Clay\", this Spaniard won the French Open 14 times", "answer": "Rafael Nadal", "accept": ["Nadal", "Rafa Nadal", "Rafa"]},
+            {"value": 800, "text": "This American won 23 Grand Slam singles titles, the most by any woman in the Open era", "answer": "Serena Williams", "accept": ["Serena", "Serena Williams"], "strict": true},
+            {"value": 1000, "text": "In 1988 this German won all four majors plus Olympic gold, the only \"Golden Slam\" in a single year", "answer": "Steffi Graf", "accept": ["Graf", "Stefanie Graf"]}
+          ]
+        },
+        {
+          "name": "AROUND THE DIAMOND",
+          "note": "Baseball, from the ballpark to the record book",
+          "tags": ["baseball", "sports"],
+          "clues": [
+            {"value": 200, "text": "The Blue Jays' home ballpark, which opened in 1989 as the SkyDome", "answer": "Rogers Centre", "accept": ["the Rogers Centre", "SkyDome", "the SkyDome"]},
+            {"value": 400, "text": "Nicknamed the Iron Horse, this Yankee played 2,130 consecutive games before illness ended his career in 1939", "answer": "Lou Gehrig", "accept": ["Gehrig"]},
+            {"value": 600, "text": "This Montreal team played its last game in 2004 before moving to Washington to become the Nationals", "answer": "the Expos", "accept": ["Expos", "Montreal Expos", "the Montreal Expos"]},
+            {"value": 800, "text": "This team ended the 86-year \"Curse of the Bambino\" by winning the 2004 World Series", "answer": "the Boston Red Sox", "accept": ["Boston Red Sox", "Red Sox", "Boston"]},
+            {"value": 1000, "text": "This flame-throwing Texan pitched a record seven no-hitters over a 27-season career", "answer": "Nolan Ryan", "accept": ["Nolan Ryan", "the Ryan Express"], "strict": true}
+          ]
+        },
+        {
+          "name": "CURLING",
+          "tags": ["curling", "sports"],
+          "clues": [
+            {"value": 200, "text": "Curling stones are made of this rock, most of it quarried on Scotland's Ailsa Craig", "answer": "granite", "accept": []},
+            {"value": 400, "text": "The team captain, who calls the shots and usually throws the last two stones", "answer": "the skip", "accept": ["skip"]},
+            {"value": 600, "text": "The advantage of throwing the last stone in an end is called this", "answer": "the hammer", "accept": ["hammer", "last rock", "last stone"]},
+            {"value": 800, "text": "The small circle at the very centre of the rings, also called the tee", "answer": "the button", "accept": ["button"], "dailyDouble": true},
+            {"value": 1000, "text": "The Scotties Tournament of Hearts crowns Canada's women's champion; this event crowns the men's", "answer": "the Brier", "accept": ["Brier", "Tim Hortons Brier", "Montana's Brier"]}
+          ]
+        },
+        {
+          "name": "TRACK & FIELD",
+          "tags": ["athletics", "sports"],
+          "clues": [
+            {"value": 200, "text": "The field event in which athletes clear a high bar with the help of a long flexible pole", "answer": "the pole vault", "accept": ["pole vault", "pole vaulting"]},
+            {"value": 400, "text": "A sprinter who leaves the blocks before the gun is charged with this", "answer": "a false start", "accept": ["false start"]},
+            {"value": 600, "text": "The number of events in the women's heptathlon", "answer": "7", "accept": ["seven"], "strict": true},
+            {"value": 800, "text": "Andre De Grasse won Olympic gold at Tokyo 2020 in this sprint, once around half the track", "answer": "the 200 metres", "accept": ["200 metres", "200 meters", "200m", "200 m", "200", "the 200", "two hundred metres"], "strict": true},
+            {"value": 1000, "text": "This Ethiopian won the 1960 Olympic marathon in Rome running barefoot, then won again in Tokyo in 1964", "answer": "Abebe Bikila", "accept": ["Bikila"]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "SOCCER AROUND THE WORLD",
+          "tags": ["soccer", "sports"],
+          "clues": [
+            {"value": 400, "text": "This Spanish club plays its home matches at the Camp Nou", "answer": "FC Barcelona", "accept": ["Barcelona", "Barca", "Barça", "Barcelona FC"]},
+            {"value": 800, "text": "Fans of this English club sing \"You'll Never Walk Alone\" before kickoff at Anfield", "answer": "Liverpool", "accept": ["Liverpool FC"]},
+            {"value": 1200, "text": "Pelé spent most of his club career with this team from the Brazilian port city of the same name", "answer": "Santos", "accept": ["Santos FC"]},
+            {"value": 1600, "text": "This South American country hosted and won the first World Cup in 1930", "answer": "Uruguay", "accept": []},
+            {"value": 2000, "text": "Canada's men made their World Cup debut at the 1986 tournament held in this country", "answer": "Mexico", "accept": []}
+          ]
+        },
+        {
+          "name": "GOLF",
+          "tags": ["golf", "sports"],
+          "clues": [
+            {"value": 400, "text": "A score of two under par on a single hole", "answer": "an eagle", "accept": ["eagle"]},
+            {"value": 800, "text": "Nicknamed the Golden Bear, he won 18 major championships", "answer": "Jack Nicklaus", "accept": ["Nicklaus"]},
+            {"value": 1200, "text": "This team match between the United States and Europe is named for an English seed merchant who donated the trophy in 1927", "answer": "the Ryder Cup", "accept": ["Ryder Cup"]},
+            {"value": 1600, "text": "In 2023 Nick Taylor sank a 72-foot putt to become the first Canadian in 69 years to win this national championship", "answer": "the Canadian Open", "accept": ["Canadian Open", "RBC Canadian Open", "the RBC Canadian Open"], "dailyDouble": true},
+            {"value": 2000, "text": "This amateur won all four majors of 1930, retired at 28 and co-founded Augusta National", "answer": "Bobby Jones", "accept": ["Bobby Jones", "Robert Tyre Jones", "Bob Jones"], "strict": true}
+          ]
+        },
+        {
+          "name": "HOOPS",
+          "tags": ["basketball", "sports"],
+          "clues": [
+            {"value": 400, "text": "Kobe Bryant spent all 20 of his NBA seasons with this team", "answer": "the Los Angeles Lakers", "accept": ["Los Angeles Lakers", "Lakers", "LA Lakers", "Los Angeles"]},
+            {"value": 800, "text": "This Canadian-born instructor invented basketball in 1891 at a YMCA school in Springfield, Massachusetts", "answer": "James Naismith", "accept": ["Naismith"]},
+            {"value": 1200, "text": "Steve Nash, raised in Victoria, B.C., won back-to-back NBA MVP awards with this Arizona team", "answer": "the Phoenix Suns", "accept": ["Phoenix Suns", "Suns", "Phoenix"]},
+            {"value": 1600, "text": "This Boston Celtics centre won 11 NBA championships in 13 seasons", "answer": "Bill Russell", "accept": ["Russell"]},
+            {"value": 2000, "text": "This Celtics coach of the 1950s and '60s lit a victory cigar on the bench once a win was certain", "answer": "Red Auerbach", "accept": ["Auerbach", "Arnold Auerbach"]}
+          ]
+        },
+        {
+          "name": "MOTORSPORT",
+          "tags": ["motorsport", "sports"],
+          "clues": [
+            {"value": 400, "text": "NASCAR's \"Great American Race\", run each February in Florida", "answer": "the Daytona 500", "accept": ["Daytona 500", "Daytona"]},
+            {"value": 800, "text": "This French endurance race lasts a full day and night", "answer": "the 24 Hours of Le Mans", "accept": ["Le Mans", "24 Hours of Le Mans", "24 Heures du Mans"]},
+            {"value": 1200, "text": "Jacques Villeneuve won the 1997 Formula One world championship driving for this British team", "answer": "Williams", "accept": ["Williams Renault", "Williams-Renault", "Williams F1"]},
+            {"value": 1600, "text": "This Brazilian three-time Formula One champion was killed in a crash at Imola in 1994", "answer": "Ayrton Senna", "accept": ["Senna"]},
+            {"value": 2000, "text": "This Argentine won five Formula One world championships in the 1950s", "answer": "Juan Manuel Fangio", "accept": ["Fangio"]}
+          ]
+        },
+        {
+          "name": "SPORTS HISTORY",
+          "tags": ["history", "sports"],
+          "clues": [
+            {"value": 400, "text": "Lord Stanley donated hockey's famous cup in 1892 while holding this office in Canada", "answer": "Governor General", "accept": ["the Governor General", "Governor General of Canada"]},
+            {"value": 800, "text": "The 1980 \"Miracle on Ice\" saw a team of American college players beat this country at Lake Placid", "answer": "the Soviet Union", "accept": ["Soviet Union", "USSR", "the USSR", "the Soviets"]},
+            {"value": 1200, "text": "Nicknamed the Brown Bomber, this heavyweight held the world title for nearly 12 years, from 1937 to 1949", "answer": "Joe Louis", "accept": ["Louis"], "dailyDouble": true},
+            {"value": 1600, "text": "In 1954, 16-year-old Marilyn Bell became the first person to swim across this Great Lake, from Youngstown, New York to Toronto", "answer": "Lake Ontario", "accept": ["Ontario"]},
+            {"value": 2000, "text": "After eight Chicago White Sox players were accused of throwing the 1919 World Series, the team got this dark nickname", "answer": "the Black Sox", "accept": ["Black Sox"]}
+          ]
+        },
+        {
+          "name": "INVENTED HERE",
+          "note": "Sports and sporting things with Canadian origins",
+          "tags": ["canada", "sports"],
+          "clues": [
+            {"value": 400, "text": "Under a 1994 act of Parliament, this is Canada's official national winter sport", "answer": "ice hockey", "accept": ["hockey"]},
+            {"value": 800, "text": "Canada's official national summer sport, played with a long stick that has a netted pocket at the end", "answer": "lacrosse", "accept": []},
+            {"value": 1200, "text": "This Montreal Canadiens goalie made the mask standard equipment after wearing one in a game in November 1959", "answer": "Jacques Plante", "accept": ["Plante"]},
+            {"value": 1600, "text": "Ringette, played on ice with a straight stick and a rubber ring, was invented in 1963 in this northern Ontario city", "answer": "North Bay", "accept": []},
+            {"value": 2000, "text": "Wheelchair rugby, originally called murderball, was invented in 1976 in this provincial capital", "answer": "Winnipeg", "accept": []}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "TENNIS HISTORY",
+    "text": "Nicknamed \"Rocket\", this Australian is the only player to win the calendar-year Grand Slam twice, in 1962 as an amateur and in 1969 as a professional",
+    "answer": "Rod Laver",
+    "accept": ["Laver", "Rodney Laver"]
+  }
+}

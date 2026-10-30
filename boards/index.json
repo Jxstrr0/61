@@ -205,6 +205,27 @@
         "sports",
         "language"
       ]
+    },
+    {
+      "id": "sports-02",
+      "title": "Sports #2",
+      "pack": "Sports",
+      "difficulty": "normal",
+      "tags": [
+        "sports",
+        "hockey",
+        "olympics",
+        "tennis",
+        "baseball",
+        "curling",
+        "athletics",
+        "soccer",
+        "golf",
+        "basketball",
+        "motorsport",
+        "history",
+        "canada"
+      ]
     }
   ]
 }
