@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>61 engine debug</title>
+  <style>
+    body { font: 14px/1.4 ui-monospace, Menlo, Consolas, monospace; margin: 1rem; background: #141413; color: #FAF9F5; }
+    label { margin-right: 1rem; }
+    input, select, button { font: inherit; }
+    button { padding: 0.3rem 0.8rem; }
+    pre { white-space: pre-wrap; }
+    .score { color: #D97757; }
+    .final { color: #B48CE8; }
+  </style>
+</head>
+<body>
+  <h1>61 engine debug</h1>
+  <p>Runs a whole game in text with a simulated human (src/sim.js) and prints the event log. No UI, no styling: this page exists to prove the engine before any screens are built.</p>
+  <form id="form">
+    <label>Board <select id="board"></select></label>
+    <label>Seed <input id="seed" type="number" value="1" style="width:6rem"></label>
+    <label>Difficulty <select id="difficulty"><option>easy</option><option selected>normal</option><option>hard</option></select></label>
+    <button type="submit">Run game</button>
+  </form>
+  <pre id="out"></pre>
+  <script type="module">
+    import { simulateGame } from "./src/sim.js";
+    const out = document.getElementById("out");
+    const boardSelect = document.getElementById("board");
+    const index = await (await fetch("./boards/index.json")).json();
+    const roster = (await (await fetch("./data/opponents.json")).json()).opponents;
+    for (const b of index.boards) boardSelect.add(new Option(`${b.title} (${b.pack})`, b.id));
+
+    document.getElementById("form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const board = await (await fetch(`./boards/${boardSelect.value}.json`)).json();
+      const seed = Number(document.getElementById("seed").value);
+      const difficulty = document.getElementById("difficulty").value;
+      const t0 = performance.now();
+      const { state, summary, log } = simulateGame({ board, roster, seed, difficulty });
+      const names = state.contestants.map((c) => c.name);
+      const lines = [];
+      lines.push(`seed ${seed}, ${difficulty}, opponents: ${names.slice(1).join(" and ")} (${(performance.now() - t0).toFixed(1)} ms)`);
+      for (const ev of log) {
+        const who = ev.contestant !== undefined ? names[ev.contestant] : "";
+        switch (ev.type) {
+          case "round.start": lines.push(`\n== Round ${ev.round + 1} == ${names[ev.controller]} picks first`); break;
+          case "clue.select": lines.push(`\n${names[ev.by]} picks ${ev.clueId}${ev.dailyDouble ? "  DAILY DOUBLE" : ""}`); break;
+          case "dd.wager": lines.push(`  ${who} wagers ${ev.amount}`); break;
+          case "buzz": lines.push(`  ${who} buzzes (+${ev.reaction} ms)`); break;
+          case "buzz.lost": lines.push(`  ${who} buzzed too late (${ev.behindMs} ms behind)`); break;
+          case "lockout": lines.push(`  ${who} buzzed early: locked out`); break;
+          case "score": lines.push(`  <span class="score">${who} ${ev.correct ? "RIGHT" : "wrong"} ${ev.delta > 0 ? "+" : ""}${ev.delta}${ev.text ? ` ("${ev.text}")` : ""}</span>`); break;
+          case "clue.resolved": lines.push(`  resolved${ev.noBuzz ? " (no buzz)" : ""}; ${names[ev.controller]} controls`); break;
+          case "round.end": lines.push(`\n-- end of round ${ev.round + 1}: ${ev.scores.map((s, i) => `${names[i]} ${s}`).join(", ")}`); break;
+          case "final.start": lines.push(`\n== Final == playing: ${ev.eligible.map((i) => names[i]).join(", ") || "nobody"}`); break;
+          case "final.wager": lines.push(`  <span class="final">${who} wagers ${ev.amount}</span>`); break;
+          case "final.reveal": lines.push(`  <span class="final">${who}: ${ev.correct ? "RIGHT" : "wrong"} (${ev.wager})</span>`); break;
+          case "game.end": lines.push(`\n== Final scores: ${ev.scores.map((s, i) => `${names[i]} ${s}`).join(", ")}; winner: ${ev.winners.map((i) => names[i]).join(" & ")}`); break;
+          default: break;
+        }
+      }
+      lines.push(`\nsummary: ${JSON.stringify({ scores: summary.scores, playerWon: summary.playerWon, buzz: summary.buzz, dailyDouble: summary.dailyDouble, final: summary.final }, null, 1)}`);
+      out.innerHTML = lines.join("\n");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "opponents": [
+    { "id": "mabel", "name": "Mabel", "pool": "easy", "bio": "Retired librarian from Moose Jaw. Strong on books, slow on the buzzer." },
+    { "id": "dev", "name": "Dev", "pool": "easy", "bio": "First-year student who signed up on a dare." },
+    { "id": "rosa", "name": "Rosa", "pool": "easy", "bio": "Runs a bakery in Brandon. Plays for fun, mostly." },
+    { "id": "theo", "name": "Theo", "pool": "normal", "bio": "High-school geography teacher and pub-quiz regular." },
+    { "id": "priya", "name": "Priya", "pool": "normal", "bio": "Software developer who reads one encyclopedia entry a day." },
+    { "id": "gord", "name": "Gord", "pool": "normal", "bio": "Grain farmer with a very good memory for dates." },
+    { "id": "ingrid", "name": "Ingrid", "pool": "hard", "bio": "Three-time provincial trivia champion. Buzzes before you blink." },
+    { "id": "marcus", "name": "Marcus", "pool": "hard", "bio": "Crossword constructor. Knows a worrying amount about everything." },
+    { "id": "yuki", "name": "Yuki", "pool": "hard", "bio": "Former quiz-bowl captain. Still keeps score at home." }
+  ]
+}
