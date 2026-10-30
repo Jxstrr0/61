@@ -1,0 +1,161 @@
+{
+  "id": "general-03",
+  "title": "General #3",
+  "pack": "General",
+  "difficulty": "normal",
+  "tags": ["geography", "mythology", "canada", "art", "math", "wordplay", "history", "science", "television", "literature", "language"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "U.S. STATES",
+          "tags": ["geography"],
+          "clues": [
+            {"value": 200, "text": "The largest state by area", "answer": "Alaska", "accept": []},
+            {"value": 400, "text": "The Grand Canyon is in this state", "answer": "Arizona", "accept": []},
+            {"value": 600, "text": "Its capital is Austin and its largest city is Houston", "answer": "Texas", "accept": []},
+            {"value": 800, "text": "The only state that borders just one other state", "answer": "Maine", "accept": []},
+            {"value": 1000, "text": "The Black Hills and Mount Rushmore are in this state", "answer": "South Dakota", "accept": [], "strict": true}
+          ]
+        },
+        {
+          "name": "GREEK MYTHOLOGY",
+          "tags": ["mythology"],
+          "clues": [
+            {"value": 200, "text": "King of the gods and wielder of the thunderbolt", "answer": "Zeus", "accept": []},
+            {"value": 400, "text": "God of the sea, he carries a trident", "answer": "Poseidon", "accept": []},
+            {"value": 600, "text": "This hero's only weak spot was his heel", "answer": "Achilles", "accept": []},
+            {"value": 800, "text": "Anyone who looked at this snake-haired woman turned to stone; Perseus cut off her head", "answer": "Medusa", "accept": []},
+            {"value": 1000, "text": "His punishment was to roll a boulder uphill forever", "answer": "Sisyphus", "accept": []}
+          ]
+        },
+        {
+          "name": "CANADIAN GEOGRAPHY",
+          "tags": ["canada", "geography"],
+          "clues": [
+            {"value": 200, "text": "Canada's capital city", "answer": "Ottawa", "accept": []},
+            {"value": 400, "text": "Canada's largest province by area", "answer": "Quebec", "accept": ["Québec"]},
+            {"value": 600, "text": "Created in 1999, this territory has Iqaluit as its capital", "answer": "Nunavut", "accept": []},
+            {"value": 800, "text": "At 5,959 metres, Mount Logan in this territory is Canada's highest peak", "answer": "Yukon", "accept": ["the Yukon", "Yukon Territory"]},
+            {"value": 1000, "text": "Canada's longest river, it flows north from Great Slave Lake to the Arctic Ocean", "answer": "the Mackenzie River", "accept": ["Mackenzie", "Mackenzie River"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "FAMOUS PAINTINGS",
+          "tags": ["art"],
+          "clues": [
+            {"value": 200, "text": "Leonardo da Vinci's portrait of a woman with a mysterious smile", "answer": "the Mona Lisa", "accept": ["Mona Lisa"]},
+            {"value": 400, "text": "Vincent van Gogh's 1889 painting of a swirling night sky over a village", "answer": "The Starry Night", "accept": ["Starry Night"]},
+            {"value": 600, "text": "Edvard Munch's painting of a figure clutching its face on a bridge", "answer": "The Scream", "accept": ["Scream"]},
+            {"value": 800, "text": "Michelangelo spent four years painting the ceiling of this Vatican chapel", "answer": "the Sistine Chapel", "accept": ["Sistine Chapel", "Sistine"]},
+            {"value": 1000, "text": "Picasso's huge 1937 painting of the bombing of a Basque town", "answer": "Guernica", "accept": []}
+          ]
+        },
+        {
+          "name": "NUMBERS & MATH",
+          "note": "Every response is a number",
+          "tags": ["math"],
+          "clues": [
+            {"value": 200, "text": "The number of degrees in a right angle", "answer": "90", "accept": ["ninety"], "strict": true},
+            {"value": 400, "text": "The number of sides on a hexagon", "answer": "6", "accept": ["six"], "strict": true},
+            {"value": 600, "text": "The only even prime number", "answer": "2", "accept": ["two"], "strict": true},
+            {"value": 800, "text": "Pi, to two decimal places", "answer": "3.14", "accept": ["3,14"], "strict": true},
+            {"value": 1000, "text": "The smallest number that is the sum of two cubes in two different ways, made famous by a story about Ramanujan and a taxi", "answer": "1729", "accept": [], "strict": true}
+          ]
+        },
+        {
+          "name": "DOUBLE LETTERS",
+          "note": "Every response contains a doubled letter",
+          "tags": ["wordplay"],
+          "clues": [
+            {"value": 200, "text": "A rubber bag you inflate for a party", "answer": "balloon", "accept": ["a balloon", "balloons"]},
+            {"value": 400, "text": "This hot drink is brewed from roasted beans", "answer": "coffee", "accept": []},
+            {"value": 600, "text": "This U.S. state's name has four S's, four I's and two P's", "answer": "Mississippi", "accept": []},
+            {"value": 800, "text": "This stretchy Italian cheese, traditionally made from buffalo milk, tops a classic pizza", "answer": "mozzarella", "accept": []},
+            {"value": 1000, "text": "This Ontario city just west of Toronto shares its first seven letters with a U.S. state", "answer": "Mississauga", "accept": []}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "ANCIENT CIVILIZATIONS",
+          "tags": ["history"],
+          "clues": [
+            {"value": 400, "text": "The pyramids of Giza were built by this civilization", "answer": "ancient Egypt", "accept": ["Egypt", "the Egyptians", "Egyptians"]},
+            {"value": 800, "text": "Julius Caesar was assassinated in 44 BC in this city", "answer": "Rome", "accept": []},
+            {"value": 1200, "text": "This Mesoamerican civilization built Chichén Itzá and kept a famous calendar", "answer": "the Maya", "accept": ["Maya", "Mayans", "Mayan", "the Mayans"]},
+            {"value": 1600, "text": "Machu Picchu was built by this Andean empire", "answer": "the Inca", "accept": ["Inca", "Incas", "Incan", "the Incas"]},
+            {"value": 2000, "text": "Led by King Leonidas, 300 soldiers from this city-state held the pass at Thermopylae", "answer": "Sparta", "accept": ["Spartans", "the Spartans"]}
+          ]
+        },
+        {
+          "name": "WEATHER & CLIMATE",
+          "tags": ["science"],
+          "clues": [
+            {"value": 400, "text": "Balls of ice that fall during thunderstorms", "answer": "hail", "accept": ["hailstones"]},
+            {"value": 800, "text": "The instrument that measures air pressure", "answer": "a barometer", "accept": ["barometer"]},
+            {"value": 1200, "text": "This warm Pacific Ocean pattern, Spanish for \"the boy\", shifts weather around the world", "answer": "El Niño", "accept": ["El Nino"]},
+            {"value": 1600, "text": "This warm, dry wind drops down the eastern slopes of the Rockies and can raise Calgary's temperature by 20 degrees in a few hours", "answer": "a chinook", "accept": ["chinook", "chinook wind"], "dailyDouble": true},
+            {"value": 2000, "text": "Named for the Irish-born admiral who devised it, this scale rates wind force from 0 (calm) to 12 (hurricane)", "answer": "the Beaufort scale", "accept": ["Beaufort", "Beaufort scale"]}
+          ]
+        },
+        {
+          "name": "TV SITCOMS",
+          "tags": ["television"],
+          "clues": [
+            {"value": 400, "text": "Six friends hang out at the Central Perk coffee shop in this 1990s sitcom", "answer": "Friends", "accept": []},
+            {"value": 800, "text": "Michael Scott manages a Scranton paper company in the American version of this show", "answer": "The Office", "accept": ["Office"]},
+            {"value": 1200, "text": "Jerry, George, Elaine and Kramer in this \"show about nothing\"", "answer": "Seinfeld", "accept": []},
+            {"value": 1600, "text": "Everybody knows your name at this Boston bar", "answer": "Cheers", "accept": []},
+            {"value": 2000, "text": "This Canadian sitcom about the Rose family swept the comedy categories at the 2020 Emmys", "answer": "Schitt's Creek", "accept": ["Schitts Creek"]}
+          ]
+        },
+        {
+          "name": "POETS & POEMS",
+          "tags": ["literature"],
+          "clues": [
+            {"value": 400, "text": "\"Shall I compare thee to a summer's day?\" opens a sonnet by this playwright", "answer": "William Shakespeare", "accept": ["Shakespeare"]},
+            {"value": 800, "text": "This American poet asked \"Quoth the Raven, 'Nevermore'\"", "answer": "Edgar Allan Poe", "accept": ["Poe", "Edgar Allen Poe"]},
+            {"value": 1200, "text": "\"In Flanders Fields\" was written in 1915 by this Canadian army doctor", "answer": "John McCrae", "accept": ["McCrae"]},
+            {"value": 1600, "text": "\"Two roads diverged in a yellow wood\" begins \"The Road Not Taken\" by this American poet", "answer": "Robert Frost", "accept": ["Frost"]},
+            {"value": 2000, "text": "The reclusive \"Belle of Amherst\", she saw fewer than a dozen of her poems published in her lifetime", "answer": "Emily Dickinson", "accept": ["Dickinson"]}
+          ]
+        },
+        {
+          "name": "WORLD LANGUAGES",
+          "tags": ["language"],
+          "clues": [
+            {"value": 400, "text": "The language with the most native speakers in the world", "answer": "Mandarin Chinese", "accept": ["Mandarin", "Chinese"]},
+            {"value": 800, "text": "Brazil's official language", "answer": "Portuguese", "accept": []},
+            {"value": 1200, "text": "\"Guten Tag\" is hello in this language", "answer": "German", "accept": []},
+            {"value": 1600, "text": "This language of ancient Rome is the ancestor of French, Spanish and Italian", "answer": "Latin", "accept": []},
+            {"value": 2000, "text": "Spoken in Budapest, this language is related to Finnish and Estonian rather than to its Indo-European neighbours", "answer": "Hungarian", "accept": ["Magyar"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "CANADIAN INVENTIONS",
+          "tags": ["canada", "science"],
+          "clues": [
+            {"value": 400, "text": "James Naismith of Almonte, Ontario invented this sport in 1891", "answer": "basketball", "accept": []},
+            {"value": 800, "text": "Frederick Banting and Charles Best discovered this diabetes treatment in Toronto in 1921", "answer": "insulin", "accept": []},
+            {"value": 1200, "text": "Toronto's Norman Breakey invented this tool in 1940 that made painting a wall much faster than a brush", "answer": "the paint roller", "accept": ["paint roller", "roller"]},
+            {"value": 1600, "text": "This square-socket screw and its matching driver, invented by P. L. Robertson in Milton, Ontario in 1908, are still a Canadian hardware favourite", "answer": "the Robertson screw", "accept": ["Robertson", "Robertson screwdriver", "Robertson screws"]},
+            {"value": 2000, "text": "In 1950 John Hopps of the National Research Council built the first external version of this device that regulates the heartbeat", "answer": "the pacemaker", "accept": ["pacemaker"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "EXPLORERS",
+    "text": "In December 1911 this Norwegian beat Robert Falcon Scott to the South Pole by about five weeks",
+    "answer": "Roald Amundsen",
+    "accept": ["Amundsen"]
+  }
+}

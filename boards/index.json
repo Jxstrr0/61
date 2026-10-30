@@ -34,6 +34,25 @@
         "music",
         "sports"
       ]
+    },
+    {
+      "id": "general-03",
+      "title": "General #3",
+      "pack": "General",
+      "difficulty": "normal",
+      "tags": [
+        "geography",
+        "mythology",
+        "canada",
+        "art",
+        "math",
+        "wordplay",
+        "history",
+        "science",
+        "television",
+        "literature",
+        "language"
+      ]
     }
   ]
 }
