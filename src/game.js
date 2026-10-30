@@ -70,6 +70,8 @@ export function findClue(board, id) {
 export function createGame({ board, seed, difficulty = "normal", roster, playerName = "You" }) {
   const rng = createRng(seed);
   const opponents = cpu.pickOpponents(rng, roster, difficulty, board.tags ?? []);
+  // (the difficulty sheet calls previewOpponents() with the same seed, so the
+  // opponents it shows are the ones this game gets: keep that the first rng use)
   const state = {
     version: 1,
     boardId: board.id,
@@ -92,6 +94,14 @@ export function createGame({ board, seed, difficulty = "normal", roster, playerN
     lastEvents: [],
   };
   return state;
+}
+
+/**
+ * The two opponents createGame() will pick for this seed and difficulty.
+ * `tags` are the board's tags (the Library index carries the same list).
+ */
+export function previewOpponents({ tags = [], seed, difficulty = "normal", roster }) {
+  return cpu.pickOpponents(createRng(seed), roster, difficulty, tags);
 }
 
 // ---------------------------------------------------------------------------

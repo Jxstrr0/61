@@ -3,7 +3,7 @@
 // the ui/ modules are the only places that touch the DOM; nothing here
 // decides a rule.
 
-import { createGame, dispatch, chooseClueForCpu, findClue, summarize } from "./game.js";
+import { createGame, dispatch, chooseClueForCpu, findClue, summarize, previewOpponents } from "./game.js";
 import { randomSeed } from "./rng.js";
 import * as storage from "./storage.js";
 import { renderBoard } from "./ui/board.js";
@@ -11,6 +11,8 @@ import { renderClue, clueRenderKey, updateClueTimers } from "./ui/clue.js";
 import { renderPodiums, escapeHtml, formatScore } from "./ui/podiums.js";
 import { renderFinal, finalRenderKey, updateFinalTimers } from "./ui/final.js";
 import { renderResults } from "./ui/results.js";
+import { renderLibrary, renderDifficultySheet, boardBadge } from "./ui/library.js";
+import { renderStats } from "./ui/stats.js";
 
 const SCREENS = ["home", "library", "game", "practice", "stats", "results", "about"];
 const DEFAULT_SCREEN = "home";
@@ -38,6 +40,9 @@ const app = {
   state: null,         // the engine's game state
   ctx: { bubbles: {}, flash: {}, lastResult: null, wager: null, nudge: false, drawing: null },
   summary: null,       // the finished game, for the results screen
+  library: { pack: "all" },   // the Library's current pack filter
+  sheet: null,         // the open difficulty sheet: { entry, difficulty, seed }
+  statsConfirm: false, // the Stats reset button is waiting for its second tap
   timers: { cpuPick: null, reveal: null, bubble: {} },
   lastClueKey: "",
   lastBoardKey: "",
@@ -58,6 +63,11 @@ async function boot() {
     resume: $("#resume"),
     results: $("#results"),
     categoryPop: $("#category-pop"),
+    library: $("#library"),
+    stats: $("#stats"),
+    sheet: $("#sheet"),
+    goLibrary: $("#go-library"),
+    goStats: $("#go-stats"),
   };
 
   window.addEventListener("hashchange", route);
@@ -71,6 +81,8 @@ async function boot() {
     app.index = index;
     app.roster = roster.opponents;
     app.el.quickPlay.disabled = false;
+    app.el.goLibrary.disabled = false;
+    if (screenFromHash(location.hash) === "library") renderLibraryScreen();
   } catch (error) {
     $("#home-note").textContent = "Could not load the board list. Check your connection and reload.";
     console.error(error);
@@ -78,6 +90,9 @@ async function boot() {
 
   app.el.quickPlay.addEventListener("click", quickPlay);
   app.el.resume.addEventListener("click", resumeGame);
+  app.el.goLibrary.addEventListener("click", () => { location.hash = "#library"; });
+  app.el.goStats.addEventListener("click", () => { location.hash = "#stats"; });
+  app.el.sheet.addEventListener("click", (e) => { if (e.target === app.el.sheet) closeSheet(); });
   document.addEventListener("keydown", onKeyDown);
   requestAnimationFrame(frame);
 
@@ -106,6 +121,9 @@ function route() {
   if (name === "game" && !app.state) { location.hash = "#home"; return; }
   if (name === "results" && !app.summary) { location.hash = "#home"; return; }
   if (name === "home") app.el.resume.hidden = !(app.state && app.state.phase !== "results") && !storage.loadGame();
+  if (name === "library") renderLibraryScreen();
+  if (name === "stats") { app.statsConfirm = false; renderStatsScreen(); }
+  if (name !== "library" && name !== "home") closeSheet();
   showScreen(name);
 }
 
@@ -113,21 +131,51 @@ function route() {
 // Starting a game
 // ---------------------------------------------------------------------------
 
-/** Quick Play: a random board you have not played yet (or any, once you have played them all). */
-async function quickPlay() {
+/** Quick Play: a random board you have not played yet (or any, once you have played them all), then the difficulty sheet. */
+function quickPlay() {
   const played = storage.loadPlayed();
   const boards = app.index.boards;
   const unplayed = boards.filter((b) => !played[b.id]);
   const pool = unplayed.length ? unplayed : boards;
   const entry = pool[Math.floor(Math.random() * pool.length)];
-  await startGame(entry.id, "normal");
+  openSheet(entry);
 }
 
-async function startGame(boardId, difficulty) {
+/** The difficulty sheet for a board: pick Easy / Normal / Hard, meet the opponents, start. */
+function openSheet(entry) {
+  app.sheet = { entry, difficulty: app.settings.difficulty ?? "normal", seed: randomSeed() };
+  renderSheet();
+}
+
+function renderSheet() {
+  const sheet = app.sheet;
+  if (!sheet) return;
+  const opponents = previewOpponents({ tags: sheet.entry.tags, seed: sheet.seed, difficulty: sheet.difficulty, roster: app.roster });
+  const badge = boardBadge(sheet.entry, storage.loadPlayed());
+  renderDifficultySheet(app.el.sheet, { entry: sheet.entry, difficulty: sheet.difficulty, opponents, badge: badge.played ? badge.text : "" }, {
+    onDifficulty: (id) => { sheet.difficulty = id; renderSheet(); },
+    onShuffle: () => { sheet.seed = randomSeed(); renderSheet(); },
+    onStart: () => {
+      app.settings.difficulty = sheet.difficulty;
+      storage.saveSettings(app.settings);
+      closeSheet();
+      startGame(sheet.entry.id, sheet.difficulty, sheet.seed);
+    },
+    onClose: closeSheet,
+  });
+}
+
+function closeSheet() {
+  app.sheet = null;
+  app.el.sheet.hidden = true;
+  app.el.sheet.replaceChildren();
+}
+
+async function startGame(boardId, difficulty, seed = randomSeed()) {
   app.el.quickPlay.disabled = true;
   try {
     const board = await fetch(`./boards/${boardId}.json`).then((r) => r.json());
-    const state = createGame({ board, seed: randomSeed(), difficulty, roster: app.roster, playerName: app.settings.playerName });
+    const state = createGame({ board, seed, difficulty, roster: app.roster, playerName: app.settings.playerName });
     beginGame(state);
     showIntro();
   } finally {
@@ -182,11 +230,37 @@ function finishGame() {
     storage.clearGame();
   }
   renderResults(app.el.results, app.summary, {
-    onPlayAgain: () => quickPlay(),
+    onPlayAgain: () => { location.hash = "#home"; quickPlay(); },
     onLibrary: () => { location.hash = "#library"; },
     onHome: () => { location.hash = "#home"; },
-  }, { libraryEnabled: false });
+  }, { libraryEnabled: true });
   location.hash = "#results";
+}
+
+// ---------------------------------------------------------------------------
+// Library and Stats screens (paper panels, re-rendered each time they open)
+// ---------------------------------------------------------------------------
+
+function renderLibraryScreen() {
+  if (!app.index) return; // the index is still loading; boot() renders once it lands
+  renderLibrary(app.el.library, { index: app.index, played: storage.loadPlayed(), pack: app.library.pack }, {
+    onPack: (pack) => { app.library.pack = pack; renderLibraryScreen(); },
+    onPick: (entry) => openSheet(entry),
+    onHome: () => { location.hash = "#home"; },
+  });
+}
+
+function renderStatsScreen() {
+  renderStats(app.el.stats, storage.loadStats(), {
+    onReset: () => {
+      if (!app.statsConfirm) { app.statsConfirm = true; renderStatsScreen(); return; }
+      storage.resetStats();
+      app.statsConfirm = false;
+      renderStatsScreen();
+    },
+    onCancel: () => { app.statsConfirm = false; renderStatsScreen(); },
+    onHome: () => { location.hash = "#home"; },
+  }, { confirming: app.statsConfirm });
 }
 
 // ---------------------------------------------------------------------------

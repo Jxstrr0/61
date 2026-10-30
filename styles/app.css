@@ -690,3 +690,113 @@ body {
 .missed__yours { color: var(--ink-muted); }
 
 .results__buttons { display: grid; gap: var(--space-2); }
+
+/* ---------- Library ---------- */
+.panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.panel__head h2 { margin: 0; }
+.panel__head .eyebrow { margin: 0 0 var(--space-1); }
+.library, .stats { display: grid; gap: var(--space-4); }
+
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.chip {
+  min-height: 2.5rem;
+  padding: 0 var(--space-4);
+  border: 2px solid var(--rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+}
+.chip--on { background: var(--ink); border-color: var(--ink); color: var(--card); }
+
+.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+@media (min-width: 40rem) { .cards { grid-template-columns: 1fr 1fr; } }
+.cards__empty, .stats__empty { color: var(--ink-muted); }
+.card {
+  width: 100%;
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 2px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s var(--ease), border-color 0.15s var(--ease);
+}
+.card:active { transform: scale(0.98); }
+.card:hover, .card:focus-visible { border-color: var(--accent); }
+.card--played { border-left: 6px solid var(--podium-cpu-a); }
+.card__title { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-lg); }
+.card__meta { color: var(--ink-muted); font-size: var(--fs-sm); text-transform: capitalize; }
+.card__tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.card__tags i {
+  font-style: normal;
+  font-size: var(--fs-xs);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--rule);
+  color: var(--ink-muted);
+}
+.card__badge { margin-top: var(--space-1); font-size: var(--fs-sm); font-weight: 600; color: var(--accent-ink); }
+
+/* The difficulty sheet (a paper card over the stage) */
+.pop--sheet { position: fixed; align-items: flex-end; }
+@media (min-width: 40rem) { .pop--sheet { align-items: center; } }
+.sheet { display: grid; gap: var(--space-3); width: 100%; max-width: 28rem; text-align: left; }
+.sheet h3 { margin: 0; font-family: var(--font-display); font-size: var(--fs-xl); }
+.sheet .eyebrow { margin: 0; }
+.sheet__blurb { margin: 0; color: var(--ink-muted); font-size: var(--fs-sm); }
+.sheet__buttons { display: grid; gap: var(--space-2); }
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); border: 2px solid var(--ink); border-radius: var(--radius); overflow: hidden; }
+.seg__btn {
+  min-height: 2.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+}
+.seg__btn + .seg__btn { border-left: 2px solid var(--ink); }
+.seg__btn--on { background: var(--ink); color: var(--card); }
+.opps { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.opp {
+  display: grid;
+  gap: 0.15rem;
+  padding: var(--space-3);
+  border-left: 6px solid var(--podium-cpu-a);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-size: var(--fs-sm);
+}
+.opp--cpu-b { border-left-color: var(--podium-cpu-b); }
+.opp strong { font-family: var(--font-display); font-size: var(--fs-md); }
+.opp span { color: var(--ink-muted); }
+
+/* ---------- Stats ---------- */
+.statgrid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+@media (min-width: 40rem) { .statgrid { grid-template-columns: repeat(3, 1fr); } }
+.stat {
+  display: grid;
+  gap: 0.15rem;
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.stat__value { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-lg); font-variant-numeric: tabular-nums; }
+.stat__label { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+.stats__reset { display: grid; gap: var(--space-2); }
+.stats__warn { margin: 0; color: var(--accent-ink); font-weight: 600; }
+.btn--danger { border-color: var(--wrong); background: var(--wrong); color: #fff; }

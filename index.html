@@ -15,17 +15,16 @@
 
   <!-- All paths are relative (./) on purpose: the site lives under
        /61/ on GitHub Pages and may move to a custom domain later. -->
-  <link rel="stylesheet" href="./styles/tokens.css?v=3">
-  <link rel="stylesheet" href="./styles/app.css?v=3">
-  <script type="module" src="./src/main.js?v=3"></script>
+  <link rel="stylesheet" href="./styles/tokens.css?v=4">
+  <link rel="stylesheet" href="./styles/app.css?v=4">
+  <script type="module" src="./src/main.js?v=4"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Every screen is a <section data-screen="..."> inside <main>. The hash
        router in src/main.js shows one at a time (#home, #library, #game,
-       #practice, #stats, #results, #about). Phase 1 ships Home only; the
-       other screens arrive in later phases. -->
+       #practice, #stats, #results, #about). Practice arrives in phase 7. -->
   <main id="main" class="app">
 
     <section class="screen screen--home" data-screen="home">
@@ -35,14 +34,14 @@
         <p class="home__tagline">Three podiums. Two boards. One wagered final.</p>
 
         <nav class="home__menu" aria-label="Main menu">
-          <!-- Library, Practice and Stats are wired up in later phases. -->
+          <!-- Practice is wired up in phase 7. -->
           <button class="btn btn--primary" type="button" id="quick-play" disabled>Quick Play</button>
           <button class="btn" type="button" id="resume" hidden>Resume game</button>
-          <button class="btn" type="button" disabled>Library</button>
+          <button class="btn" type="button" id="go-library" disabled>Library</button>
           <button class="btn" type="button" disabled>Practice</button>
-          <button class="btn" type="button" disabled>Stats</button>
+          <button class="btn" type="button" id="go-stats">Stats</button>
         </nav>
-        <p class="home__note" id="home-note">Quick Play starts a random board against two Normal opponents. Phone: tap the clue to buzz. Desktop: press Space.</p>
+        <p class="home__note" id="home-note">Quick Play picks a board you have not played yet. Phone: tap the clue to buzz. Desktop: press Space.</p>
       </div>
       <footer class="home__footer">
         <span class="eyebrow">A Longlight Interactive game</span>
@@ -66,6 +65,16 @@
       <div class="pop" id="category-pop" hidden></div>
     </section>
 
+    <!-- Library: pack chips and board cards (ui/library.js) -->
+    <section class="screen screen--paper" data-screen="library" hidden>
+      <div id="library"></div>
+    </section>
+
+    <!-- Stats: career numbers and category bars (ui/stats.js) -->
+    <section class="screen screen--paper" data-screen="stats" hidden>
+      <div id="stats"></div>
+    </section>
+
     <!-- Results: filled by ui/results.js when a game ends -->
     <section class="screen screen--paper" data-screen="results" hidden>
       <div id="results"></div>
@@ -80,5 +89,8 @@
     </section>
 
   </main>
+
+  <!-- The difficulty sheet, over whichever screen opened it (ui/library.js) -->
+  <div class="pop pop--sheet" id="sheet" hidden></div>
 </body>
 </html>
