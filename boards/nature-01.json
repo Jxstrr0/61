@@ -1,0 +1,709 @@
+{
+  "id": "nature-01",
+  "title": "Nature #1",
+  "pack": "Nature",
+  "difficulty": "normal",
+  "tags": [
+    "nature",
+    "science",
+    "language",
+    "history",
+    "canada"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "CATS, BIG & SMALL",
+          "tags": [
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The largest of the big cats, striped and found from India to the Russian Far East",
+              "answer": "the tiger",
+              "accept": [
+                "tiger",
+                "tigers"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "The only big cat that lives in groups, called prides",
+              "answer": "the lion",
+              "accept": [
+                "lion",
+                "lions"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This spotted cat of Central and South America is the largest cat in the Western Hemisphere",
+              "answer": "the jaguar",
+              "accept": [
+                "jaguar",
+                "jaguars"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Also called the puma or mountain lion, it has the largest range of any wild land mammal in the Americas",
+              "answer": "the cougar",
+              "accept": [
+                "cougar",
+                "puma",
+                "mountain lion"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This tufted-eared cat of Canada's boreal forest has huge snowshoe-like paws, and its numbers rise and fall with the snowshoe hare",
+              "answer": "the lynx",
+              "accept": [
+                "lynx",
+                "Canada lynx",
+                "the Canada lynx"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OCEAN LIFE",
+          "tags": [
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "This eight-armed mollusc squirts ink and can squeeze through a gap the size of its eye",
+              "answer": "the octopus",
+              "accept": [
+                "octopus",
+                "octopuses",
+                "an octopus"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "The largest fish in the sea, this spotted filter feeder is harmless to people",
+              "answer": "the whale shark",
+              "accept": [
+                "whale shark",
+                "whale sharks"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "In this family of fish, the male carries the eggs in a pouch until they hatch",
+              "answer": "the seahorse",
+              "accept": [
+                "seahorse",
+                "seahorses",
+                "sea horse"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Off the coast of Queensland, Australia, it is the world's largest coral reef system",
+              "answer": "the Great Barrier Reef",
+              "accept": [
+                "Great Barrier Reef"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The largest toothed whale, it dives deep to hunt giant squid and inspired a famous 1851 novel",
+              "answer": "the sperm whale",
+              "accept": [
+                "sperm whale",
+                "sperm whales"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CLOUDS & STORMS",
+          "tags": [
+            "nature",
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "In the Atlantic, a tropical storm with winds of 119 km/h or more gets this name",
+              "answer": "a hurricane",
+              "accept": [
+                "hurricane",
+                "hurricanes"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Puffy, flat-bottomed fair-weather clouds, their name is Latin for \"heap\"",
+              "answer": "cumulus",
+              "accept": [
+                "cumulus clouds"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Lightning heats the air so fast that it expands with a bang, which we hear as this",
+              "answer": "thunder",
+              "accept": [
+                "a thunderclap",
+                "thunderclap"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Named with the Latin for \"curl of hair\", these wispy high clouds are made of ice crystals",
+              "answer": "cirrus",
+              "accept": [
+                "cirrus clouds"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 1000,
+              "text": "Hurricanes are rated from category 1 to 5 by wind speed on this two-name scale",
+              "answer": "the Saffir-Simpson scale",
+              "accept": [
+                "Saffir-Simpson",
+                "Saffir Simpson",
+                "Saffir-Simpson Hurricane Wind Scale"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "ROCKS & MINERALS",
+          "tags": [
+            "science",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The hardest natural substance, this gem is a crystal of pure carbon",
+              "answer": "a diamond",
+              "accept": [
+                "diamond",
+                "diamonds"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Limestone that has been squeezed and heated turns into this rock, prized by sculptors",
+              "answer": "marble",
+              "accept": [
+                "marble stone",
+                "marbles"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This scale of mineral hardness runs from 1 for talc to 10 for diamond",
+              "answer": "the Mohs scale",
+              "accept": [
+                "Mohs",
+                "Mohs hardness scale",
+                "the Mohs hardness scale"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This black volcanic glass was chipped into razor-sharp blades by ancient peoples",
+              "answer": "obsidian",
+              "accept": [
+                "volcanic glass",
+                "obsidion"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Alberta's oil sands are sand and clay mixed with this thick, tar-like form of petroleum",
+              "answer": "bitumen",
+              "accept": [
+                "asphalt",
+                "tar",
+                "bitumin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LEAF IT TO ME",
+          "note": "Trees and plants",
+          "tags": [
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Bamboo, the fastest-growing plant on Earth, is actually a giant member of this plant family",
+              "answer": "grass",
+              "accept": [
+                "grasses",
+                "the grass family"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Indigenous peoples of eastern Canada built canoes from the white, papery bark of this tree",
+              "answer": "the birch",
+              "accept": [
+                "birch",
+                "paper birch",
+                "white birch"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This carnivorous plant snaps shut when an insect touches the trigger hairs inside its leaves",
+              "answer": "the Venus flytrap",
+              "accept": [
+                "Venus flytrap",
+                "Venus fly trap",
+                "flytrap"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The age of a tree, and the weather of past years, can be read from these inside its trunk",
+              "answer": "tree rings",
+              "accept": [
+                "rings",
+                "growth rings",
+                "annual rings"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The oldest known individual trees, some over 4,800 years old, are these pines of the Great Basin in the western United States",
+              "answer": "bristlecone pines",
+              "accept": [
+                "bristlecone pine",
+                "bristlecone",
+                "Great Basin bristlecone pine"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BABY TALK",
+          "note": "Every response is the name for a young animal",
+          "tags": [
+            "nature",
+            "language"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "A young cat",
+              "answer": "a kitten",
+              "accept": [
+                "kitten",
+                "kittens"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "A young kangaroo, or any young marsupial",
+              "answer": "a joey",
+              "accept": [
+                "joey",
+                "joeys"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "A young goose",
+              "answer": "a gosling",
+              "accept": [
+                "gosling",
+                "goslings"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "A young swan",
+              "answer": "a cygnet",
+              "accept": [
+                "cygnet",
+                "cygnets"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "A young hare",
+              "answer": "a leveret",
+              "accept": [
+                "leveret",
+                "leverets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "FOR THE BIRDS",
+          "tags": [
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This big black-necked bird is Canada's most famous, honking overhead in V-shaped flocks",
+              "answer": "the Canada goose",
+              "accept": [
+                "Canada goose",
+                "Canada geese",
+                "Canadian goose"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The fastest animal on Earth, this bird of prey can pass 300 km/h in a hunting dive",
+              "answer": "the peregrine falcon",
+              "accept": [
+                "peregrine falcon",
+                "peregrine",
+                "the peregrine"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Ontario's provincial bird, this black-and-white diver with a haunting call appears on the one-dollar coin",
+              "answer": "the loon",
+              "accept": [
+                "loon",
+                "common loon",
+                "the common loon"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "North America's tallest bird, it breeds in Wood Buffalo National Park and was down to about 20 birds in the 1940s",
+              "answer": "the whooping crane",
+              "accept": [
+                "whooping crane",
+                "whooping cranes"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This flightless, nocturnal New Zealand parrot is the heaviest parrot in the world",
+              "answer": "the kākāpō",
+              "accept": [
+                "kakapo",
+                "kākāpō",
+                "the kakapo"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "CREEPY CRAWLIES",
+          "tags": [
+            "nature",
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "These insects live in colonies with a queen, and some species farm aphids for their sweet secretions",
+              "answer": "ants",
+              "accept": [
+                "ant",
+                "the ant"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Fireflies make their glow with this chemical process, also used by deep-sea fish",
+              "answer": "bioluminescence",
+              "accept": [
+                "bioluminescent"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Spiders are not insects; along with scorpions, ticks and mites they belong to this eight-legged class",
+              "answer": "arachnids",
+              "accept": [
+                "arachnid",
+                "arachnida"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Monarch butterfly caterpillars feed only on this plant, whose toxins make the adults poisonous to birds",
+              "answer": "milkweed",
+              "accept": [
+                "milkweeds"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Insects have no lungs; air enters through these tiny openings along the sides of the body",
+              "answer": "spiracles",
+              "accept": [
+                "spiracle"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GONE OR GOING",
+          "note": "Extinct and endangered animals",
+          "tags": [
+            "nature",
+            "history"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This flightless bird of Mauritius was wiped out by 1700 and lives on in the phrase \"dead as a\" this",
+              "answer": "the dodo",
+              "accept": [
+                "dodo",
+                "dodo bird"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Also called the Tasmanian tiger, this striped marsupial's last known member died in a Hobart zoo in 1936",
+              "answer": "the thylacine",
+              "accept": [
+                "thylacine",
+                "Tasmanian tiger",
+                "Tasmanian wolf"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Once numbering in the billions, this North American bird's last member, Martha, died at the Cincinnati Zoo in 1914",
+              "answer": "the passenger pigeon",
+              "accept": [
+                "passenger pigeon",
+                "passenger pigeons"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "In 2016 this black-and-white bamboo eater was moved from \"endangered\" to \"vulnerable\"",
+              "answer": "the giant panda",
+              "accept": [
+                "giant panda",
+                "panda",
+                "pandas"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "These huge sea cows, named for a German naturalist, were hunted to extinction near the Bering Sea within 27 years of their discovery in 1741",
+              "answer": "Steller's sea cow",
+              "accept": [
+                "Steller's sea cows",
+                "Stellers sea cow",
+                "the Steller's sea cow"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WILD CANADA",
+          "tags": [
+            "nature",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Canada's national animal, whose pelts drove the fur trade",
+              "answer": "the beaver",
+              "accept": [
+                "beaver",
+                "beavers"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Found on the quarter, this antlered animal of the north is called a reindeer in Europe",
+              "answer": "the caribou",
+              "accept": [
+                "caribou"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "In species like sockeye and coho, this Pacific fish swims up British Columbia's rivers to spawn and die",
+              "answer": "salmon",
+              "accept": [
+                "Pacific salmon",
+                "the salmon",
+                "sockeye salmon"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The largest land member of the weasel family, this fierce northern scavenger shares its name with a Marvel hero",
+              "answer": "the wolverine",
+              "accept": [
+                "wolverine",
+                "wolverines"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Called umingmak, \"the bearded one\", in Inuktitut, this shaggy Arctic grazer forms a defensive circle when wolves attack",
+              "answer": "the muskox",
+              "accept": [
+                "muskox",
+                "musk ox",
+                "muskoxen"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "HOW ANIMALS WORK",
+          "tags": [
+            "science",
+            "nature"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Bears, bats and groundhogs survive winter by slowing their bodies right down in this deep sleep",
+              "answer": "hibernation",
+              "accept": [
+                "hibernating",
+                "hibernate"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The gilled, swimming young of frogs and toads",
+              "answer": "tadpoles",
+              "accept": [
+                "tadpole",
+                "a tadpole",
+                "polliwogs"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Bats and dolphins find prey and their way around by bouncing sound off objects, a sense called this",
+              "answer": "echolocation",
+              "accept": [
+                "sonar",
+                "biosonar"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The scientific word for a \"cold-blooded\" animal like a reptile, whose body heat comes from its surroundings",
+              "answer": "an ectotherm",
+              "accept": [
+                "ectotherm",
+                "poikilotherm",
+                "cold-blooded"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Sea turtles and migrating birds navigate partly by sensing Earth's magnetic field, an ability known by this name",
+              "answer": "magnetoreception",
+              "accept": [
+                "magnetoreceptive",
+                "magnetic sense"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WHAT'S IN A NAME",
+          "note": "We give the scientific name; you give the everyday name of the animal",
+          "tags": [
+            "nature",
+            "language",
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Canis familiaris",
+              "answer": "the dog",
+              "accept": [
+                "dog",
+                "dogs",
+                "the domestic dog"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Ursus arctos, found from Alaska to Siberia and known in the Rockies by a fiercer name",
+              "answer": "the brown bear",
+              "accept": [
+                "brown bear",
+                "grizzly bear",
+                "grizzly"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Rattus norvegicus, the common city rodent also bred as a lab animal",
+              "answer": "the rat",
+              "accept": [
+                "rat",
+                "rats",
+                "brown rat"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Orcinus orca, the black-and-white \"wolf of the sea\"",
+              "answer": "the orca",
+              "accept": [
+                "orca",
+                "killer whale",
+                "orcas"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Bubo scandiacus, Quebec's official bird, a white Arctic hunter",
+              "answer": "the snowy owl",
+              "accept": [
+                "snowy owl",
+                "snowy owls"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "FUNGI",
+    "text": "A single specimen of this genus of honey fungus in Oregon's Malheur National Forest covers about nine square kilometres and is often called the largest living organism on Earth",
+    "answer": "Armillaria",
+    "accept": [
+      "Armillaria ostoyae",
+      "Armillaria solidipes",
+      "honey fungus"
+    ]
+  }
+}

@@ -279,6 +279,19 @@
         "history",
         "sports"
       ]
+    },
+    {
+      "id": "nature-01",
+      "title": "Nature #1",
+      "pack": "Nature",
+      "difficulty": "normal",
+      "tags": [
+        "nature",
+        "science",
+        "language",
+        "history",
+        "canada"
+      ]
     }
   ]
 }
