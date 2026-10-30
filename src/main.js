@@ -17,6 +17,9 @@ import * as audio from "./audio.js";
 import { renderTutorial } from "./ui/tutorial.js";
 import { createPractice, dispatchPractice, cluesFromBoard } from "./practice.js";
 import { renderPracticeSetup, renderPracticeClue, practiceRenderKey, updatePracticeTimers } from "./ui/practice.js";
+import { hostReact, hostGreeting } from "./host.js";
+import { mountHost } from "./ui/host.js";
+import { mountStudio, mountCrowd, setOnAir } from "./ui/studio.js";
 
 const SCREENS = ["home", "library", "game", "practice", "stats", "results", "about"];
 const DEFAULT_SCREEN = "home";
@@ -50,6 +53,11 @@ const app = {
   countUp: null,       // podium score animation: { from, to, start, duration }
   practice: { state: null, mode: "buzz", clues: null, loading: false, error: null, lastKey: "" },
   statsConfirm: false, // the Stats reset button is waiting for its second tap
+  host: null,          // the host at the game desk (ui/host.js controller)
+  homeHost: null,      // the host on the Home screen
+  studio: null,        // the game screen's set (flash, hush)
+  crowd: null,         // the audience strip (applause, groan, hush)
+  lastShot: null,      // "board" | "clue": for the camera cut between them
   timers: { cpuPick: null, reveal: null, bubble: {} },
   lastClueKey: "",
   lastBoardKey: "",
@@ -80,7 +88,18 @@ async function boot() {
     practice: $("#practice"),
     tutorial: $("#tutorial"),
     muteButtons: document.querySelectorAll("[data-mute]"),
+    stage: $("#stage"),
+    onair: $("#onair"),
+    onairPractice: $("#onair-practice"),
   };
+  // The set, the host and the audience (phase 9). Pure decoration: the game
+  // runs the same if any of it fails to load.
+  mountStudio($("#studio-home"));
+  app.studio = mountStudio($("#studio-game"));
+  mountStudio($("#studio-practice"));
+  app.crowd = mountCrowd($("#crowd"));
+  app.host = mountHost($("#host-game"), { size: "small" });
+  app.homeHost = mountHost($("#host-home"), { size: "large" });
   audio.setMuted(app.settings.muted);
   renderMute();
   for (const b of app.el.muteButtons) b.addEventListener("click", toggleMute);
@@ -157,7 +176,10 @@ function route() {
   const name = screenFromHash(location.hash);
   if (name === "game" && !app.state) { location.hash = "#home"; return; }
   if (name === "results" && !app.summary) { location.hash = "#home"; return; }
-  if (name === "home") app.el.resume.hidden = !(app.state && app.state.phase !== "results") && !storage.loadGame();
+  if (name === "home") {
+    app.el.resume.hidden = !(app.state && app.state.phase !== "results") && !storage.loadGame();
+    greetAtHome();
+  }
   if (name === "library") renderLibraryScreen();
   if (name === "stats") { app.statsConfirm = false; renderStatsScreen(); }
   if (name === "practice") renderPracticeScreen();
@@ -256,7 +278,12 @@ function beginGame(state) {
   clearTimers();
   app.lastClueKey = "";
   app.lastBoardKey = "";
+  app.lastShot = null;
   hideBand();
+  app.host.setMood("idle");
+  app.host.say("");
+  app.studio.setHush(false);
+  app.crowd.setHush(false);
   app.el.gameTitle.textContent = state.board.title;
   location.hash = "#game";
   render();
@@ -321,6 +348,7 @@ function renderLibraryScreen() {
 
 function renderPracticeScreen() {
   const p = app.practice;
+  setOnAir(app.el.onairPractice, Boolean(p.state));
   if (p.state) {
     const key = practiceRenderKey(p.state);
     if (key === p.lastKey) return;
@@ -437,6 +465,7 @@ function act(action) {
 function onEvent(event) {
   const state = app.state;
   const names = state.contestants.map((c) => c.name);
+  app.host.react(hostReact(event, state)); // what the host says and the face they pull
   switch (event.type) {
     case "round.start":
       app.revealBoard = true;
@@ -445,6 +474,7 @@ function onEvent(event) {
       break;
     case "clue.select":
       audio.play(event.dailyDouble ? "dailyDouble" : "categoryPop");
+      if (event.dailyDouble) { app.studio.flash(); audio.play("gasp"); }
       break;
     case "buzzers.open":
       audio.play("goLight");
@@ -463,6 +493,8 @@ function onEvent(event) {
       app.ctx.lastResult = event;
       flash(event.contestant, event.correct ? "correct" : "wrong", 900);
       audio.play(event.correct ? "correct" : "wrong");
+      if (event.correct) { app.crowd.applause(); audio.play("applause"); }
+      else { app.crowd.groan(); audio.play("groan"); }
       if (!state.contestants[event.contestant].isHuman) {
         const said = event.text ? `${event.text}. ` : "";
         bubble(event.contestant, `${said}${event.correct ? "Correct!" : "Incorrect."}`, 2600);
@@ -496,16 +528,26 @@ function onEvent(event) {
       break;
     case "final.clue":
       audio.startFinalMusic();
+      app.studio.setHush(true);   // the room goes dark for the think time
+      app.crowd.setHush(true);
       break;
     case "final.answered":
       audio.stopFinalMusic();
+      app.studio.setHush(false);
+      app.crowd.setHush(false);
       break;
     case "final.reveal":
       flash(event.contestant, event.correct ? "correct" : "wrong", 900);
       audio.play(event.correct ? "correct" : "wrong");
+      if (event.correct) { app.crowd.applause(); audio.play("applause"); } else { app.crowd.groan(); }
       break;
     case "game.end":
       audio.stopFinalMusic();
+      app.studio.setHush(false);
+      app.crowd.setHush(false);
+      app.studio.flash();
+      app.crowd.applause(true);
+      audio.play("ovation");
       break;
     default:
       break;
@@ -633,7 +675,27 @@ function render() {
     app.lastClueKey = clueKey;
   }
   renderPodiumsNow();
-  app.el.game.classList.toggle("game--clue", state.phase === "clue" || Boolean(inFinal));
+  const live = state.phase === "clue" || Boolean(inFinal);
+  app.el.game.classList.toggle("game--clue", live);
+  setOnAir(app.el.onair, live);
+  // The host reads the clue aloud (silently): mouth moves while the reading delay runs.
+  app.host.setTalking(state.phase === "clue" && state.clue?.state === "reading");
+  // A camera cut when the shot changes between the board and the clue card.
+  const shot = live ? "clue" : "board";
+  if (app.lastShot && shot !== app.lastShot) {
+    app.el.stage.classList.remove("stage--cut");
+    void app.el.stage.offsetWidth;
+    app.el.stage.classList.add("stage--cut");
+  }
+  app.lastShot = shot;
+}
+
+/** The host's hello on the Home screen (changes a little as your career grows). */
+function greetAtHome() {
+  if (!app.homeHost) return;
+  const stats = storage.loadStats();
+  app.homeHost.setMood(stats.games > 0 ? "happy" : "idle");
+  app.homeHost.say(hostGreeting(stats, new Date().getMinutes()), 0);
 }
 
 function renderPodiumsNow() {

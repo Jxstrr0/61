@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="sun" aria-hidden="true" focusable="false">
+  <!--
+    The host of 61: an original sun character in the Longlight spirit.
+    This file is the SOURCE. src/ui/host.js fetches it and inlines it in the
+    page so CSS can animate the parts; every group below has a class the
+    stylesheet (styles/app.css, "Host" section) hooks into:
+
+      .sun__rays     the twelve rays, slowly turning (spin faster when happy)
+      .sun__face     the disc
+      .sun__eye      an eye; .sun__lid is the eyelid that drops to blink
+      .sun__brow     an eyebrow, rotated per mood
+      .sun__mouth    one mouth shape per mood; CSS shows exactly one at a time
+                     (smile, grin, o, flat, frown). "Talking" alternates o/flat.
+
+    Edit it in any SVG editor; keep the class names and the 200x200 viewBox.
+  -->
+  <defs>
+    <radialGradient id="sun-skin" cx="38%" cy="32%" r="78%">
+      <stop offset="0" stop-color="#FFE59A"/>
+      <stop offset="0.6" stop-color="#FFC347"/>
+      <stop offset="1" stop-color="#F59E2B"/>
+    </radialGradient>
+    <linearGradient id="sun-ray-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD166"/>
+      <stop offset="1" stop-color="#F59E2B"/>
+    </linearGradient>
+    <path id="sun-ray" d="M100 10 C106 24 110 32 114 42 Q100 35 86 42 C90 32 94 24 100 10 Z" fill="url(#sun-ray-fill)"/>
+  </defs>
+
+  <g class="sun__rays">
+    <use href="#sun-ray"/>
+    <use href="#sun-ray" transform="rotate(30 100 100)"/>
+    <use href="#sun-ray" transform="rotate(60 100 100)"/>
+    <use href="#sun-ray" transform="rotate(90 100 100)"/>
+    <use href="#sun-ray" transform="rotate(120 100 100)"/>
+    <use href="#sun-ray" transform="rotate(150 100 100)"/>
+    <use href="#sun-ray" transform="rotate(180 100 100)"/>
+    <use href="#sun-ray" transform="rotate(210 100 100)"/>
+    <use href="#sun-ray" transform="rotate(240 100 100)"/>
+    <use href="#sun-ray" transform="rotate(270 100 100)"/>
+    <use href="#sun-ray" transform="rotate(300 100 100)"/>
+    <use href="#sun-ray" transform="rotate(330 100 100)"/>
+  </g>
+
+  <g class="sun__head">
+    <circle class="sun__face" cx="100" cy="100" r="58" fill="url(#sun-skin)"/>
+
+    <!-- cheeks -->
+    <circle cx="68" cy="116" r="9" fill="#FF7F5C" opacity="0.4"/>
+    <circle cx="132" cy="116" r="9" fill="#FF7F5C" opacity="0.4"/>
+
+    <!-- eyes: pupil, highlight, then the lid that slides down to blink -->
+    <g class="sun__eye sun__eye--l" transform="translate(80 92)">
+      <ellipse rx="8" ry="10" fill="#2B1B3D"/>
+      <circle cx="3" cy="-3.5" r="2.6" fill="#FFF8EA"/>
+      <rect class="sun__lid" x="-10" y="-12" width="20" height="24" rx="6" fill="#FFC95A"/>
+    </g>
+    <g class="sun__eye sun__eye--r" transform="translate(120 92)">
+      <ellipse rx="8" ry="10" fill="#2B1B3D"/>
+      <circle cx="3" cy="-3.5" r="2.6" fill="#FFF8EA"/>
+      <rect class="sun__lid" x="-10" y="-12" width="20" height="24" rx="6" fill="#FFC95A"/>
+    </g>
+
+    <!-- brows -->
+    <path class="sun__brow sun__brow--l" d="M68 74 Q80 67 92 73" fill="none" stroke="#B5621B" stroke-width="4.5" stroke-linecap="round"/>
+    <path class="sun__brow sun__brow--r" d="M108 73 Q120 67 132 74" fill="none" stroke="#B5621B" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- mouths (one visible at a time, see CSS) -->
+    <g class="sun__mouths" transform="translate(100 126)">
+      <path class="sun__mouth sun__mouth--smile" d="M-18 -2 Q0 14 18 -2" fill="none" stroke="#7A3E12" stroke-width="4.5" stroke-linecap="round"/>
+      <path class="sun__mouth sun__mouth--grin" d="M-22 -4 Q0 28 22 -4 Z" fill="#7A3E12"/>
+      <path class="sun__mouth sun__mouth--tongue" d="M-9 8 Q0 18 9 8 Q0 12 -9 8 Z" fill="#FF7F5C"/>
+      <ellipse class="sun__mouth sun__mouth--o" rx="8" ry="10" cy="2" fill="#7A3E12"/>
+      <path class="sun__mouth sun__mouth--flat" d="M-14 2 L14 2" fill="none" stroke="#7A3E12" stroke-width="4.5" stroke-linecap="round"/>
+      <path class="sun__mouth sun__mouth--frown" d="M-16 8 Q0 -6 16 8" fill="none" stroke="#7A3E12" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

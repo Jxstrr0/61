@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 64" preserveAspectRatio="xMidYMax slice" class="crowd__svg" aria-hidden="true" focusable="false">
+  <!--
+    The studio audience: two rows of silhouettes sitting behind the podiums.
+    src/ui/studio.js inlines this file so the stylesheet can bounce each
+    figure on applause (.crowd--applause .aud) and dim the room for the
+    Final (.crowd--hush). Each <use> is one person; the delay of their bounce
+    comes from nth-child rules in CSS, so adding or removing people is safe.
+  -->
+  <defs>
+    <!-- head and shoulders, drawn once -->
+    <path id="aud-person" d="M-14 30 Q-14 14 -5 11 A7.5 7.5 0 1 1 5 11 Q14 14 14 30 Z"/>
+  </defs>
+  <g class="crowd__row crowd__row--back" fill="#0B0920" stroke="#2B2456" stroke-width="0.8">
+    <use class="aud" href="#aud-person" x="18" y="12"/>
+    <use class="aud" href="#aud-person" x="50" y="10"/>
+    <use class="aud" href="#aud-person" x="82" y="13"/>
+    <use class="aud" href="#aud-person" x="114" y="11"/>
+    <use class="aud" href="#aud-person" x="146" y="12"/>
+    <use class="aud" href="#aud-person" x="178" y="10"/>
+    <use class="aud" href="#aud-person" x="210" y="13"/>
+    <use class="aud" href="#aud-person" x="242" y="11"/>
+    <use class="aud" href="#aud-person" x="274" y="12"/>
+    <use class="aud" href="#aud-person" x="306" y="10"/>
+    <use class="aud" href="#aud-person" x="338" y="13"/>
+    <use class="aud" href="#aud-person" x="370" y="11"/>
+    <use class="aud" href="#aud-person" x="402" y="12"/>
+  </g>
+  <g class="crowd__row crowd__row--front" fill="#070617" stroke="#352C66" stroke-width="0.8">
+    <use class="aud" href="#aud-person" x="2" y="30"/>
+    <use class="aud" href="#aud-person" x="34" y="32"/>
+    <use class="aud" href="#aud-person" x="66" y="29"/>
+    <use class="aud" href="#aud-person" x="98" y="31"/>
+    <use class="aud" href="#aud-person" x="130" y="33"/>
+    <use class="aud" href="#aud-person" x="162" y="30"/>
+    <use class="aud" href="#aud-person" x="194" y="32"/>
+    <use class="aud" href="#aud-person" x="226" y="29"/>
+    <use class="aud" href="#aud-person" x="258" y="31"/>
+    <use class="aud" href="#aud-person" x="290" y="33"/>
+    <use class="aud" href="#aud-person" x="322" y="30"/>
+    <use class="aud" href="#aud-person" x="354" y="32"/>
+    <use class="aud" href="#aud-person" x="386" y="29"/>
+    <use class="aud" href="#aud-person" x="418" y="31"/>
+  </g>
+</svg>

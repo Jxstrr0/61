@@ -1,7 +1,9 @@
 /* ==========================================================================
-   61 - A Trivia Game: app styles (phase 1: shell and Home only)
+   61 - A Trivia Game: app styles
    Phone portrait is the design target (down to 360 px wide); desktop is
-   the same layout, centred. Colours come from tokens.css.
+   the same layout, centred. Colours come from tokens.css. Since phase 9 the
+   game plays in a night studio: see the "Studio", "Host" and "Crowd"
+   sections at the end for the set, the sun host and the audience.
    ========================================================================== */
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -69,10 +71,8 @@ body {
   gap: var(--space-4);
 }
 
-.home__mark {
-  width: 7.5rem;
-  height: 7.5rem;
-}
+.screen--home { position: relative; overflow: hidden; background: var(--stage); }
+.screen--home > .home, .screen--home > .home__footer { position: relative; z-index: 1; }
 
 .home__title {
   margin: 0;
@@ -81,6 +81,19 @@ body {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.03em;
+}
+/* The "61" sign: lit tube letters */
+.sign {
+  display: inline-block;
+  font-size: 5.5rem;
+  color: #FFF4D6;
+  text-shadow: 0 0 6px #FFE3A6, 0 0 18px var(--light), 0 0 42px var(--light-glow), 0 0 80px rgba(255, 179, 71, 0.35);
+  animation: sign-flicker 7s infinite;
+}
+@keyframes sign-flicker {
+  0%, 91%, 94%, 100% { opacity: 1; }
+  92% { opacity: 0.72; }
+  93% { opacity: 0.95; }
 }
 
 .home__subtitle {
@@ -183,10 +196,22 @@ body {
 .screen--game {
   padding: 0;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
   position: relative;
   overflow: hidden;
+  background: var(--stage);
 }
+/* Everything but the set itself sits above the studio backdrop */
+.game__top, .stage, .host-desk, .crowd, .podiums, .practice { position: relative; z-index: 1; }
+/* While a clue is up the board stays in the DOM (keyed render) but out of shot */
+.game--clue .board { visibility: hidden; }
+
+/* The stage holds the board, and the clue card over it */
+.stage {
+  display: grid;
+  min-height: 0;
+}
+.stage > .board { grid-area: 1 / 1; }
 
 .game__top {
   display: flex;
@@ -196,7 +221,8 @@ body {
   font-family: var(--font-display);
 }
 .game__home {
-  color: var(--accent-stage);
+  color: var(--light);
+  text-shadow: 0 0 12px var(--light-glow);
   font-weight: 700;
   font-size: var(--fs-lg);
   text-decoration: none;
@@ -215,8 +241,8 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 4.25rem repeat(5, minmax(2.75rem, 4.5rem));
-  gap: 3px;
-  padding: 0 var(--space-2);
+  gap: 4px;
+  padding: var(--space-2) var(--space-2) var(--space-3);
   align-content: center;
   min-height: 0;
 }
@@ -232,8 +258,9 @@ body {
 }
 
 .board__cat {
-  background: var(--stage-deep);
+  background: linear-gradient(180deg, #332A72, var(--cat));
   color: var(--stage-ink);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 2px 0 #0A0818;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -263,14 +290,22 @@ body {
 }
 
 .board__cell {
-  background: var(--cell);
-  color: var(--accent);
+  background: linear-gradient(180deg, #221D4D, var(--cell));
+  color: var(--cell-ink);
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  text-shadow: 0 0 10px rgba(255, 197, 107, 0.55);
+  box-shadow: inset 0 0 0 1px var(--cell-edge), inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 2px 0 #0A0818;
+  transition: transform 0.12s var(--ease), box-shadow 0.2s;
+}
+.board__cell:not(:disabled):hover,
+.board__cell:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 1px var(--light), 0 0 18px var(--light-soft), 0 2px 0 #0A0818;
 }
 .board__cell--used {
-  background: rgba(20, 20, 19, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
   cursor: default;
 }
 .board__cell:disabled:not(.board__cell--used) { cursor: wait; }
@@ -278,7 +313,11 @@ body {
 .board__cell:not(:disabled):active { transform: scale(0.95); }
 
 @media (min-width: 40rem) {
-  .board { gap: 6px; padding: 0 var(--space-4); grid-template-rows: 5rem repeat(5, minmax(3.5rem, 5.5rem)); max-width: 56rem; width: 100%; margin: 0 auto; }
+  .board { gap: 6px; padding: var(--space-3) var(--space-4); grid-template-rows: 5rem repeat(5, minmax(3.5rem, 5.5rem)); max-width: 56rem; width: 100%; margin: 0 auto; }
+  /* Lecterns and the host's desk stay the board's width on wide screens; the floor spans the room */
+  .podiums { padding-inline: max(var(--space-2), calc((100% - 56rem) / 2)); }
+  .host-desk { padding-inline: max(var(--space-3), calc((100% - 56rem) / 2)); }
+  .clue { max-width: 56rem; margin: 0 auto; left: 0; right: 0; }
   .board__cat > span { font-size: clamp(0.6rem, calc(96cqw / (var(--longest, 8) * 0.8)), 0.85rem); }
   .board__cell { font-size: 1.5rem; }
 }
@@ -286,39 +325,56 @@ body {
 /* ---------- Clue card (covers the board) ---------- */
 .clue {
   position: absolute;
-  inset: 0 0 auto 0;
-  top: 0;
-  bottom: 0;
-  background: var(--stage);
+  inset: 0;
+  background: transparent;
   display: flex;
   flex-direction: column;
-  padding: max(var(--space-3), env(safe-area-inset-top)) var(--space-3) var(--space-3);
+  padding: var(--space-2) var(--space-3) var(--space-3);
   gap: var(--space-3);
   z-index: 2;
-  padding-bottom: 7.5rem; /* room for the podiums below */
   overflow-y: auto;
+  animation: clue-in 0.32s var(--ease) both;
+}
+@keyframes clue-in {
+  from { opacity: 0; transform: scale(1.03); }
+  to { opacity: 1; transform: none; }
 }
 .clue[hidden] { display: none; }
 
+/* The lower third: a broadcast-style banner with the category and value */
 .clue__meta {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: var(--space-3);
+  align-self: flex-start;
+  max-width: 100%;
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  border-left: 5px solid var(--light);
+  background: linear-gradient(90deg, rgba(255, 179, 71, 0.22), rgba(22, 19, 44, 0.9) 60%);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  animation: lower-third 0.4s var(--ease) both;
+}
+.clue__meta .eyebrow { color: var(--stage-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@keyframes lower-third {
+  from { transform: translateX(-110%); opacity: 0; }
+  to { transform: none; opacity: 1; }
 }
 .clue__value {
   font-family: var(--font-display);
   font-weight: 700;
-  color: var(--accent-stage);
+  color: var(--light);
+  white-space: nowrap;
 }
 
 .clue__card {
   flex: 1;
   width: 100%;
   min-height: 11rem;
-  border: 4px solid var(--stage-deep);
+  border: 3px solid #2A2360;
   border-radius: var(--radius);
-  background: var(--stage-deep);
+  background: radial-gradient(120% 90% at 50% 0%, #241E52, var(--stage-deep) 70%);
+  box-shadow: var(--shadow);
   color: var(--stage-ink);
   font: inherit;
   padding: var(--space-4);
@@ -335,7 +391,7 @@ body {
 .clue__card:disabled { cursor: default; }
 .clue--open .clue__card {
   border-color: var(--accent);
-  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.35), 0 0 32px rgba(217, 119, 87, 0.45);
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.35), 0 0 36px rgba(217, 119, 87, 0.55), var(--shadow);
 }
 .clue--answering .clue__card,
 .clue--ruling .clue__card,
@@ -367,9 +423,12 @@ body {
   font-size: var(--fs-2xl);
   font-weight: 700;
   text-align: center;
-  color: var(--accent-stage);
+  color: var(--light);
+  text-shadow: 0 0 18px var(--light-glow);
   letter-spacing: -0.02em;
+  animation: dd-pop 0.6s var(--ease) both;
 }
+@keyframes dd-pop { from { transform: scale(0.6); opacity: 0; } 60% { transform: scale(1.08); } to { transform: none; opacity: 1; } }
 
 /* Typed answer */
 .answer {
@@ -394,7 +453,7 @@ body {
   width: 100%;
   min-height: 3.25rem;
   padding: var(--space-2) var(--space-3);
-  border: 2px solid var(--stage-ink);
+  border: 2px solid var(--light);
   border-radius: var(--radius-sm);
   background: var(--card);
   color: var(--ink);
@@ -414,11 +473,12 @@ body {
   font-family: var(--font-display);
   font-size: var(--fs-xl);
   font-weight: 700;
-  color: var(--accent-stage);
+  color: var(--light);
+  text-shadow: 0 0 14px var(--light-glow);
 }
 .reveal__line { color: var(--stage-muted); }
-.reveal__line--correct { color: #C2F1DB; }
-.reveal__line--wrong { color: #FCD0CC; }
+.reveal__line--correct { color: var(--correct-ink); }
+.reveal__line--wrong { color: var(--wrong-ink); }
 
 /* Wager */
 .wager {
@@ -442,8 +502,9 @@ body {
   grid-template-columns: 1fr 1.15fr 1fr;
   gap: var(--space-2);
   align-items: end;
-  padding: var(--space-2) var(--space-2) max(var(--space-2), env(safe-area-inset-bottom));
-  background: var(--stage-deep);
+  padding: 0 var(--space-2) max(var(--space-2), env(safe-area-inset-bottom));
+  /* the stage floor: a lit strip under the lecterns */
+  background: linear-gradient(180deg, transparent 0, transparent 1.1rem, #1A1636 1.1rem, #0B0918 100%);
   position: relative;
   z-index: 3;
 }
@@ -452,16 +513,17 @@ body {
   border-radius: var(--radius-sm) var(--radius-sm) 4px 4px;
   padding: var(--space-2);
   text-align: center;
-  background: var(--cell);
-  color: var(--cell-ink);
+  background: linear-gradient(180deg, #24204A, #15122C 80%);
+  color: var(--stage-ink);
   border-top: 5px solid var(--podium-cpu-a);
+  box-shadow: 0 -6px 18px -8px var(--podium-cpu-a), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition: box-shadow 0.15s, transform 0.15s;
   min-height: 4.5rem;
 }
-.podium--you { border-top-color: var(--podium-you); }
-.podium--cpu-b { border-top-color: var(--podium-cpu-b); }
-.podium--controller { box-shadow: 0 0 0 2px var(--stage-ink); }
-.podium--answering { box-shadow: 0 0 0 3px var(--accent); transform: translateY(-3px); }
+.podium--you { border-top-color: var(--podium-you); box-shadow: 0 -6px 18px -8px var(--podium-you), inset 0 1px 0 rgba(255, 255, 255, 0.08); }
+.podium--cpu-b { border-top-color: var(--podium-cpu-b); box-shadow: 0 -6px 18px -8px var(--podium-cpu-b), inset 0 1px 0 rgba(255, 255, 255, 0.08); }
+.podium--controller { box-shadow: 0 0 0 2px var(--stage-ink), 0 0 16px rgba(250, 249, 245, 0.25); }
+.podium--answering { box-shadow: 0 0 0 3px var(--accent), 0 0 24px rgba(217, 119, 87, 0.5); transform: translateY(-3px); }
 .podium--lockout { animation: flash-wrong 0.6s; }
 .podium--wrong { animation: flash-wrong 0.9s; }
 .podium--correct { animation: flash-correct 0.9s; }
@@ -476,7 +538,7 @@ body {
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
-.podium__score--neg { color: #FCD0CC; }
+.podium__score--neg { color: var(--wrong-ink); }
 .podium__name {
   font-size: var(--fs-xs);
   text-transform: uppercase;
@@ -522,7 +584,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: var(--space-4);
-  background: rgba(20, 20, 19, 0.55);
+  background: rgba(5, 4, 14, 0.7);
+  backdrop-filter: blur(3px);
 }
 .band[hidden], .pop[hidden] { display: none; }
 .band__inner, .pop__inner {
@@ -531,6 +594,7 @@ body {
   padding: var(--space-6);
   border-radius: var(--radius);
   background: var(--stage-deep);
+  border: 1px solid rgba(255, 197, 107, 0.25);
   color: var(--stage-ink);
   box-shadow: var(--shadow);
   display: grid;
@@ -575,12 +639,14 @@ body {
   gap: var(--space-2);
   min-height: 12rem;
 }
+/* The writing pad is a sheet of paper under the lights: ivory, dark ink */
 .pad__canvas {
   flex: 1;
   width: 100%;
   min-height: 10rem;
   border-radius: var(--radius);
-  background: var(--card);
+  background: var(--ll-ivory);
+  box-shadow: var(--shadow);
   touch-action: none;
   cursor: crosshair;
 }
@@ -590,14 +656,14 @@ body {
   max-height: 10rem;
   object-fit: contain;
   border-radius: var(--radius-sm);
-  background: var(--card);
+  background: var(--ll-ivory);
 }
 .pad__thumb {
   height: 2rem;
   max-width: 7rem;
   object-fit: contain;
   border-radius: 4px;
-  background: var(--card);
+  background: var(--ll-ivory);
   vertical-align: middle;
 }
 
@@ -623,8 +689,8 @@ body {
 .reveal__what { grid-area: what; color: var(--stage-muted); font-size: var(--fs-sm); }
 .reveal__delta { grid-area: delta; font-weight: 700; }
 .reveal__total { grid-area: total; font-family: var(--font-display); font-weight: 700; font-size: var(--fs-lg); }
-.reveal__row--correct .reveal__delta { color: #C2F1DB; }
-.reveal__row--wrong .reveal__delta { color: #FCD0CC; }
+.reveal__row--correct .reveal__delta { color: var(--correct-ink); }
+.reveal__row--wrong .reveal__delta { color: var(--wrong-ink); }
 
 /* ==========================================================================
    Results (on paper)
@@ -661,7 +727,7 @@ body {
 }
 .finish__row--you { border-left-color: var(--podium-you); }
 .finish__row--cpu-b { border-left-color: var(--podium-cpu-b); }
-.finish__row--winner { background: #FBEFE9; }
+.finish__row--winner { background: rgba(255, 197, 107, 0.12); box-shadow: inset 0 0 0 1px rgba(255, 197, 107, 0.35); }
 .finish__place { font-family: var(--font-display); font-weight: 700; color: var(--ink-muted); }
 .finish__name { font-weight: 600; }
 .finish__score { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-lg); }
@@ -876,7 +942,7 @@ body {
 @keyframes demo-go-text { 0%, 55% { opacity: 0; } 60%, 100% { opacity: 1; } }
 .tut__answer { display: grid; gap: var(--space-2); padding: var(--space-3); border-radius: var(--radius); background: var(--stage); }
 .tut__answer .answer__bar { flex: none; }
-.tut__input { padding: var(--space-3); border-radius: var(--radius-sm, 8px); background: #fff; color: var(--ink); font-size: var(--fs-md); }
+.tut__input { padding: var(--space-3); border-radius: var(--radius-sm, 8px); background: var(--card); color: var(--ink); border: 1px solid var(--light); font-size: var(--fs-md); }
 .tut__final {
   display: grid;
   gap: 0.25rem;
@@ -924,3 +990,290 @@ body {
 .drill .btn { margin-left: auto; min-height: 2.25rem; padding: 0 var(--space-3); font-size: var(--fs-sm); }
 .clue--practice { position: relative; inset: auto; flex: 1; padding-bottom: var(--space-4); }
 .results__mark { margin: var(--space-2) 0 0; text-align: center; }
+
+/* ==========================================================================
+   The studio set (phase 9)
+   A backdrop layer (<div class="studio">) behind every stage screen: a warm
+   glow from the rig, two slow-moving beams, a truss of lamps, a floor with
+   perspective lines, and a flash layer. Only transforms and opacity move,
+   so phones stay smooth; reduced-motion users get a still set.
+   ========================================================================== */
+.studio {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: radial-gradient(120% 60% at 50% -10%, #231D4C 0%, var(--stage) 60%);
+}
+.studio__glow {
+  position: absolute;
+  left: 50%;
+  top: -25%;
+  width: 150%;
+  height: 75%;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, var(--light-soft), transparent 72%);
+  transition: opacity 0.6s;
+}
+.studio__beam {
+  position: absolute;
+  top: -8%;
+  width: 44%;
+  height: 125%;
+  opacity: 0.55;
+  mix-blend-mode: screen;
+  transform-origin: 50% 0;
+  filter: blur(8px);
+  clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
+  background: linear-gradient(180deg, rgba(255, 197, 107, 0.3), var(--wash) 50%, transparent 88%);
+  transition: opacity 0.6s;
+  will-change: transform;
+}
+.studio__beam--l { left: -6%; animation: beam-l 11s ease-in-out infinite alternate; }
+.studio__beam--r { right: -6%; animation: beam-r 13s ease-in-out infinite alternate; }
+@keyframes beam-l { from { transform: rotate(-24deg); } to { transform: rotate(14deg); } }
+@keyframes beam-r { from { transform: rotate(22deg); } to { transform: rotate(-16deg); } }
+
+.studio__truss {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(env(safe-area-inset-top, 0px) + 2.8rem);
+  height: 5px;
+  background: linear-gradient(#2B2456, #171331);
+  display: flex;
+  justify-content: space-evenly;
+}
+.studio__truss i {
+  width: 9px;
+  height: 9px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--light);
+  box-shadow: 0 0 10px var(--light), 0 0 24px var(--light-glow);
+  animation: lamp 3.4s ease-in-out infinite;
+  transition: opacity 0.6s;
+}
+.studio__truss i:nth-child(2) { animation-delay: -0.7s; }
+.studio__truss i:nth-child(3) { animation-delay: -1.4s; }
+.studio__truss i:nth-child(4) { animation-delay: -2.1s; }
+.studio__truss i:nth-child(5) { animation-delay: -2.8s; }
+@keyframes lamp { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
+
+.studio__floor {
+  position: absolute;
+  left: -25%;
+  right: -25%;
+  bottom: 0;
+  height: 26%;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 44px),
+    linear-gradient(180deg, transparent, rgba(255, 179, 71, 0.09));
+  transform: perspective(320px) rotateX(58deg);
+  transform-origin: bottom;
+}
+.studio__flash {
+  position: absolute;
+  inset: 0;
+  background: #FFE9B8;
+  opacity: 0;
+}
+.studio--flash .studio__flash { animation: studio-flash 0.55s ease-out; }
+@keyframes studio-flash { 0% { opacity: 0.7; } 100% { opacity: 0; } }
+
+/* Final round: the room goes dark except one lamp */
+.studio--hush .studio__beam { opacity: 0.12; }
+.studio--hush .studio__glow { opacity: 0.35; }
+.studio--hush .studio__truss i:not(:nth-child(3)) { opacity: 0.12; }
+
+/* A "camera cut": a quick dip to black when the stage changes shot */
+.stage--cut::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: #000;
+  pointer-events: none;
+  animation: cut 0.32s ease-out both;
+}
+@keyframes cut { 0% { opacity: 0.92; } 100% { opacity: 0; } }
+
+/* ---------- On air lamp (top bar) ---------- */
+.onair {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgba(185, 175, 214, 0.3);
+  border-radius: 999px;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stage-muted);
+  opacity: 0.55;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+.onair i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #5A5470; }
+.onair--live { opacity: 1; color: #FFD9D4; border-color: rgba(226, 87, 77, 0.7); background: rgba(226, 87, 77, 0.18); }
+.onair--live i { background: #FF5A4E; box-shadow: 0 0 8px #FF5A4E; animation: onair-blink 1.2s steps(1) infinite; }
+@keyframes onair-blink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.35; } }
+.game__title { flex: 0 1 auto; }
+
+/* ==========================================================================
+   The host (phase 9): the sun from assets/host/sun.svg
+   src/ui/host.js inlines the SVG inside .sun-wrap and sets one
+   .host-mood--<mood> class; src/host.js chooses the mood. Everything
+   visual about a mood lives here.
+   ========================================================================== */
+.host { display: grid; }
+.host-desk {
+  grid-template-columns: 3.9rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-2);
+  min-height: 4.25rem;
+}
+.host-dock {
+  justify-items: center;
+  gap: var(--space-3);
+}
+.sun-wrap {
+  width: 3.9rem;
+  height: 3.9rem;
+  transform-origin: 50% 70%;
+  filter: drop-shadow(0 0 14px rgba(255, 179, 71, 0.45));
+}
+.host--large .sun-wrap { width: 8.5rem; height: 8.5rem; filter: drop-shadow(0 0 28px rgba(255, 179, 71, 0.5)); }
+.sun-wrap svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  animation: host-bob 3.4s ease-in-out infinite;
+}
+@keyframes host-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+
+/* The speech balloon */
+.host__say {
+  margin: 0;
+  position: relative;
+  justify-self: start;
+  max-width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--ll-ivory);
+  color: var(--ll-slate);
+  font-size: var(--fs-sm);
+  line-height: 1.3;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+}
+.host__say[hidden] { display: none; }
+.host__say::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -6px;
+  border: 6px solid transparent;
+  border-right-color: var(--ll-ivory);
+}
+.host--large .host__say { justify-self: center; text-align: center; max-width: 18rem; font-size: var(--fs-md); }
+.host--large .host__say::before {
+  right: auto;
+  left: 50%;
+  top: auto;
+  bottom: 100%;
+  margin: 0 0 0 -6px;
+  border-right-color: transparent;
+  border-bottom-color: var(--ll-ivory);
+}
+.host__say--in { animation: say-in 0.28s var(--ease) both; }
+@keyframes say-in { from { opacity: 0; transform: translateY(4px) scale(0.96); } to { opacity: 1; transform: none; } }
+
+/* Parts: rays turn, lids blink, brows and mouths follow the mood */
+.sun__rays {
+  transform-box: view-box;
+  transform-origin: 100px 100px;
+  animation: rays-turn 28s linear infinite;
+}
+@keyframes rays-turn { to { transform: rotate(360deg); } }
+.host-mood--happy .sun__rays, .host-mood--proud .sun__rays { animation-duration: 6s; }
+.host-mood--surprised .sun__rays { animation-duration: 3s; }
+.host-mood--serious .sun__rays { animation-duration: 60s; }
+
+.sun__lid {
+  transform-box: fill-box;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: blink 4.6s infinite;
+}
+.sun__eye--r .sun__lid { animation-delay: 0.04s; }
+@keyframes blink { 0%, 93%, 100% { transform: scaleY(0); } 95.5% { transform: scaleY(1); } }
+.host-mood--happy .sun__lid, .host-mood--proud .sun__lid { animation: none; transform: scaleY(0.5); }
+.host-mood--sad .sun__lid { animation: none; transform: scaleY(0.38); }
+.host-mood--serious .sun__lid { animation: none; transform: scaleY(0.3); }
+.sun__eye { transform-box: fill-box; transform-origin: center; transition: transform 0.2s var(--ease); }
+.host-mood--surprised .sun__eye { transform: scale(1.22); }
+.host-mood--listening .sun__eye--r { transform: scale(1.1); }
+
+.sun__brow { transform-box: fill-box; transform-origin: center; transition: transform 0.25s var(--ease); }
+.host-mood--happy .sun__brow, .host-mood--proud .sun__brow { transform: translateY(-3px); }
+.host-mood--surprised .sun__brow { transform: translateY(-7px); }
+.host-mood--listening .sun__brow--r { transform: translateY(-5px) rotate(-6deg); }
+.host-mood--sad .sun__brow--l { transform: rotate(14deg) translateY(2px); }
+.host-mood--sad .sun__brow--r { transform: rotate(-14deg) translateY(2px); }
+.host-mood--serious .sun__brow--l { transform: rotate(-10deg) translateY(1px); }
+.host-mood--serious .sun__brow--r { transform: rotate(10deg) translateY(1px); }
+
+.sun__mouth { opacity: 0; transition: opacity 0.12s; transform-box: fill-box; transform-origin: center; }
+.host-mood--idle .sun__mouth--smile,
+.host-mood--happy .sun__mouth--grin, .host-mood--happy .sun__mouth--tongue,
+.host-mood--proud .sun__mouth--grin, .host-mood--proud .sun__mouth--tongue,
+.host-mood--sad .sun__mouth--frown,
+.host-mood--serious .sun__mouth--flat,
+.host-mood--surprised .sun__mouth--o,
+.host-mood--listening .sun__mouth--o,
+.host-mood--talking .sun__mouth--flat { opacity: 1; }
+.host-mood--surprised .sun__mouth--o { transform: scale(1.25); }
+.host-mood--listening .sun__mouth--o { transform: scale(0.7); }
+/* Reading a clue: the mouth alternates open and closed */
+.host--talking .sun__mouth--flat, .host--talking .sun__mouth--smile, .host--talking .sun__mouth--grin, .host--talking .sun__mouth--tongue { animation: talk-closed 0.3s steps(1) infinite; }
+.host--talking .sun__mouth--o { animation: talk-open 0.3s steps(1) infinite; }
+@keyframes talk-open { 0% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes talk-closed { 0% { opacity: 0; } 50% { opacity: 1; } }
+
+/* One-shot reactions on the whole head */
+.host-mood--happy.host--react, .host-mood--proud.host--react { animation: host-nod 0.6s var(--ease); }
+.host-mood--sad.host--react { animation: host-wince 0.5s var(--ease); }
+.host-mood--surprised.host--react { animation: host-jump 0.55s var(--ease); }
+.host-mood--listening { transform: rotate(5deg); transition: transform 0.25s var(--ease); }
+@keyframes host-nod { 0%, 100% { transform: none; } 30% { transform: translateY(-8px) scale(1.06); } 60% { transform: translateY(2px); } }
+@keyframes host-wince { 0%, 100% { transform: none; } 40% { transform: rotate(-9deg) translateY(2px); } }
+@keyframes host-jump { 0%, 100% { transform: none; } 40% { transform: scale(1.18) translateY(-6px); } }
+
+/* ---------- The audience ---------- */
+.crowd {
+  height: 2.4rem;
+  margin-bottom: -1.2rem;
+  overflow: hidden;
+  opacity: 0.95;
+  transition: opacity 0.6s;
+}
+.crowd svg { width: 100%; height: 100%; display: block; }
+.aud { transform-box: fill-box; transform-origin: 50% 100%; }
+.crowd--applause .aud { animation: aud-bounce 0.46s ease-in-out 3; }
+.crowd--applause .aud:nth-child(2n) { animation-delay: 0.09s; }
+.crowd--applause .aud:nth-child(3n) { animation-delay: 0.17s; }
+.crowd--applause .aud:nth-child(5n) { animation-delay: 0.05s; }
+@keyframes aud-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px) scaleY(1.04); } }
+.crowd--groan .aud { animation: aud-sink 0.9s ease-out; }
+.crowd--groan .aud:nth-child(2n) { animation-delay: 0.06s; }
+@keyframes aud-sink { 0%, 100% { transform: none; } 40% { transform: translateY(2px) rotate(2deg); } }
+.crowd--hush { opacity: 0.35; }
+
+/* Practice has only a header and the drill */
+.screen--practice { grid-template-rows: auto minmax(0, 1fr); }

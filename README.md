@@ -26,6 +26,16 @@ and handwrite your final answer. "61" is the number of clues in a full game.
 - Sound cues are synthesized with the Web Audio API (`src/audio.js`), so the
   site ships no audio files. The Final-round music is a short original loop
   made the same way. A mute toggle lives on the Home and game screens.
+- The host is an original sun character. Its artwork is one SVG file
+  (`assets/host/sun.svg`) that `src/ui/host.js` inlines so CSS can move the
+  rays, eyelids, brows and mouths; what the host says and which face they
+  pull comes from `src/host.js`, which only reads the engine's events (and is
+  unit-tested). The host is silent text: lines in a speech balloon, no voice.
+- The studio set (`src/ui/studio.js`) is CSS: moving beams, a lamp truss, a
+  floor and an on-air lamp. The audience is another SVG file
+  (`assets/studio/audience.svg`) that bounces on applause. Applause, groans
+  and gasps are synthesized like the other cues. Reduced-motion users get a
+  still set and a still host.
 - `manifest.webmanifest` and the icons in `assets/icons/` let the game be
   added to a phone's home screen. There is no service worker yet, so it needs
   a connection to load.
@@ -46,14 +56,17 @@ src/
   storage.js          # localStorage save/resume, stats, settings (versioned)
   sim.js              # plays a whole game with no UI (tests, debug.html)
   practice.js         # Practice mode rules: endless buzzer drill (pure, no DOM)
-  audio.js            # Web Audio cues and the Final loop, mute
-  ui/                 # board, clue, podiums, final, results, library, stats, practice, tutorial
+  audio.js            # Web Audio cues, audience, the Final loop, mute
+  host.js             # what the host says and which face they pull (pure, no DOM)
+  ui/                 # board, clue, podiums, final, results, library, stats, practice, tutorial, host, studio
 boards/
   _schema.json        # JSON Schema for a board          (phase 2)
   index.json          # list of boards for the Library    (phase 2)
   <id>.json           # one file per board
 data/opponents.json   # CPU roster: name, bio, pool
 assets/               # fonts, logo.svg, icons/ (home-screen icons)
+  host/sun.svg        # the host character (source art, inlined at runtime)
+  studio/audience.svg # the audience silhouettes
 manifest.webmanifest  # install to home screen
 tools/                # GENERATE_BOARD.md (the generation prompt), validate.js
 test/                 # node --test suites

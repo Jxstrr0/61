@@ -55,42 +55,57 @@
   --ll-accent-ink: #A8482A;    /* clay darkened so small text passes contrast on paper */
 }
 
-/* ---------- Game roles: where each colour is used in 61 ---------- */
+/* ---------- Game roles: the night studio (phase 9) ----------
+   The game plays in a dark TV studio: near-black indigo walls, warm amber
+   stage light, glowing value cells. The brand colours above still carry the
+   identity (clay for you and the primary button, purple in the lighting),
+   but the stage itself is dark so the lights and the host read. Every
+   panel (Library, Stats, Results) sits in the same room: dark cards with a
+   warm edge, no more paper. Contrast: all small text here is at least
+   4.5:1 on its background (checked with a script in phase 9). */
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
-  /* The stage: board and clue screens */
-  --stage: var(--ll-purple);        /* board and clue background */
-  --stage-deep: var(--ll-ground);   /* podium strip, round-transition band */
-  --stage-ink: var(--ll-ivory);     /* headings and clue text on purple */
-  --stage-muted: var(--ll-sky-muted); /* secondary text on purple */
-  --cell: var(--ll-slate);          /* value cells, silhouettes */
-  --cell-ink: var(--ll-ivory);
+  /* The studio */
+  --stage: #0D0B1C;                 /* the room: walls, screen background */
+  --stage-deep: #16132C;            /* set pieces: category headers, podium strip, bands */
+  --stage-ink: #FAF9F5;             /* headings and clue text (ivory) */
+  --stage-muted: #B9AFD6;           /* secondary text on the stage */
+  --cell: #1C1840;                  /* value cells */
+  --cell-ink: #FFC56B;              /* the value digits: amber light */
+  --cell-edge: rgba(255, 197, 107, 0.18); /* a lit edge on each cell */
+  --cat: #2A2360;                   /* category headers */
 
-  /* Paper: Library, Stats and Results panels */
-  --paper: var(--ll-surface);
-  --card: #FFFFFF;
-  --ink: var(--ll-slate);
-  --ink-muted: var(--ll-ink-muted);
-  --rule: var(--ll-rule);
+  /* Stage light: amber lamps, purple wash */
+  --light: #FFB347;
+  --light-soft: rgba(255, 179, 71, 0.16);
+  --light-glow: rgba(255, 179, 71, 0.55);
+  --wash: rgba(123, 63, 196, 0.35);  /* the brand purple in the beams */
+
+  /* Panels (Library, Stats, Results): the same room, dressed as cards */
+  --paper: #120F26;
+  --card: #1B1738;
+  --ink: #F5F0E8;
+  --ink-muted: #B9AFD6;
+  --rule: #2E2857;
 
   /* Actions and signals */
-  --accent: var(--ll-clay);         /* player podium, go-light, primary buttons */
-  --accent-ink: var(--ll-accent-ink);
-  --accent-stage: #F3B093;          /* clay tint for LARGE text on purple (3.4:1); small text on purple uses --stage-ink */
+  --accent: var(--ll-clay);         /* you, the go-light, primary buttons */
+  --accent-ink: #F3B093;            /* clay tint for small text on dark */
+  --accent-stage: #F3B093;          /* large clay text on the stage */
   --on-accent: var(--ll-slate);     /* text on a clay button */
-  --focus: var(--ll-lilac);
-  --correct: #2E9E6B;               /* always paired with an icon or word, never colour alone */
-  --wrong: #C8423A;
+  --focus: #FFC56B;
+  --correct: #3DBE82;               /* always paired with a word or icon */
+  --wrong: #E2574D;
+  --correct-ink: #C2F1DB;           /* small correct/wrong text on dark */
+  --wrong-ink: #FCD0CC;
 
-  /* Podiums: you in clay, the two computer contestants in a cool mint and
-     a soft gold so three contestants read apart at a glance. These two are
-     derived, not from the hub; revisit in the polish phase if they clash. */
+  /* Podiums: you in clay, the two computer contestants in mint and gold */
   --podium-you: var(--ll-clay);
   --podium-cpu-a: #7FD1B9;
   --podium-cpu-b: #E8C36A;
 
-  --shadow: 0 6px 22px rgba(20, 20, 19, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 
   /* Type scale (rem) and spacing */
   --fs-xs: 0.75rem;

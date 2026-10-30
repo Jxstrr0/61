@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>61 - A Trivia Game</title>
   <meta name="description" content="61 - A Trivia Game: a phone-first quiz-show game from Longlight Interactive. Three podiums, two rounds, a wagered final.">
-  <meta name="theme-color" content="#7B3FC4">
+  <meta name="theme-color" content="#0D0B1C">
   <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -17,9 +17,9 @@
 
   <!-- All paths are relative (./) on purpose: the site lives under
        /61/ on GitHub Pages and may move to a custom domain later. -->
-  <link rel="stylesheet" href="./styles/tokens.css?v=5">
-  <link rel="stylesheet" href="./styles/app.css?v=5">
-  <script type="module" src="./src/main.js?v=5"></script>
+  <link rel="stylesheet" href="./styles/tokens.css?v=6">
+  <link rel="stylesheet" href="./styles/app.css?v=6">
+  <script type="module" src="./src/main.js?v=6"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,9 +30,12 @@
   <main id="main" class="app">
 
     <section class="screen screen--home" data-screen="home">
+      <!-- The studio set sits behind every stage screen (ui/studio.js) -->
+      <div class="studio" id="studio-home"></div>
       <div class="home">
-        <img class="home__mark" src="./assets/logo.svg" alt="" width="120" height="120">
-        <h1 class="home__title">61<span class="home__subtitle">A Trivia Game</span></h1>
+        <!-- The host greets you on the way in (ui/host.js + src/host.js) -->
+        <div class="host-dock" id="host-home"></div>
+        <h1 class="home__title"><span class="sign">61</span><span class="home__subtitle">A Trivia Game</span></h1>
         <p class="home__tagline">Three podiums. Two boards. One wagered final.</p>
 
         <nav class="home__menu" aria-label="Main menu">
@@ -52,15 +55,24 @@
     </section>
 
     <section class="screen screen--game" data-screen="game" hidden>
+      <div class="studio" id="studio-game"></div>
       <header class="game__top">
         <a class="game__home" href="#home" aria-label="Home">61</a>
         <span class="game__title" id="game-title"></span>
+        <span class="onair" id="onair" role="img" aria-label="Off air"><i></i>On air</span>
         <button type="button" class="mute" data-mute aria-pressed="false">Sound on</button>
       </header>
-      <!-- The board: six category headers over five rows of values (ui/board.js) -->
-      <div class="board" id="board" role="grid"></div>
-      <!-- The clue card covers the board while a clue is in play (ui/clue.js) -->
-      <div class="clue" id="clue" hidden></div>
+      <!-- The stage: the board, with the clue card over it while a clue is in play -->
+      <div class="stage" id="stage">
+        <!-- Six category headers over five rows of values (ui/board.js) -->
+        <div class="board" id="board" role="grid"></div>
+        <!-- The clue card (ui/clue.js); the Final renders here too (ui/final.js) -->
+        <div class="clue" id="clue" hidden></div>
+      </div>
+      <!-- The host's desk: face and speech balloon (ui/host.js) -->
+      <div class="host-desk" id="host-game"></div>
+      <!-- The audience, behind the podiums (ui/studio.js) -->
+      <div id="crowd"></div>
       <!-- Podiums along the bottom: you in the middle (ui/podiums.js) -->
       <div class="podiums" id="podiums"></div>
       <!-- Round transitions and the intro -->
@@ -70,10 +82,12 @@
     </section>
 
     <!-- Practice: endless buzzer drill (src/practice.js + ui/practice.js) -->
-    <section class="screen screen--game" data-screen="practice" hidden>
+    <section class="screen screen--game screen--practice" data-screen="practice" hidden>
+      <div class="studio" id="studio-practice"></div>
       <header class="game__top">
         <a class="game__home" href="#home" aria-label="Home">61</a>
         <span class="game__title">Practice</span>
+        <span class="onair" id="onair-practice" role="img" aria-label="Off air"><i></i>On air</span>
         <button type="button" class="mute" data-mute aria-pressed="false">Sound on</button>
       </header>
       <div class="practice" id="practice"></div>

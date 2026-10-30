@@ -117,6 +117,36 @@ const CUES = {
     tone({ type: "triangle", freq: 523, at: 0.18, dur: 0.2, gain: 0.14 });
     tone({ type: "triangle", freq: 392, at: 0.36, dur: 0.5, gain: 0.14 });
   },
+
+  // ---- The studio audience (phase 9). All noise and tones, no samples. ----
+
+  // Clapping: a cloud of short noise clicks, thicker in the middle, 1.2 s.
+  applause() {
+    const claps = 36;
+    for (let i = 0; i < claps; i++) {
+      const at = Math.random() * 1.2;
+      const centre = 1 - Math.abs(at - 0.55) / 0.7; // loudest around the middle
+      noise({ at, dur: 0.03 + Math.random() * 0.02, gain: 0.05 + 0.1 * Math.max(0, centre), cutoff: 1800 + Math.random() * 1600 });
+    }
+  },
+  // A longer ovation for the end of the game.
+  ovation() {
+    const claps = 90;
+    for (let i = 0; i < claps; i++) {
+      const at = Math.random() * 2.6;
+      const centre = 1 - Math.abs(at - 1.0) / 1.8;
+      noise({ at, dur: 0.03 + Math.random() * 0.02, gain: 0.05 + 0.11 * Math.max(0, centre), cutoff: 1800 + Math.random() * 1600 });
+    }
+  },
+  // "Ohh": a soft falling chord, the crowd wincing with you.
+  groan() {
+    for (const f of [220, 277, 330]) tone({ type: "sine", freq: f, dur: 0.6, gain: 0.05, glide: f * 0.84, attack: 0.08 });
+  },
+  // A sharp intake of breath for a Daily Double: rising filtered noise.
+  gasp() {
+    noise({ dur: 0.35, gain: 0.08, cutoff: 900 });
+    tone({ type: "sine", freq: 440, dur: 0.35, gain: 0.04, glide: 700, attack: 0.1 });
+  },
 };
 
 /** Plays a named cue (silently does nothing before unlock() or while muted). */
