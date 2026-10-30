@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="61">
+  <!-- The 61 mark: a slate value cell with the number in Longlight clay.
+       Placeholder for phase 1; refined in the polish phase. -->
+  <rect x="6" y="6" width="108" height="108" rx="20" fill="#141413"/>
+  <rect x="6" y="6" width="108" height="108" rx="20" fill="none" stroke="#7B3FC4" stroke-width="4"/>
+  <text x="60" y="84" text-anchor="middle" font-family="'Space Grotesk','Helvetica Neue',Arial,sans-serif" font-size="64" font-weight="700" fill="#D97757" letter-spacing="-3">61</text>
+</svg>

@@ -1,0 +1,108 @@
+/* ==========================================================================
+   61 - A Trivia Game: design tokens
+   --------------------------------------------------------------------------
+   The brand palette and font setup are copied from the Longlight hub
+   (Jxstrr0/Kelbo.Website, style.css) so the game matches the studio site.
+   The "Brand palette" and "@font-face" blocks below are the hub's values
+   verbatim; everything under "Game roles" is 61's own mapping of those
+   colours onto the board, podiums and panels.
+   ========================================================================== */
+
+/* ---------- Font: Space Grotesk ----------
+   Kept in this repo (assets/fonts/, free to share under its licence,
+   OFL.txt beside it). It is a "variable" font: one file covers every
+   weight from 300 to 700. The latin file has all the letters the game
+   uses; the latin-ext one (accented letters) only downloads if needed.
+   Paths are relative to this CSS file. */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../assets/fonts/space-grotesk-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../assets/fonts/space-grotesk-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---------- Brand palette (from the hub, never changes) ---------- */
+:root {
+  --ll-clay:   #D97757;
+  --ll-purple: #7B3FC4;
+  --ll-slate:  #141413;
+  --ll-ivory:  #FAF9F5;
+  --ll-lilac:  #B48CE8;
+
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-body: "Space Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Hub secondary values reused below */
+  --ll-ground: #6A33AD;        /* the hub's --ground: deeper purple */
+  --ll-sky-muted: #E6D8F7;     /* the hub's --sky-muted: pale lilac text on purple */
+  --ll-surface: #F1EEE7;       /* the hub's --surface: warm paper */
+  --ll-ink-muted: #5F5C56;     /* the hub's --muted: secondary text on paper */
+  --ll-rule: #E2DED5;          /* the hub's --rule: hairlines on paper */
+  --ll-accent-ink: #A8482A;    /* clay darkened so small text passes contrast on paper */
+}
+
+/* ---------- Game roles: where each colour is used in 61 ---------- */
+:root {
+  color-scheme: light;
+
+  /* The stage: board and clue screens */
+  --stage: var(--ll-purple);        /* board and clue background */
+  --stage-deep: var(--ll-ground);   /* podium strip, round-transition band */
+  --stage-ink: var(--ll-ivory);     /* headings and clue text on purple */
+  --stage-muted: var(--ll-sky-muted); /* secondary text on purple */
+  --cell: var(--ll-slate);          /* value cells, silhouettes */
+  --cell-ink: var(--ll-ivory);
+
+  /* Paper: Library, Stats and Results panels */
+  --paper: var(--ll-surface);
+  --card: #FFFFFF;
+  --ink: var(--ll-slate);
+  --ink-muted: var(--ll-ink-muted);
+  --rule: var(--ll-rule);
+
+  /* Actions and signals */
+  --accent: var(--ll-clay);         /* player podium, go-light, primary buttons */
+  --accent-ink: var(--ll-accent-ink);
+  --on-accent: var(--ll-slate);     /* text on a clay button */
+  --focus: var(--ll-lilac);
+  --correct: #2E9E6B;               /* always paired with an icon or word, never colour alone */
+  --wrong: #C8423A;
+
+  /* Podiums: you in clay, the two computer contestants in a cool mint and
+     a soft gold so three contestants read apart at a glance. These two are
+     derived, not from the hub; revisit in the polish phase if they clash. */
+  --podium-you: var(--ll-clay);
+  --podium-cpu-a: #7FD1B9;
+  --podium-cpu-b: #E8C36A;
+
+  --shadow: 0 6px 22px rgba(20, 20, 19, 0.12);
+
+  /* Type scale (rem) and spacing */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.5rem;
+  --fs-3xl: 4rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+}

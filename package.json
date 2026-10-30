@@ -1,0 +1,13 @@
+{
+  "name": "sixty-one",
+  "version": "0.1.0",
+  "description": "61 - A Trivia Game: a phone-first quiz-show game by Longlight Interactive. Static site, no build step.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

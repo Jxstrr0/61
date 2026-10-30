@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>61 - A Trivia Game</title>
+  <meta name="description" content="61 - A Trivia Game: a phone-first quiz-show game from Longlight Interactive. Three podiums, two rounds, a wagered final.">
+  <meta name="theme-color" content="#7B3FC4">
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+
+  <!-- Font: Space Grotesk, the Longlight brand face. The file lives in this
+       repo (assets/fonts/); tokens.css sets it up. Preloading starts the
+       download before the page needs it. -->
+  <link rel="preload" href="./assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- All paths are relative (./) on purpose: the site lives under
+       /61/ on GitHub Pages and may move to a custom domain later. -->
+  <link rel="stylesheet" href="./styles/tokens.css?v=1">
+  <link rel="stylesheet" href="./styles/app.css?v=1">
+  <script type="module" src="./src/main.js?v=1"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Every screen is a <section data-screen="..."> inside <main>. The hash
+       router in src/main.js shows one at a time (#home, #library, #game,
+       #practice, #stats, #results, #about). Phase 1 ships Home only; the
+       other screens arrive in later phases. -->
+  <main id="main" class="app">
+
+    <section class="screen screen--home" data-screen="home">
+      <div class="home">
+        <img class="home__mark" src="./assets/logo.svg" alt="" width="120" height="120">
+        <h1 class="home__title">61<span class="home__subtitle">A Trivia Game</span></h1>
+        <p class="home__tagline">Three podiums. Two boards. One wagered final.</p>
+
+        <nav class="home__menu" aria-label="Main menu">
+          <!-- Buttons are wired up in phase 4 (Quick Play) and phase 6
+               (Library, Practice, Stats). Until then they are disabled. -->
+          <button class="btn btn--primary" type="button" disabled>Quick Play</button>
+          <button class="btn" type="button" disabled>Library</button>
+          <button class="btn" type="button" disabled>Practice</button>
+          <button class="btn" type="button" disabled>Stats</button>
+        </nav>
+        <p class="home__note">Under construction. The game is being built in phases; this page is phase 1 of 8.</p>
+      </div>
+      <footer class="home__footer">
+        <span class="eyebrow">A Longlight Interactive game</span>
+      </footer>
+    </section>
+
+    <section class="screen" data-screen="about" hidden>
+      <div class="panel">
+        <h2>About</h2>
+        <p>61 - A Trivia Game is a single-player quiz-show game. You play a full game of 61 clues against two computer contestants: two boards of six categories, hidden doubles, and a wagered final.</p>
+        <p><a href="#home">Back to Home</a></p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
