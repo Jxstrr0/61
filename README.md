@@ -66,12 +66,19 @@ npm test
 ```
 
 That runs Node's built-in test runner (`node --test`). There is nothing to
-install. The suite plays 1,000 seeded games through the engine and checks the
-scores against the event log, runs a table of typed answers through the
-matcher, checks the CPU dice over 10,000 rolls, and plays the Practice drill through its rules, and checks every board in
-`boards/` against the schema and the placement rules (`node tools/validate.js` does the same for one file; see
-`tools/GENERATE_BOARD.md` for how boards are written and reviewed). The same command runs on every push and pull request
-(`.github/workflows/test.yml`), and the deploy stops if it fails.
+install. The suite:
+
+- plays 1,000 seeded games through the engine and checks the scores against
+  the event log;
+- runs a table of typed answers through the matcher;
+- checks the CPU dice over 10,000 rolls;
+- plays the Practice drill through its rules;
+- checks every board in `boards/` against the schema and the placement rules.
+
+`node tools/validate.js` checks a single board file the same way; see
+`tools/GENERATE_BOARD.md` for how boards are written and reviewed. The same
+command runs on every push and pull request (`.github/workflows/test.yml`),
+and the deploy stops if it fails.
 
 ## Dependencies
 
