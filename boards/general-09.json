@@ -1,0 +1,697 @@
+{
+  "id": "general-09",
+  "title": "General #9",
+  "pack": "General",
+  "difficulty": "hard",
+  "tags": [
+    "history",
+    "science",
+    "geography",
+    "music",
+    "theatre",
+    "sports",
+    "wordplay",
+    "language",
+    "art",
+    "culture",
+    "canada",
+    "space",
+    "movies"
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "ROMAN EMPERORS",
+          "tags": [
+            "history"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Julius Caesar's grandnephew and heir, he became the first Roman emperor in 27 BC",
+              "answer": "Augustus",
+              "accept": [
+                "Octavian",
+                "Caesar Augustus",
+                "Octavius"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This emperor built a 117-kilometre wall across northern Britain in the 120s AD",
+              "answer": "Hadrian",
+              "accept": [
+                "Emperor Hadrian",
+                "Hadrianus",
+                "Adrian"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This philosopher-emperor's private notebooks survive as the \"Meditations\"",
+              "answer": "Marcus Aurelius",
+              "accept": [
+                "Aurelius"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The first Christian emperor, he founded a new capital on the Bosporus in 330 AD",
+              "answer": "Constantine",
+              "accept": [
+                "Constantine the Great",
+                "Constantine I"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "The last emperor of the Western Roman Empire, a teenager deposed by Odoacer in 476",
+              "answer": "Romulus Augustulus",
+              "accept": [
+                "Romulus Augustus",
+                "Augustulus"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "GENETICS",
+          "tags": [
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Humans carry their genes on 23 pairs of these thread-like structures",
+              "answer": "chromosomes",
+              "accept": [
+                "chromosome",
+                "a chromosome"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Adenine, thymine, guanine and this are the four bases of DNA",
+              "answer": "cytosine",
+              "accept": [
+                "cytosene",
+                "C"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Born in Scotland in 1996, this sheep was the first mammal cloned from an adult cell",
+              "answer": "Dolly",
+              "accept": [
+                "Dolly the sheep"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This gene-editing tool, adapted from a bacterial defence system, uses the Cas9 enzyme to cut DNA",
+              "answer": "CRISPR",
+              "accept": [
+                "CRISPR-Cas9",
+                "crisper"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Rosalind Franklin's 1952 X-ray image that revealed DNA's helical shape is known by this number",
+              "answer": "Photo 51",
+              "accept": [
+                "Photograph 51",
+                "51"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "ASIAN CAPITALS",
+          "note": "Name the capital city of the country given",
+          "tags": [
+            "geography"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "South Korea",
+              "answer": "Seoul",
+              "accept": [
+                "Seoul, South Korea",
+                "Soul"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Vietnam",
+              "answer": "Hanoi",
+              "accept": [
+                "Hanoi, Vietnam",
+                "Ha Noi"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Nepal",
+              "answer": "Kathmandu",
+              "accept": [
+                "Katmandu"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Mongolia",
+              "answer": "Ulaanbaatar",
+              "accept": [
+                "Ulan Bator",
+                "Ulan Bataar"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Bhutan",
+              "answer": "Thimphu",
+              "accept": [
+                "Thimpu"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "A NIGHT AT THE OPERA",
+          "tags": [
+            "music",
+            "theatre"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "Bizet's opera about a Spanish gypsy, a soldier and a toreador",
+              "answer": "Carmen",
+              "accept": [
+                "Bizet's Carmen",
+                "Carmen by Bizet"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "Puccini's opera about a geisha in Nagasaki abandoned by an American naval officer",
+              "answer": "Madama Butterfly",
+              "accept": [
+                "Madame Butterfly",
+                "Madam Butterfly"
+              ],
+              "strict": true
+            },
+            {
+              "value": 600,
+              "text": "Wagner's cycle of four operas about a magic ring, running about 15 hours in all",
+              "answer": "The Ring of the Nibelung",
+              "accept": [
+                "Der Ring des Nibelungen",
+                "the Ring Cycle",
+                "Ring Cycle"
+              ],
+              "strict": true
+            },
+            {
+              "value": 800,
+              "text": "Verdi's opera set in ancient Egypt had its premiere in Cairo in 1871",
+              "answer": "Aida",
+              "accept": [
+                "Aïda",
+                "Aida by Verdi"
+              ],
+              "dailyDouble": true
+            },
+            {
+              "value": 1000,
+              "text": "Alban Berg's 1925 atonal opera about a tormented soldier who murders his lover Marie",
+              "answer": "Wozzeck",
+              "accept": [
+                "Wozeck",
+                "Woyzeck"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CYCLING",
+          "tags": [
+            "sports"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "The Tour de France's best climber wears a white jersey covered in these red shapes",
+              "answer": "polka dots",
+              "accept": [
+                "polka dot",
+                "red dots",
+                "dots"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "This Belgian nicknamed \"the Cannibal\" won the Tour de France five times between 1969 and 1974",
+              "answer": "Eddy Merckx",
+              "accept": [
+                "Merckx"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "Along with the Tour de France and the Vuelta a España, this Italian race is one of cycling's three Grand Tours",
+              "answer": "the Giro d'Italia",
+              "accept": [
+                "Giro",
+                "the Giro",
+                "Giro d'Italia"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "Track cycling takes place on the steeply banked oval known by this name",
+              "answer": "a velodrome",
+              "accept": [
+                "velodrome"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "Nicknamed \"the Hell of the North\", this one-day race over cobbled farm roads finishes in a velodrome in northern France",
+              "answer": "Paris–Roubaix",
+              "accept": [
+                "Paris-Roubaix",
+                "Paris Roubaix",
+                "Roubaix"
+              ],
+              "strict": true
+            }
+          ]
+        },
+        {
+          "name": "EPONYMS",
+          "note": "Every response is a word that comes from a real person's name",
+          "tags": [
+            "wordplay",
+            "language"
+          ],
+          "clues": [
+            {
+              "value": 200,
+              "text": "An 18th-century English earl who wanted to eat without leaving the gaming table gave his name to this",
+              "answer": "a sandwich",
+              "accept": [
+                "sandwich",
+                "the sandwich"
+              ]
+            },
+            {
+              "value": 400,
+              "text": "A 19th-century French trapeze artist gave his name to this one-piece, skin-tight garment",
+              "answer": "a leotard",
+              "accept": [
+                "leotard"
+              ]
+            },
+            {
+              "value": 600,
+              "text": "This beheading machine of the French Revolution is named for a doctor who proposed a more humane execution",
+              "answer": "the guillotine",
+              "accept": [
+                "guillotine"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "An 18th-century German doctor who claimed to heal with \"animal magnetism\" gave us this verb for holding someone spellbound",
+              "answer": "mesmerize",
+              "accept": [
+                "mesmerise",
+                "to mesmerize",
+                "mesmerized"
+              ]
+            },
+            {
+              "value": 1000,
+              "text": "This addictive chemical in tobacco is named for the French diplomat who brought the plant to Paris in 1560",
+              "answer": "nicotine",
+              "accept": [
+                "nicotene",
+                "nicoteen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "NOBEL LAUREATES",
+          "tags": [
+            "history",
+            "science"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This Canadian doctor shared the 1923 Nobel Prize in Medicine for the discovery of insulin",
+              "answer": "Frederick Banting",
+              "accept": [
+                "Banting",
+                "Sir Frederick Banting"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The Nobel Peace Prize is presented in this city, unlike the other prizes",
+              "answer": "Oslo",
+              "accept": [
+                "Oslo, Norway",
+                "Olso"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Alice Munro, Canada's 2013 literature laureate, was hailed by the committee as a master of this form",
+              "answer": "the short story",
+              "accept": [
+                "short story",
+                "short stories",
+                "short fiction"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This humanitarian organization has won the Nobel Peace Prize three times, in 1917, 1944 and 1963",
+              "answer": "the Red Cross",
+              "accept": [
+                "Red Cross",
+                "International Committee of the Red Cross",
+                "ICRC"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Kingston, Ontario-born economist won the 1999 prize for work on currency areas that laid the groundwork for the euro",
+              "answer": "Robert Mundell",
+              "accept": [
+                "Mundell"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "ARCHITECTS",
+          "tags": [
+            "art"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Frank Lloyd Wright built this house over a waterfall in Pennsylvania in the 1930s",
+              "answer": "Fallingwater",
+              "accept": [
+                "Falling Water"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This Catalan architect's Sagrada Família in Barcelona has been under construction since 1882",
+              "answer": "Antoni Gaudí",
+              "accept": [
+                "Gaudi",
+                "Gaudí",
+                "Antonio Gaudí"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "This Toronto-born architect designed the Guggenheim Museum Bilbao and the Walt Disney Concert Hall",
+              "answer": "Frank Gehry",
+              "accept": [
+                "Gehry"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The first woman to win the Pritzker Prize, this Iraqi-British architect designed the London Aquatics Centre for the 2012 Olympics",
+              "answer": "Zaha Hadid",
+              "accept": [
+                "Hadid"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This Israeli-Canadian architect designed Montreal's stacked-box housing complex Habitat 67 while still in his twenties",
+              "answer": "Moshe Safdie",
+              "accept": [
+                "Safdie"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WORLD RELIGIONS",
+          "tags": [
+            "culture",
+            "history"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "Daily prayer, fasting during Ramadan and the pilgrimage to Mecca are among the Five Pillars of this faith",
+              "answer": "Islam",
+              "accept": [
+                "the Islamic faith",
+                "Muslim"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "This eight-night Jewish festival of lights recalls the rededication of the Temple in Jerusalem",
+              "answer": "Hanukkah",
+              "accept": [
+                "Chanukah",
+                "Hanukah",
+                "Chanukkah"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Sikhism was founded in the Punjab in the 15th century by this first of its ten gurus",
+              "answer": "Guru Nanak",
+              "accept": [
+                "Nanak"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "The earliest Buddhist scriptures, written in Pali, are grouped in \"three baskets\" known by this name",
+              "answer": "the Tripitaka",
+              "accept": [
+                "Tripitaka",
+                "Tipitaka",
+                "the Pali Canon"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Founded in 19th-century Persia, this faith teaching the unity of all religions has its world centre in Haifa, Israel",
+              "answer": "the Bahá'í Faith",
+              "accept": [
+                "Baha'i",
+                "Bahai",
+                "the Baha'i Faith"
+              ],
+              "dailyDouble": true
+            }
+          ]
+        },
+        {
+          "name": "PARLIAMENT HILL",
+          "tags": [
+            "history",
+            "canada"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The upper house of Canada's Parliament, whose members are appointed rather than elected",
+              "answer": "the Senate",
+              "accept": [
+                "Senate"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The carpet and benches of the House of Commons are this colour, while the Senate's are red",
+              "answer": "green",
+              "accept": [
+                "dark green",
+                "forest green"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "Section 33 of the Charter, which lets a legislature shield a law from parts of the Charter for five years, is known as this clause",
+              "answer": "the notwithstanding clause",
+              "accept": [
+                "notwithstanding clause",
+                "notwithstanding",
+                "the override clause"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "This 1987 constitutional deal to bring Quebec into the Constitution died in 1990 when Manitoba and Newfoundland failed to ratify it",
+              "answer": "the Meech Lake Accord",
+              "accept": [
+                "Meech Lake",
+                "Meech",
+                "Meech Lake Accord"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Lord Elgin's assent to this 1849 bill confirmed responsible government in Canada, and rioters burned down the Parliament building in Montreal in protest",
+              "answer": "the Rebellion Losses Bill",
+              "accept": [
+                "Rebellion Losses Bill",
+                "Rebellion Losses Act"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DEEP SPACE",
+          "tags": [
+            "science",
+            "space"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "The galaxy we live in, seen as a hazy band across a dark night sky",
+              "answer": "the Milky Way",
+              "accept": [
+                "Milky Way",
+                "Milky Way Galaxy"
+              ]
+            },
+            {
+              "value": 800,
+              "text": "The nearest large galaxy to our own, it is on course to merge with us in about four billion years",
+              "answer": "Andromeda",
+              "accept": [
+                "the Andromeda Galaxy",
+                "Andromeda Galaxy",
+                "M31"
+              ]
+            },
+            {
+              "value": 1200,
+              "text": "The boundary around a black hole beyond which nothing, not even light, can escape",
+              "answer": "the event horizon",
+              "accept": [
+                "event horizon"
+              ]
+            },
+            {
+              "value": 1600,
+              "text": "Betelgeuse and Antares are examples of this type of huge, cool star near the end of its life",
+              "answer": "a red supergiant",
+              "accept": [
+                "red supergiant",
+                "red giant",
+                "supergiant"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "Jocelyn Bell Burnell discovered the first of these rapidly spinning neutron stars in 1967, by their regular radio pulses",
+              "answer": "a pulsar",
+              "accept": [
+                "pulsar",
+                "pulsars"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CLASSIC HOLLYWOOD",
+          "tags": [
+            "movies"
+          ],
+          "clues": [
+            {
+              "value": 400,
+              "text": "This 1939 epic gave the world Scarlett O'Hara and Rhett Butler",
+              "answer": "Gone with the Wind",
+              "accept": [
+                "Gone With the Wind"
+              ],
+              "strict": true
+            },
+            {
+              "value": 800,
+              "text": "Humphrey Bogart played detective Sam Spade in this 1941 film about a jewelled statuette",
+              "answer": "The Maltese Falcon",
+              "accept": [
+                "Maltese Falcon"
+              ],
+              "strict": true
+            },
+            {
+              "value": 1200,
+              "text": "Billy Wilder's 1959 comedy has Jack Lemmon and Tony Curtis hiding from the mob in an all-girl band",
+              "answer": "Some Like It Hot",
+              "accept": [
+                "Some Like it Hot",
+                "Some Like It Hot (1959)"
+              ],
+              "strict": true
+            },
+            {
+              "value": 1600,
+              "text": "Born in Toronto in 1892, \"America's Sweetheart\" co-founded United Artists in 1919",
+              "answer": "Mary Pickford",
+              "accept": [
+                "Pickford"
+              ]
+            },
+            {
+              "value": 2000,
+              "text": "This 1950 Billy Wilder film opens with a screenwriter floating dead in a faded silent-film star's swimming pool",
+              "answer": "Sunset Boulevard",
+              "accept": [
+                "Sunset Blvd.",
+                "Sunset Blvd"
+              ],
+              "strict": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "THE PERIODIC TABLE",
+    "text": "Element number 43, it was the first element to be made artificially, in 1937, and its name comes from the Greek for \"artificial\"",
+    "answer": "technetium",
+    "accept": [
+      "Tc"
+    ]
+  }
+}

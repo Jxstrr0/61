@@ -325,6 +325,27 @@
         "literature",
         "sports"
       ]
+    },
+    {
+      "id": "general-09",
+      "title": "General #9",
+      "pack": "General",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "geography",
+        "music",
+        "theatre",
+        "sports",
+        "wordplay",
+        "language",
+        "art",
+        "culture",
+        "canada",
+        "space",
+        "movies"
+      ]
     }
   ]
 }
