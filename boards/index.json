@@ -69,6 +69,23 @@
         "canada",
         "geography"
       ]
+    },
+    {
+      "id": "prairie-01",
+      "title": "Prairie #1",
+      "pack": "Prairie",
+      "difficulty": "normal",
+      "tags": [
+        "canada",
+        "prairie",
+        "geography",
+        "history",
+        "nature",
+        "food",
+        "wordplay",
+        "music",
+        "sports"
+      ]
     }
   ]
 }

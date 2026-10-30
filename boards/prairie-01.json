@@ -1,0 +1,161 @@
+{
+  "id": "prairie-01",
+  "title": "Prairie #1",
+  "pack": "Prairie",
+  "difficulty": "normal",
+  "tags": ["canada", "prairie", "geography", "history", "nature", "food", "wordplay", "music", "sports"],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "multiplier": 1,
+      "categories": [
+        {
+          "name": "PRAIRIE CITIES",
+          "tags": ["geography", "prairie"],
+          "clues": [
+            {"value": 200, "text": "The largest city in Alberta", "answer": "Calgary", "accept": []},
+            {"value": 400, "text": "Saskatchewan's capital", "answer": "Regina", "accept": []},
+            {"value": 600, "text": "Manitoba's second-largest city, home to a university and a big summer fair", "answer": "Brandon", "accept": []},
+            {"value": 800, "text": "This Alberta city two hours south of Calgary is known for the High Level Bridge over the Oldman River", "answer": "Lethbridge", "accept": []},
+            {"value": 1000, "text": "This \"Border City\" sits on the Alberta–Saskatchewan line, with the boundary running right down one of its main streets", "answer": "Lloydminster", "accept": []}
+          ]
+        },
+        {
+          "name": "PRAIRIE HISTORY",
+          "tags": ["history", "prairie"],
+          "clues": [
+            {"value": 200, "text": "This Métis leader led the 1885 North-West Resistance and was hanged in Regina", "answer": "Louis Riel", "accept": ["Riel"]},
+            {"value": 400, "text": "In 1919 some 30,000 Winnipeg workers walked off the job in this six-week event", "answer": "the Winnipeg General Strike", "accept": ["Winnipeg General Strike", "General Strike", "the General Strike"]},
+            {"value": 600, "text": "The drought years of the 1930s that turned the southern prairies to dust are known as the Dirty these", "answer": "the Dirty Thirties", "accept": ["Dirty Thirties", "Thirties", "the Thirties"]},
+            {"value": 800, "text": "In 1947 this province brought in North America's first universal hospital insurance", "answer": "Saskatchewan", "accept": []},
+            {"value": 1000, "text": "Alberta and Saskatchewan both became provinces in this year", "answer": "1905", "accept": [], "strict": true}
+          ]
+        },
+        {
+          "name": "GRAIN & GROWING",
+          "tags": ["prairie", "nature"],
+          "clues": [
+            {"value": 200, "text": "The prairies are famous for fields of this bright yellow-flowered oilseed crop", "answer": "canola", "accept": ["rapeseed"]},
+            {"value": 400, "text": "The tall buildings beside the rail line where grain was stored for shipping", "answer": "grain elevators", "accept": ["grain elevator", "elevators", "the elevator"]},
+            {"value": 600, "text": "Saskatchewan is the world's biggest exporter of these small red or green legumes used in dal", "answer": "lentils", "accept": ["lentil"]},
+            {"value": 800, "text": "The main ingredient of beer malt and a staple prairie crop", "answer": "barley", "accept": []},
+            {"value": 1000, "text": "Selected by Charles Saunders in 1904, this variety of wheat ripened early enough to beat the prairie frost and transformed western farming", "answer": "Marquis wheat", "accept": ["Marquis"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "PRAIRIE WILDLIFE",
+          "tags": ["nature", "prairie"],
+          "clues": [
+            {"value": 200, "text": "Once numbering in the tens of millions on the plains, this shaggy animal is on Manitoba's coat of arms", "answer": "the bison", "accept": ["bison", "buffalo", "the buffalo"]},
+            {"value": 400, "text": "Canada's largest deer, this antlered animal shares its name with a Saskatchewan city", "answer": "the moose", "accept": ["moose"]},
+            {"value": 600, "text": "Churchill, Manitoba is famous for its autumn gatherings of this big white predator", "answer": "the polar bear", "accept": ["polar bear", "polar bears"]},
+            {"value": 800, "text": "Saskatchewan's provincial bird, it performs a stamping dance on open ground each spring", "answer": "the sharp-tailed grouse", "accept": ["sharp-tailed grouse", "sharptail", "grouse"]},
+            {"value": 1000, "text": "This chatty, burrowing rodent lives in \"towns\" in Grasslands National Park, its only home in Canada", "answer": "the black-tailed prairie dog", "accept": ["prairie dog", "black-tailed prairie dog", "prairie dogs"]}
+          ]
+        },
+        {
+          "name": "PRAIRIE PLATES",
+          "tags": ["food", "prairie"],
+          "clues": [
+            {"value": 200, "text": "These small purple berries, native to the prairies, fill a classic pie and give a Saskatchewan city its name", "answer": "saskatoon berries", "accept": ["saskatoons", "saskatoon", "saskatoon berry"]},
+            {"value": 400, "text": "These Ukrainian dumplings stuffed with potato and cheese are a prairie staple; a giant one stands in Glendon, Alberta", "answer": "perogies", "accept": ["pierogi", "pierogies", "perogy", "pyrohy"]},
+            {"value": 600, "text": "This fried or baked bread of Indigenous cooking is served at powwows and festivals across the prairies", "answer": "bannock", "accept": []},
+            {"value": 800, "text": "This dish of crispy fried beef in a sweet and spicy sauce was invented in Calgary in the 1970s", "answer": "ginger beef", "accept": []},
+            {"value": 1000, "text": "Winnipeg's famous smoked fish, eaten since the days of the Hudson's Bay Company, is this golden-skinned freshwater species", "answer": "goldeye", "accept": ["Winnipeg goldeye"]}
+          ]
+        },
+        {
+          "name": "ODD PLACE NAMES",
+          "note": "Real places on the prairies",
+          "tags": ["wordplay", "geography", "prairie"],
+          "clues": [
+            {"value": 200, "text": "Legend says this Alberta city's name comes from a Cree medicine man who lost his headdress in the river", "answer": "Medicine Hat", "accept": []},
+            {"value": 400, "text": "Named for the Roman god of fire, this Alberta town leans into Star Trek with a replica starship by the highway", "answer": "Vulcan", "accept": []},
+            {"value": 600, "text": "This Manitoba mining town took its name from Josiah Flintabbatey Flonatin, a character in a dime novel", "answer": "Flin Flon", "accept": []},
+            {"value": 800, "text": "This UNESCO site near Fort Macleod, Alberta is named for how Plains peoples hunted bison by driving them over a cliff", "answer": "Head-Smashed-In Buffalo Jump", "accept": ["Head Smashed In", "Head-Smashed-In"]},
+            {"value": 1000, "text": "Before 1882 Regina was known by this name, for the heaps of bison bones left by hunters", "answer": "Pile of Bones", "accept": ["Pile o' Bones", "Pile O Bones"]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "multiplier": 2,
+      "categories": [
+        {
+          "name": "PRAIRIE POLITICS",
+          "tags": ["history", "prairie"],
+          "clues": [
+            {"value": 400, "text": "This Saskatchewan premier and father of medicare was voted \"The Greatest Canadian\" in a 2004 CBC poll", "answer": "Tommy Douglas", "accept": ["Douglas"]},
+            {"value": 800, "text": "Alberta's premier from 1971 to 1985, he set up the Heritage Savings Trust Fund", "answer": "Peter Lougheed", "accept": ["Lougheed"]},
+            {"value": 1200, "text": "In January 1916 this province became the first in Canada to give women the vote", "answer": "Manitoba", "accept": []},
+            {"value": 1600, "text": "This suffragist and member of the Famous Five staged the 1914 Mock Parliament in Winnipeg and helped win the 1929 Persons Case", "answer": "Nellie McClung", "accept": ["McClung"]},
+            {"value": 2000, "text": "This radio preacher's Social Credit party swept to power in Alberta in 1935", "answer": "William Aberhart", "accept": ["Aberhart", "Bible Bill"], "dailyDouble": true}
+          ]
+        },
+        {
+          "name": "PRAIRIE MUSIC",
+          "tags": ["music", "prairie"],
+          "clues": [
+            {"value": 400, "text": "This Winnipeg band of the late 1960s had hits with \"American Woman\" and \"These Eyes\"", "answer": "The Guess Who", "accept": ["Guess Who"]},
+            {"value": 800, "text": "This rocker grew up in Winnipeg, formed his first bands there, and later sang \"Heart of Gold\"", "answer": "Neil Young", "accept": ["Young"]},
+            {"value": 1200, "text": "k.d. lang, who sang \"Constant Craving\", grew up in the village of Consort in this province", "answer": "Alberta", "accept": []},
+            {"value": 1600, "text": "Formed in Winnipeg by Randy Bachman, this band told everyone to be \"Takin' Care of Business\"", "answer": "Bachman-Turner Overdrive", "accept": ["BTO", "Bachman Turner Overdrive"]},
+            {"value": 2000, "text": "This Winnipeg band's song \"One Great City!\" has the refrain \"I hate Winnipeg\"", "answer": "The Weakerthans", "accept": ["Weakerthans"]}
+          ]
+        },
+        {
+          "name": "PRAIRIE SPORTS",
+          "tags": ["sports", "prairie"],
+          "clues": [
+            {"value": 400, "text": "Winnipeg's CFL team", "answer": "the Blue Bombers", "accept": ["Blue Bombers", "Winnipeg Blue Bombers", "Bombers"]},
+            {"value": 800, "text": "This NHL team came back to Winnipeg in 2011 after 15 years away", "answer": "the Jets", "accept": ["Jets", "Winnipeg Jets"]},
+            {"value": 1200, "text": "The Calgary Stampede's famous evening race, with teams of horses pulling cook wagons around a track", "answer": "the chuckwagon races", "accept": ["chuckwagon races", "chuckwagons", "chuckwagon racing", "the Rangeland Derby"]},
+            {"value": 1600, "text": "Sandra Schmirler of Biggar, Saskatchewan skipped Canada to the first Olympic women's gold in this sport in 1998", "answer": "curling", "accept": []},
+            {"value": 2000, "text": "The 1988 Calgary Olympics made this last-place British ski jumper a folk hero", "answer": "Eddie the Eagle", "accept": ["Eddie Edwards", "Michael Edwards", "Eddie the Eagle Edwards"]}
+          ]
+        },
+        {
+          "name": "RIVERS & LAKES",
+          "tags": ["geography", "prairie"],
+          "clues": [
+            {"value": 400, "text": "Winnipeg stands where the Assiniboine meets this river, which flows north from the United States", "answer": "the Red River", "accept": ["Red River", "the Red"]},
+            {"value": 800, "text": "Canada's sixth-largest lake, it lies just north of Manitoba's capital", "answer": "Lake Winnipeg", "accept": []},
+            {"value": 1200, "text": "Calgary sits where the Elbow River meets this larger river", "answer": "the Bow River", "accept": ["Bow River", "the Bow", "Bow"]},
+            {"value": 1600, "text": "Lake Diefenbaker was created by damming this river, Saskatchewan's largest", "answer": "the South Saskatchewan River", "accept": ["South Saskatchewan River", "South Saskatchewan"], "dailyDouble": true},
+            {"value": 2000, "text": "Alberta's Lake Louise is named for a daughter of this monarch", "answer": "Queen Victoria", "accept": ["Victoria"]}
+          ]
+        },
+        {
+          "name": "BUILT ON THE PRAIRIE",
+          "tags": ["prairie", "history"],
+          "clues": [
+            {"value": 400, "text": "Opened in Winnipeg in 2014 with a glass \"cloud\" and a Tower of Hope, it is Canada's first national museum outside the capital region", "answer": "the Canadian Museum for Human Rights", "accept": ["Museum for Human Rights", "Canadian Museum for Human Rights", "Human Rights Museum"]},
+            {"value": 800, "text": "This Drumheller museum holds one of the world's largest collections of dinosaur fossils", "answer": "the Royal Tyrrell Museum", "accept": ["Royal Tyrrell Museum", "Tyrrell", "Royal Tyrrell"]},
+            {"value": 1200, "text": "This Alberta shopping centre was the largest mall in the world when it opened in 1981", "answer": "West Edmonton Mall", "accept": ["West Ed"]},
+            {"value": 1600, "text": "Every RCMP cadet trains at this Regina academy, known by the French word for a storehouse", "answer": "Depot", "accept": ["the Depot", "RCMP Depot", "Depot Division"]},
+            {"value": 2000, "text": "Moose Jaw's tunnels are said to have hidden this Chicago gangster during Prohibition", "answer": "Al Capone", "accept": ["Capone"]}
+          ]
+        },
+        {
+          "name": "BUNNYHUG & CO.",
+          "note": "Words and places only a prairie person would know",
+          "tags": ["wordplay", "prairie"],
+          "clues": [
+            {"value": 400, "text": "In Saskatchewan, a hooded sweatshirt is called this", "answer": "a bunnyhug", "accept": ["bunnyhug", "bunny hug"]},
+            {"value": 800, "text": "Across the prairies a Richardson's ground squirrel is simply called this", "answer": "a gopher", "accept": ["gopher", "gophers"]},
+            {"value": 1200, "text": "\"Vi-Co\" is a Saskatchewan word for this drink", "answer": "chocolate milk", "accept": []},
+            {"value": 1600, "text": "This downtown Winnipeg intersection is often called the windiest corner in Canada", "answer": "Portage and Main", "accept": ["Portage & Main", "Portage Main"]},
+            {"value": 2000, "text": "A \"section\" of prairie farmland is this many acres", "answer": "640", "accept": ["six hundred forty", "six hundred and forty"], "strict": true}
+          ]
+        }
+      ]
+    }
+  ],
+  "final": {
+    "category": "PRAIRIE HISTORY",
+    "text": "In 1874 this newly formed force marched west from Manitoba to shut down the whisky trade at Fort Whoop-Up, founding Fort Macleod along the way",
+    "answer": "the North-West Mounted Police",
+    "accept": ["North-West Mounted Police", "NWMP", "the Mounties", "Mounties", "RCMP", "North West Mounted Police"]
+  }
+}
